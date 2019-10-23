@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C12A650235D715C00CBFEE5 /* Constantes.swift */; };
+		0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */; };
+		0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA68235CF1100037F5EE /* LoginViewController.swift */; };
+		0C13CA6B235CF11D0037F5EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6A235CF11D0037F5EE /* HomeViewController.swift */; };
+		0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */; };
+		0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */; };
+		0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */; };
+		0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C5370F32360BE13006BD76D /* videoAbertura.mp4 */; };
+		0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */; };
+		0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6E252354BE850039FC41 /* MenuViewController.swift */; };
+		0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB68235347D5004D6EA9 /* AppDelegate.swift */; };
+		0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */; };
+		0CB2FB70235347D5004D6EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB6E235347D5004D6EA9 /* Main.storyboard */; };
+		0CB2FB72235347D6004D6EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB71235347D6004D6EA9 /* Assets.xcassets */; };
+		0CB2FB75235347D6004D6EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB73235347D6004D6EA9 /* LaunchScreen.storyboard */; };
+		0CB2FB80235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB7F235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift */; };
+		0CB2FB8B235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB8A235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift */; };
+		0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB9B23534B23004D6EA9 /* Model.swift */; };
+		0CB2FB9F23535588004D6EA9 /* ReceberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB9D23535588004D6EA9 /* ReceberTableViewCell.swift */; };
+		0CB2FBA023535588004D6EA9 /* ReceberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB9E23535588004D6EA9 /* ReceberTableViewCell.xib */; };
+		0CB2FBA223536743004D6EA9 /* ReceberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FBA123536743004D6EA9 /* ReceberViewController.swift */; };
+		0CB2FBA623536AF1004D6EA9 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FBA523536AF1004D6EA9 /* Controller.swift */; };
+		0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5D5B12353A95C001F2FC7 /* ReceberGaleriaViewController.swift */; };
+		94718232AF000B6DD88E1585 /* Pods_AppReceitaReceberRestauranteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */; };
+		A5B3118B091858A772F98AF4 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */; };
+		C6692A1DA7C9871C2F7B003A /* Pods_AppReceitaReceberRestaurante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0CB2FB7C235347D7004D6EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CB2FB5D235347D5004D6EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CB2FB64235347D5004D6EA9;
+			remoteInfo = AppReceitaReceberRestaurante;
+		};
+		0CB2FB87235347D7004D6EA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CB2FB5D235347D5004D6EA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0CB2FB64235347D5004D6EA9;
+			remoteInfo = AppReceitaReceberRestaurante;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06CC69613BE539C37663450B /* Pods-AppReceitaReceberRestaurante.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.release.xcconfig"; sourceTree = "<group>"; };
+		0C12A650235D715C00CBFEE5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
+		0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		0C13CA68235CF1100037F5EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0C13CA6A235CF11D0037F5EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AberturaViewController.swift; sourceTree = "<group>"; };
+		0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizacaoTextField.swift; sourceTree = "<group>"; };
+		0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0C5370F32360BE13006BD76D /* videoAbertura.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAbertura.mp4; sourceTree = "<group>"; };
+		0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemVindoViewController.swift; sourceTree = "<group>"; };
+		0CAF6E252354BE850039FC41 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0CB2FB65235347D5004D6EA9 /* AppReceitaReceberRestaurante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReceitaReceberRestaurante.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB2FB68235347D5004D6EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0CB2FB6F235347D5004D6EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CB2FB71235347D6004D6EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0CB2FB74235347D6004D6EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CB2FB76235347D6004D6EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB2FB7B235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppReceitaReceberRestauranteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB2FB7F235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReceitaReceberRestauranteTests.swift; sourceTree = "<group>"; };
+		0CB2FB81235347D7004D6EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB2FB86235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppReceitaReceberRestauranteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CB2FB8A235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReceitaReceberRestauranteUITests.swift; sourceTree = "<group>"; };
+		0CB2FB8C235347D7004D6EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB2FB9B23534B23004D6EA9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0CB2FB9D23535588004D6EA9 /* ReceberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceberTableViewCell.swift; sourceTree = "<group>"; };
+		0CB2FB9E23535588004D6EA9 /* ReceberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceberTableViewCell.xib; sourceTree = "<group>"; };
+		0CB2FBA123536743004D6EA9 /* ReceberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceberViewController.swift; sourceTree = "<group>"; };
+		0CB2FBA523536AF1004D6EA9 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		0CB5D5B12353A95C001F2FC7 /* ReceberGaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceberGaleriaViewController.swift; sourceTree = "<group>"; };
+		3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.debug.xcconfig"; sourceTree = "<group>"; };
+		4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestauranteTests.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestauranteTests/Pods-AppReceitaReceberRestauranteTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestauranteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94AED5EB8975D10F29EB8E2 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestaurante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A130E0BE532766999907C4 /* Pods-AppReceitaReceberRestauranteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestauranteTests.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestauranteTests/Pods-AppReceitaReceberRestauranteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E860D0F1E911C8EAA94039A0 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CB2FB62235347D5004D6EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6692A1DA7C9871C2F7B003A /* Pods_AppReceitaReceberRestaurante.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB2FB78235347D7004D6EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94718232AF000B6DD88E1585 /* Pods_AppReceitaReceberRestauranteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB2FB83235347D7004D6EA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B3118B091858A772F98AF4 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C13CA6E235D029E0037F5EE /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */,
+				0C12A650235D715C00CBFEE5 /* Constantes.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		0CAF6E222354BDF70039FC41 /* ReceberView */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FB9D23535588004D6EA9 /* ReceberTableViewCell.swift */,
+				0CB2FB9E23535588004D6EA9 /* ReceberTableViewCell.xib */,
+				0CB2FBA123536743004D6EA9 /* ReceberViewController.swift */,
+				0CB5D5B12353A95C001F2FC7 /* ReceberGaleriaViewController.swift */,
+			);
+			path = ReceberView;
+			sourceTree = "<group>";
+		};
+		0CAF6E232354BE0B0039FC41 /* ReceitaView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReceitaView;
+			sourceTree = "<group>";
+		};
+		0CB2FB5C235347D5004D6EA9 = {
+			isa = PBXGroup;
+			children = (
+				0CB2FB67235347D5004D6EA9 /* AppReceitaReceberRestaurante */,
+				0CB2FB7E235347D7004D6EA9 /* AppReceitaReceberRestauranteTests */,
+				0CB2FB89235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests */,
+				0CB2FB66235347D5004D6EA9 /* Products */,
+				75F6AE2CB129684C2A76EAF8 /* Pods */,
+				E31080918D687415E013A53C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0CB2FB66235347D5004D6EA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FB65235347D5004D6EA9 /* AppReceitaReceberRestaurante.app */,
+				0CB2FB7B235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.xctest */,
+				0CB2FB86235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CB2FB67235347D5004D6EA9 /* AppReceitaReceberRestaurante */ = {
+			isa = PBXGroup;
+			children = (
+				0CD26DB3235E371900907B1C /* Media */,
+				0C13CA6E235D029E0037F5EE /* Extras */,
+				0CB2FB9A2353480E004D6EA9 /* Controller */,
+				0CB2FB99235347F3004D6EA9 /* View */,
+				0CB2FB98235347E0004D6EA9 /* Model */,
+				0CB2FB68235347D5004D6EA9 /* AppDelegate.swift */,
+				0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */,
+				0CB2FB6E235347D5004D6EA9 /* Main.storyboard */,
+				0CB2FB71235347D6004D6EA9 /* Assets.xcassets */,
+				0CB2FB73235347D6004D6EA9 /* LaunchScreen.storyboard */,
+				0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */,
+				0CB2FB76235347D6004D6EA9 /* Info.plist */,
+			);
+			path = AppReceitaReceberRestaurante;
+			sourceTree = "<group>";
+		};
+		0CB2FB7E235347D7004D6EA9 /* AppReceitaReceberRestauranteTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FB7F235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift */,
+				0CB2FB81235347D7004D6EA9 /* Info.plist */,
+			);
+			path = AppReceitaReceberRestauranteTests;
+			sourceTree = "<group>";
+		};
+		0CB2FB89235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FB8A235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift */,
+				0CB2FB8C235347D7004D6EA9 /* Info.plist */,
+			);
+			path = AppReceitaReceberRestauranteUITests;
+			sourceTree = "<group>";
+		};
+		0CB2FB98235347E0004D6EA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FB9B23534B23004D6EA9 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CB2FB99235347F3004D6EA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF6E232354BE0B0039FC41 /* ReceitaView */,
+				0CAF6E222354BDF70039FC41 /* ReceberView */,
+				0CAF6E252354BE850039FC41 /* MenuViewController.swift */,
+				0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */,
+				0C13CA68235CF1100037F5EE /* LoginViewController.swift */,
+				0C13CA6A235CF11D0037F5EE /* HomeViewController.swift */,
+				0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */,
+				0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CB2FB9A2353480E004D6EA9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FBA523536AF1004D6EA9 /* Controller.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CD26DB3235E371900907B1C /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				0C5370F32360BE13006BD76D /* videoAbertura.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		75F6AE2CB129684C2A76EAF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */,
+				06CC69613BE539C37663450B /* Pods-AppReceitaReceberRestaurante.release.xcconfig */,
+				A94AED5EB8975D10F29EB8E2 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig */,
+				E860D0F1E911C8EAA94039A0 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig */,
+				D8A130E0BE532766999907C4 /* Pods-AppReceitaReceberRestauranteTests.debug.xcconfig */,
+				4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E31080918D687415E013A53C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */,
+				B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */,
+				A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CB2FB64235347D5004D6EA9 /* AppReceitaReceberRestaurante */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB2FB8F235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestaurante" */;
+			buildPhases = (
+				769E81EE71BF1A1D91CE98E1 /* [CP] Check Pods Manifest.lock */,
+				0CB2FB61235347D5004D6EA9 /* Sources */,
+				0CB2FB62235347D5004D6EA9 /* Frameworks */,
+				0CB2FB63235347D5004D6EA9 /* Resources */,
+				2AAECD11795295A924911B74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppReceitaReceberRestaurante;
+			productName = AppReceitaReceberRestaurante;
+			productReference = 0CB2FB65235347D5004D6EA9 /* AppReceitaReceberRestaurante.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0CB2FB7A235347D7004D6EA9 /* AppReceitaReceberRestauranteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB2FB92235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestauranteTests" */;
+			buildPhases = (
+				E46BF718C974D2D08C1FCDF1 /* [CP] Check Pods Manifest.lock */,
+				0CB2FB77235347D7004D6EA9 /* Sources */,
+				0CB2FB78235347D7004D6EA9 /* Frameworks */,
+				0CB2FB79235347D7004D6EA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CB2FB7D235347D7004D6EA9 /* PBXTargetDependency */,
+			);
+			name = AppReceitaReceberRestauranteTests;
+			productName = AppReceitaReceberRestauranteTests;
+			productReference = 0CB2FB7B235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0CB2FB85235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CB2FB95235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestauranteUITests" */;
+			buildPhases = (
+				81D19551C9A8841EDEBDF051 /* [CP] Check Pods Manifest.lock */,
+				0CB2FB82235347D7004D6EA9 /* Sources */,
+				0CB2FB83235347D7004D6EA9 /* Frameworks */,
+				0CB2FB84235347D7004D6EA9 /* Resources */,
+				38B748EA95EFD77731320C17 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0CB2FB88235347D7004D6EA9 /* PBXTargetDependency */,
+			);
+			name = AppReceitaReceberRestauranteUITests;
+			productName = AppReceitaReceberRestauranteUITests;
+			productReference = 0CB2FB86235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CB2FB5D235347D5004D6EA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Maíra Acioli";
+				TargetAttributes = {
+					0CB2FB64235347D5004D6EA9 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					0CB2FB7A235347D7004D6EA9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0CB2FB64235347D5004D6EA9;
+					};
+					0CB2FB85235347D7004D6EA9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0CB2FB64235347D5004D6EA9;
+					};
+				};
+			};
+			buildConfigurationList = 0CB2FB60235347D5004D6EA9 /* Build configuration list for PBXProject "AppReceitaReceberRestaurante" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CB2FB5C235347D5004D6EA9;
+			productRefGroup = 0CB2FB66235347D5004D6EA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CB2FB64235347D5004D6EA9 /* AppReceitaReceberRestaurante */,
+				0CB2FB7A235347D7004D6EA9 /* AppReceitaReceberRestauranteTests */,
+				0CB2FB85235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CB2FB63235347D5004D6EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB2FBA023535588004D6EA9 /* ReceberTableViewCell.xib in Resources */,
+				0CB2FB75235347D6004D6EA9 /* LaunchScreen.storyboard in Resources */,
+				0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */,
+				0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */,
+				0CB2FB72235347D6004D6EA9 /* Assets.xcassets in Resources */,
+				0CB2FB70235347D5004D6EA9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB2FB79235347D7004D6EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB2FB84235347D7004D6EA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AAECD11795295A924911B74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38B748EA95EFD77731320C17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769E81EE71BF1A1D91CE98E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppReceitaReceberRestaurante-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81D19551C9A8841EDEBDF051 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E46BF718C974D2D08C1FCDF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppReceitaReceberRestauranteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CB2FB61235347D5004D6EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */,
+				0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */,
+				0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */,
+				0CB2FB9F23535588004D6EA9 /* ReceberTableViewCell.swift in Sources */,
+				0CB2FBA223536743004D6EA9 /* ReceberViewController.swift in Sources */,
+				0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */,
+				0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */,
+				0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */,
+				0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */,
+				0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */,
+				0C13CA6B235CF11D0037F5EE /* HomeViewController.swift in Sources */,
+				0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */,
+				0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */,
+				0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */,
+				0CB2FBA623536AF1004D6EA9 /* Controller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB2FB77235347D7004D6EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB2FB80235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CB2FB82235347D7004D6EA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB2FB8B235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CB2FB7D235347D7004D6EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CB2FB64235347D5004D6EA9 /* AppReceitaReceberRestaurante */;
+			targetProxy = 0CB2FB7C235347D7004D6EA9 /* PBXContainerItemProxy */;
+		};
+		0CB2FB88235347D7004D6EA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0CB2FB64235347D5004D6EA9 /* AppReceitaReceberRestaurante */;
+			targetProxy = 0CB2FB87235347D7004D6EA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0CB2FB6E235347D5004D6EA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CB2FB6F235347D5004D6EA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CB2FB73235347D6004D6EA9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CB2FB74235347D6004D6EA9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CB2FB8D235347D7004D6EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0CB2FB8E235347D7004D6EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CB2FB90235347D7004D6EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5URSQ65G4D;
+				INFOPLIST_FILE = AppReceitaReceberRestaurante/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mairaAcioli.AppReceitaReceberRestaurante;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CB2FB91235347D7004D6EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06CC69613BE539C37663450B /* Pods-AppReceitaReceberRestaurante.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5URSQ65G4D;
+				INFOPLIST_FILE = AppReceitaReceberRestaurante/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mairaAcioli.AppReceitaReceberRestaurante;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0CB2FB93235347D7004D6EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A130E0BE532766999907C4 /* Pods-AppReceitaReceberRestauranteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppReceitaReceberRestauranteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mairaAcioli.AppReceitaReceberRestauranteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReceitaReceberRestaurante.app/AppReceitaReceberRestaurante";
+			};
+			name = Debug;
+		};
+		0CB2FB94235347D7004D6EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppReceitaReceberRestauranteTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mairaAcioli.AppReceitaReceberRestauranteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppReceitaReceberRestaurante.app/AppReceitaReceberRestaurante";
+			};
+			name = Release;
+		};
+		0CB2FB96235347D7004D6EA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A94AED5EB8975D10F29EB8E2 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppReceitaReceberRestauranteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mairaAcioli.AppReceitaReceberRestauranteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppReceitaReceberRestaurante;
+			};
+			name = Debug;
+		};
+		0CB2FB97235347D7004D6EA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E860D0F1E911C8EAA94039A0 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AppReceitaReceberRestauranteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mairaAcioli.AppReceitaReceberRestauranteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppReceitaReceberRestaurante;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CB2FB60235347D5004D6EA9 /* Build configuration list for PBXProject "AppReceitaReceberRestaurante" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB2FB8D235347D7004D6EA9 /* Debug */,
+				0CB2FB8E235347D7004D6EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CB2FB8F235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestaurante" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB2FB90235347D7004D6EA9 /* Debug */,
+				0CB2FB91235347D7004D6EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CB2FB92235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestauranteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB2FB93235347D7004D6EA9 /* Debug */,
+				0CB2FB94235347D7004D6EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CB2FB95235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestauranteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CB2FB96235347D7004D6EA9 /* Debug */,
+				0CB2FB97235347D7004D6EA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CB2FB5D235347D5004D6EA9 /* Project object */;
+}
