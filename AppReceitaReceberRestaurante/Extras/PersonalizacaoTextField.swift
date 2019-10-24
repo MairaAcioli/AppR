@@ -12,19 +12,19 @@ import UIKit
 
 class Utilities {
     
-    static func styleTextField(_ textfield: UITextField){
+    static func styleTextField(_ textfield: UITextField) {
         
-        let botao = CALayer()
+        let tf = CALayer()
         
-        botao.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
-        
-        botao.backgroundColor = UIColor.init(red: 150/255, green: 150/255, blue: 150/255, alpha: 1).cgColor
+        tf.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: UIScreen.main.bounds.width - 80, height: 1)
+
+        tf.backgroundColor = UIColor.init(red: 150/255, green: 150/255, blue: 150/255, alpha: 1).cgColor
         
         //tirar a bordar do text field
         textfield.borderStyle = .none
         
         //adicionar linha inferior na text field
-        textfield.layer.addSublayer(botao)
+        textfield.layer.addSublayer(tf)
         
     }
     

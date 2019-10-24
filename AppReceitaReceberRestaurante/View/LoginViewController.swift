@@ -49,11 +49,12 @@ class LoginViewController: UIViewController {
             }
             else{
                 
-                let bemVindoViewController = self.storyboard?.instantiateViewController(identifier: Constantes.Storyboard.bemVindoViewController) as? BemVindoViewController
-                      
-                self.view.window?.rootViewController = bemVindoViewController
-                self.view.window?.makeKeyAndVisible()
-                
+                if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
+                      let nvc = UINavigationController(rootViewController: menuVC)
+                    
+                    self.view.window?.rootViewController = nvc
+                    self.view.window?.makeKeyAndVisible()
+                }
             }
         }
         

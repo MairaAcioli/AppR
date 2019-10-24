@@ -20,6 +20,7 @@ target 'AppReceitaReceberRestaurante' do
         pod 'Firebase/Auth'
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
+  pod 'lottie-ios'
 
 
 

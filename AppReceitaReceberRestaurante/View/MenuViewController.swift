@@ -18,15 +18,26 @@ class MenuViewController: UIViewController {
     
     
     override func viewDidLoad() {
-   super.viewDidLoad()
+        super.viewDidLoad()
     
     
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
     }
     
  
   
     @IBAction func buttonTap(_ sender: UIButton) {
         guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}
+        
         
         switch sender {
         case receberButton:

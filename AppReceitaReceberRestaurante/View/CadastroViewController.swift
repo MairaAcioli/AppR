@@ -41,8 +41,9 @@ class CadastroViewController: UIViewController {
        
         setUpCadastroTextField()
         self.fotoCadastroImageView.image = UIImage(named: "cadastro")
-        
     }
+    
+
     
     func setUpCadastroTextField() {
         

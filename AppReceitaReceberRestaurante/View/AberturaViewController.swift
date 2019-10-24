@@ -28,8 +28,17 @@ class AberturaViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        self.navigationController?.isNavigationBarHidden = true
+
         setUpVideo()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        videoPlayer?.pause()
+        videoPlayerLayer?.removeFromSuperlayer()
+        videoPlayer = nil
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     func setUpAbertura(){
