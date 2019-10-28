@@ -27,7 +27,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
        setUpLoginTextField()
        self.fotoLoginImageView.image = UIImage(named: "login")
         

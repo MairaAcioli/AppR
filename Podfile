@@ -17,11 +17,11 @@ target 'AppReceitaReceberRestaurante' do
   end
 
 	pod 'Firebase/Analytics'
-        pod 'Firebase/Auth'
+  pod 'Firebase/Auth'
 	pod 'Firebase/Core'
 	pod 'Firebase/Firestore'
   pod 'lottie-ios'
-
+  pod 'Alamofire'
 
 
 end

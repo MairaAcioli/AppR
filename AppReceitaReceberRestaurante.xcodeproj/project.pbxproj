@@ -30,6 +30,10 @@
 		0CB2FBA223536743004D6EA9 /* ReceberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FBA123536743004D6EA9 /* ReceberViewController.swift */; };
 		0CB2FBA623536AF1004D6EA9 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FBA523536AF1004D6EA9 /* Controller.swift */; };
 		0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5D5B12353A95C001F2FC7 /* ReceberGaleriaViewController.swift */; };
+		0CBC91A32362723E00061996 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A22362723E00061996 /* API.swift */; };
+		0CBC91A52362740000061996 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A42362740000061996 /* ApiManager.swift */; };
+		0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A6236274E900061996 /* RestaurantSearch.swift */; };
+		0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A8236280B200061996 /* RestaurantController.swift */; };
 		94718232AF000B6DD88E1585 /* Pods_AppReceitaReceberRestauranteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */; };
 		A5B3118B091858A772F98AF4 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */; };
 		C6692A1DA7C9871C2F7B003A /* Pods_AppReceitaReceberRestaurante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */; };
@@ -83,6 +87,10 @@
 		0CB2FBA123536743004D6EA9 /* ReceberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceberViewController.swift; sourceTree = "<group>"; };
 		0CB2FBA523536AF1004D6EA9 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		0CB5D5B12353A95C001F2FC7 /* ReceberGaleriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceberGaleriaViewController.swift; sourceTree = "<group>"; };
+		0CBC91A22362723E00061996 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0CBC91A42362740000061996 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		0CBC91A6236274E900061996 /* RestaurantSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSearch.swift; sourceTree = "<group>"; };
+		0CBC91A8236280B200061996 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 		3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.debug.xcconfig"; sourceTree = "<group>"; };
 		4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestauranteTests.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestauranteTests/Pods-AppReceitaReceberRestauranteTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestauranteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,13 +149,6 @@
 			path = ReceberView;
 			sourceTree = "<group>";
 		};
-		0CAF6E232354BE0B0039FC41 /* ReceitaView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ReceitaView;
-			sourceTree = "<group>";
-		};
 		0CB2FB5C235347D5004D6EA9 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +174,7 @@
 		0CB2FB67235347D5004D6EA9 /* AppReceitaReceberRestaurante */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC91A12362722500061996 /* Network */,
 				0CD26DB3235E371900907B1C /* Media */,
 				0C13CA6E235D029E0037F5EE /* Extras */,
 				0CB2FB9A2353480E004D6EA9 /* Controller */,
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB2FB9B23534B23004D6EA9 /* Model.swift */,
+				0CBC91A6236274E900061996 /* RestaurantSearch.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,7 +221,6 @@
 		0CB2FB99235347F3004D6EA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0CAF6E232354BE0B0039FC41 /* ReceitaView */,
 				0CAF6E222354BDF70039FC41 /* ReceberView */,
 				0CAF6E252354BE850039FC41 /* MenuViewController.swift */,
 				0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */,
@@ -234,8 +236,18 @@
 			isa = PBXGroup;
 			children = (
 				0CB2FBA523536AF1004D6EA9 /* Controller.swift */,
+				0CBC91A8236280B200061996 /* RestaurantController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CBC91A12362722500061996 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0CBC91A22362723E00061996 /* API.swift */,
+				0CBC91A42362740000061996 /* ApiManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		0CD26DB3235E371900907B1C /* Media */ = {
@@ -520,11 +532,15 @@
 				0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */,
 				0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */,
 				0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */,
+				0CBC91A52362740000061996 /* ApiManager.swift in Sources */,
+				0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */,
+				0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */,
 				0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */,
 				0C13CA6B235CF11D0037F5EE /* HomeViewController.swift in Sources */,
 				0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */,
 				0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */,
 				0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */,
+				0CBC91A32362723E00061996 /* API.swift in Sources */,
 				0CB2FBA623536AF1004D6EA9 /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
