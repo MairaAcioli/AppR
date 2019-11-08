@@ -51,8 +51,8 @@ class CadastroViewController: UIViewController {
       
         Utilities.styleTextField(nomeTextField)
         Utilities.styleTextField(sobrenomeTextFiled)
-            Utilities.styleTextField(emailTextField)
-            Utilities.styleTextField(senhaTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(senhaTextField)
         Utilities.styleFilledButton(cadastroButton)
             
             

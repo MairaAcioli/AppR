@@ -30,6 +30,9 @@ class LoginViewController: UIViewController {
        setUpLoginTextField()
        self.fotoLoginImageView.image = UIImage(named: "login")
         
+        self.emailTextField.text = "maira@teste.com"
+        self.senhaTextField.text = "maira1234@"
+        
     }
     
 

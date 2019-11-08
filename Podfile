@@ -22,6 +22,10 @@ target 'AppReceitaReceberRestaurante' do
 	pod 'Firebase/Firestore'
   pod 'lottie-ios'
   pod 'Alamofire'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+ 
+
 
 
 end

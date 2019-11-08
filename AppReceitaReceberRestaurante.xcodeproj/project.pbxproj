@@ -10,12 +10,12 @@
 		0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C12A650235D715C00CBFEE5 /* Constantes.swift */; };
 		0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */; };
 		0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA68235CF1100037F5EE /* LoginViewController.swift */; };
-		0C13CA6B235CF11D0037F5EE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6A235CF11D0037F5EE /* HomeViewController.swift */; };
 		0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */; };
 		0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */; };
 		0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */; };
 		0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C5370F32360BE13006BD76D /* videoAbertura.mp4 */; };
 		0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */; };
+		0CAF6BCF23668BEE001F3124 /* RestauranteMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */; };
 		0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6E252354BE850039FC41 /* MenuViewController.swift */; };
 		0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB68235347D5004D6EA9 /* AppDelegate.swift */; };
 		0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */; };
@@ -61,12 +61,12 @@
 		0C12A650235D715C00CBFEE5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		0C13CA68235CF1100037F5EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		0C13CA6A235CF11D0037F5EE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AberturaViewController.swift; sourceTree = "<group>"; };
 		0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizacaoTextField.swift; sourceTree = "<group>"; };
 		0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0C5370F32360BE13006BD76D /* videoAbertura.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAbertura.mp4; sourceTree = "<group>"; };
 		0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemVindoViewController.swift; sourceTree = "<group>"; };
+		0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteMapaViewController.swift; sourceTree = "<group>"; };
 		0CAF6E252354BE850039FC41 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0CB2FB65235347D5004D6EA9 /* AppReceitaReceberRestaurante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReceitaReceberRestaurante.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB2FB68235347D5004D6EA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +136,14 @@
 				0C12A650235D715C00CBFEE5 /* Constantes.swift */,
 			);
 			path = Extras;
+			sourceTree = "<group>";
+		};
+		0CAF6BCD23668AAD001F3124 /* RestauranteView */ = {
+			isa = PBXGroup;
+			children = (
+				0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */,
+			);
+			path = RestauranteView;
 			sourceTree = "<group>";
 		};
 		0CAF6E222354BDF70039FC41 /* ReceberView */ = {
@@ -221,11 +229,11 @@
 		0CB2FB99235347F3004D6EA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0CAF6BCD23668AAD001F3124 /* RestauranteView */,
 				0CAF6E222354BDF70039FC41 /* ReceberView */,
 				0CAF6E252354BE850039FC41 /* MenuViewController.swift */,
 				0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */,
 				0C13CA68235CF1100037F5EE /* LoginViewController.swift */,
-				0C13CA6A235CF11D0037F5EE /* HomeViewController.swift */,
 				0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */,
 				0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */,
 			);
@@ -293,6 +301,7 @@
 				0CB2FB62235347D5004D6EA9 /* Frameworks */,
 				0CB2FB63235347D5004D6EA9 /* Resources */,
 				2AAECD11795295A924911B74 /* [CP] Embed Pods Frameworks */,
+				B9639222CAA0CE938D452218 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,6 +340,7 @@
 				0CB2FB83235347D7004D6EA9 /* Frameworks */,
 				0CB2FB84235347D7004D6EA9 /* Resources */,
 				38B748EA95EFD77731320C17 /* [CP] Embed Pods Frameworks */,
+				DE99D6BF3A3DD982901496D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -494,6 +504,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B9639222CAA0CE938D452218 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE99D6BF3A3DD982901496D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E46BF718C974D2D08C1FCDF1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +570,7 @@
 				0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */,
 				0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */,
 				0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */,
+				0CAF6BCF23668BEE001F3124 /* RestauranteMapaViewController.swift in Sources */,
 				0CB2FB9F23535588004D6EA9 /* ReceberTableViewCell.swift in Sources */,
 				0CB2FBA223536743004D6EA9 /* ReceberViewController.swift in Sources */,
 				0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */,
@@ -536,7 +581,6 @@
 				0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */,
 				0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */,
 				0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */,
-				0C13CA6B235CF11D0037F5EE /* HomeViewController.swift in Sources */,
 				0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */,
 				0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */,
 				0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */,

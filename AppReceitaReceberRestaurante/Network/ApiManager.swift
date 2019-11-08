@@ -13,7 +13,7 @@ import Alamofire
 struct ApiManager {
     
     
-    func getRestaurante(location: String,completion: @escaping (_ result: [Business]?, _ error: Bool) -> Void) {
+    func getRestaurante(location: String, completion: @escaping (_ result: [Business]?, _ error: Bool) -> Void) {
         let parameters: [String:Any] = ["location":location, "categories":"restaurants"]
         let url = API.baseURL + API.businesses + API.search
         let header: HTTPHeaders = ["Authorization":API.apiKey]

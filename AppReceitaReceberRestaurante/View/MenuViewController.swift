@@ -46,7 +46,7 @@ class MenuViewController: UIViewController {
         case receitaButton:
             vc.tipo = .receita
             navigationController?.pushViewController(vc, animated: true)
-        case restauranteButton:
+       case restauranteButton:
             vc.tipo = .restaurante
             navigationController?.pushViewController(vc, animated: true)
         default:

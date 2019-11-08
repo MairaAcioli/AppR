@@ -271,6 +271,7 @@
                                 <state key="normal" title="RESTAURANTE" backgroundImage="menu"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="12e-Ih-wQT" eventType="touchUpInside" id="Pig-gY-zrc"/>
+                                    <segue destination="rwy-cC-3EH" kind="showDetail" id="nhd-mD-xzQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -296,7 +297,6 @@
                     <connections>
                         <outlet property="receberButton" destination="x5U-1h-lc0" id="CAg-zj-bf8"/>
                         <outlet property="receitaButton" destination="Cxj-zo-mKH" id="sdC-eS-Dd3"/>
-                        <outlet property="restauranteButton" destination="6iT-q6-WNs" id="3O4-t9-YM5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sR6-b7-NYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -348,6 +348,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cl-nF-k17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1142" y="104"/>
+        </scene>
+        <!--Restaurante Mapa View Controller-->
+        <scene sceneID="Oed-Aj-Ud9">
+            <objects>
+                <viewController storyboardIdentifier="RestauranteMapaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rwy-cC-3EH" customClass="RestauranteMapaViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KyR-mr-X98">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ybd-hW-KOO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxl-tU-1j4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2866.666666666667" y="-620.08928571428567"/>
         </scene>
         <!--Receber-->
         <scene sceneID="9vW-Rh-MbU">
