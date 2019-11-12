@@ -364,6 +364,21 @@
             </objects>
             <point key="canvasLocation" x="2866.666666666667" y="-620.08928571428567"/>
         </scene>
+        <!--Restaurante Informacoes View Controller-->
+        <scene sceneID="Hni-6N-js5">
+            <objects>
+                <viewController storyboardIdentifier="RestauranteInformacoesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HqR-Mp-y3n" customClass="RestauranteInformacoesViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1lz-mF-PG9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="18I-QR-EBF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S6M-Hx-AEA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3723" y="-619"/>
+        </scene>
         <!--Receber-->
         <scene sceneID="9vW-Rh-MbU">
             <objects>
