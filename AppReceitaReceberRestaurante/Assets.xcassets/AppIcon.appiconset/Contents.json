@@ -1,21 +1,18 @@
 {
   "images" : [
     {
-      "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-2.jpeg",
+      "size" : "20x20",
       "scale" : "2x"
     },
     {
-      "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-3.jpeg",
+      "size" : "20x20",
       "scale" : "3x"
     },
     {
-      "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-8.jpeg",
+      "size" : "29x29",
       "scale" : "2x"
     },
     {
@@ -24,27 +21,23 @@
       "scale" : "3x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-22.jpeg",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-11.jpeg",
+      "size" : "40x40",
       "scale" : "3x"
     },
     {
+      "idiom" : "iphone",
       "size" : "60x60",
-      "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-10.jpeg",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-20.jpeg",
+      "size" : "60x60",
       "scale" : "3x"
     },
     {
@@ -63,9 +56,8 @@
       "scale" : "1x"
     },
     {
-      "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-13.jpeg",
+      "size" : "29x29",
       "scale" : "2x"
     },
     {
@@ -79,9 +71,8 @@
       "scale" : "2x"
     },
     {
+      "idiom" : "ipad",
       "size" : "76x76",
-      "idiom" : "ipad",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-18.jpeg",
       "scale" : "1x"
     },
     {
@@ -90,15 +81,13 @@
       "scale" : "2x"
     },
     {
+      "idiom" : "ipad",
       "size" : "83.5x83.5",
-      "idiom" : "ipad",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-14.jpeg",
       "scale" : "2x"
     },
     {
-      "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "WhatsApp Image 2019-10-18 at 10.34.55-15.jpeg",
+      "size" : "1024x1024",
       "scale" : "1x"
     }
   ],

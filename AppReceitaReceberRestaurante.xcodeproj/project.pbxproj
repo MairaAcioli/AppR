@@ -23,7 +23,6 @@
 		0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */; };
 		0CB2FB70235347D5004D6EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB6E235347D5004D6EA9 /* Main.storyboard */; };
 		0CB2FB72235347D6004D6EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB71235347D6004D6EA9 /* Assets.xcassets */; };
-		0CB2FB75235347D6004D6EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB2FB73235347D6004D6EA9 /* LaunchScreen.storyboard */; };
 		0CB2FB80235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB7F235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift */; };
 		0CB2FB8B235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB8A235347D7004D6EA9 /* AppReceitaReceberRestauranteUITests.swift */; };
 		0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB9B23534B23004D6EA9 /* Model.swift */; };
@@ -61,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		06CC69613BE539C37663450B /* Pods-AppReceitaReceberRestaurante.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.release.xcconfig"; sourceTree = "<group>"; };
+		0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C12A650235D715C00CBFEE5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		0C13CA68235CF1100037F5EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +78,6 @@
 		0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0CB2FB6F235347D5004D6EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CB2FB71235347D6004D6EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0CB2FB74235347D6004D6EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0CB2FB76235347D6004D6EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CB2FB7B235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppReceitaReceberRestauranteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB2FB7F235347D7004D6EA9 /* AppReceitaReceberRestauranteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReceitaReceberRestauranteTests.swift; sourceTree = "<group>"; };
 		0CB2FB81235347D7004D6EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,9 +199,8 @@
 				0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */,
 				0CB2FB6E235347D5004D6EA9 /* Main.storyboard */,
 				0CB2FB71235347D6004D6EA9 /* Assets.xcassets */,
-				0CB2FB73235347D6004D6EA9 /* LaunchScreen.storyboard */,
 				0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */,
-				0CB2FB76235347D6004D6EA9 /* Info.plist */,
+				0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */,
 			);
 			path = AppReceitaReceberRestaurante;
 			sourceTree = "<group>";
@@ -410,7 +407,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB2FBA023535588004D6EA9 /* ReceberTableViewCell.xib in Resources */,
-				0CB2FB75235347D6004D6EA9 /* LaunchScreen.storyboard in Resources */,
 				0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */,
 				0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */,
 				0CB2FB72235347D6004D6EA9 /* Assets.xcassets in Resources */,
@@ -639,14 +635,6 @@
 				0CB2FB6F235347D5004D6EA9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0CB2FB73235347D6004D6EA9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0CB2FB74235347D6004D6EA9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

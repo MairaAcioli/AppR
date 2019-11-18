@@ -10,7 +10,7 @@ import UIKit
 
 class RestauranteInformacoesViewController: UIViewController {
 
-  var passedData = (nomeRestaurante: "Figo", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "0")
+  var passedData = (nomeRestaurante: "Figo", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "200")
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -37,7 +37,7 @@ class RestauranteInformacoesViewController: UIViewController {
             imageView.leftAnchor.constraint(equalTo: containerView.leftAnchor).isActive = true
             imageView.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
             imageView.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
-            imageView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+            imageView.heightAnchor.constraint(equalToConstant: 350).isActive = true
             imageView.image = passedData.foto
             
             containerView.addSubview(nomeRestauranteLabel)
@@ -48,17 +48,17 @@ class RestauranteInformacoesViewController: UIViewController {
             nomeRestauranteLabel.text = passedData.nomeRestaurante
             
             containerView.addSubview(precoRestauranteLabel)
-            precoRestauranteLabel.leftAnchor.constraint(equalTo: precoRestauranteLabel.leftAnchor).isActive = true
-            precoRestauranteLabel.topAnchor.constraint(equalTo: precoRestauranteLabel.bottomAnchor).isActive = true
-            precoRestauranteLabel.rightAnchor.constraint(equalTo: precoRestauranteLabel.rightAnchor).isActive = true
-            precoRestauranteLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
-            precoRestauranteLabel.text = "R$\(passedData.precoRestaurante)"
-            
+            precoRestauranteLabel.leftAnchor.constraint(equalTo: nomeRestauranteLabel.leftAnchor).isActive = true
+            precoRestauranteLabel.topAnchor.constraint(equalTo: nomeRestauranteLabel.bottomAnchor).isActive = true
+            precoRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
+            precoRestauranteLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+            precoRestauranteLabel.text = "R$\(passedData.precoRestaurante)/pessoa"
+          
             containerView.addSubview(categoriaRestauranteLabel)
             categoriaRestauranteLabel.leftAnchor.constraint(equalTo: nomeRestauranteLabel.leftAnchor).isActive = true
             categoriaRestauranteLabel.topAnchor.constraint(equalTo: precoRestauranteLabel.bottomAnchor, constant: 10).isActive = true
             categoriaRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
-            categoriaRestauranteLabel.text = "comida araba"
+            categoriaRestauranteLabel.text = "comida saudável"
             categoriaRestauranteLabel.sizeToFit()
         }
         
@@ -97,8 +97,8 @@ class RestauranteInformacoesViewController: UIViewController {
         let precoRestauranteLabel: UILabel = {
             let label = UILabel()
             label.text = "PrecoRestaurante"
-            label.font = UIFont.boldSystemFont(ofSize: 24)
-            label.textColor = UIColor(white: 0.5, alpha: 1)
+            label.font = UIFont.boldSystemFont(ofSize: 18)
+            label.textColor = UIColor.systemPink
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()

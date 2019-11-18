@@ -34,12 +34,6 @@ class BemVindoViewController: UIViewController {
             self.present(nvc, animated: true, completion: nil)
         }
        
-
-
-
-
-
-
     }
 
     
