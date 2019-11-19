@@ -13,8 +13,6 @@ class ReceberViewController: UIViewController {
     
     @IBOutlet weak var receberTableView: UITableView!
     
-    
-    
     let receberCell = ReceberTableViewCell()
     var receberController: GenericController!
     

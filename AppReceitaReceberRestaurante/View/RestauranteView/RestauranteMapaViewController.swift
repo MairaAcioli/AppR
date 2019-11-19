@@ -19,29 +19,31 @@ import GooglePlaces
 class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate {
 
 
+    var controller: RestauranteController? = RestauranteController()
     let regiao: CLLocationDistance = 800
-    let coordenadaRestaurante = Coordinate(latitude: 0.0, longitude: 0.0)
-//    let nomeRestaurante : Business
-//
-//    super.init(nomeRestaurante : Business) {
-//        self.nomeRestaurante = nomeRestaurante
-//    }
+    var mapView: GMSMapView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
         
-
+        self.controller?.getRestaurantes(completion: { (success) in
+            if success {
+                DispatchQueue.main.async {
+                    self.addPinMap()
+                }
+            }
+        })
+        
+        
         GMSServices.provideAPIKey("AIzaSyAZA2glzbuUiYlTJbqGFkh_qtLjHl7wVkw")
         GMSPlacesClient.provideAPIKey("AIzaSyAZA2glzbuUiYlTJbqGFkh_qtLjHl7wVkw")
 
         let camera = GMSCameraPosition.camera(withLatitude: -23.592669, longitude: -46.664963, zoom: 15)
         
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
-
 
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: -23.592669, longitude: -46.664963)
@@ -53,24 +55,33 @@ class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate {
         
         marker.map = mapView
         
-        mapView.translatesAutoresizingMaskIntoConstraints = false
-        mapView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        mapView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        mapView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-
-////
-////        let localizacaoRestaurantes = GMSMarker()
-////        localizacaoRestaurantes.position = CLLocationCoordinate2D(latitude: coordenadaRestaurante.latitude, longitude: coordenadaRestaurante.longitude)
-////        localizacaoRestaurantes.icon = GMSMarker.markerImage(with: .gray)
-////        localizacaoRestaurantes.title = ""
-////        localizacaoRestaurantes.tracksViewChanges = true
-//
-//
-//
+        mapView?.translatesAutoresizingMaskIntoConstraints = false
+        mapView?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        mapView?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        mapView?.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        mapView?.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        
+        
     }
 
 
+    func addPinMap() {
+        guard let arrayBussiness = self.controller?.devolveBusiness() else {return}
+        let restaurant = RestaurantePreviewView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        for bussiness in arrayBussiness {
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: bussiness.coordinates?.latitude ?? 0, longitude: bussiness.coordinates?.longitude ?? 0)
+            marker.title = bussiness.name
+            marker.snippet = bussiness.categories?.first?.title
+            marker.iconView = restaurant
+            marker.appearAnimation = .pop
+            marker.tracksViewChanges = true
+            
+            marker.map = mapView
+        }
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

@@ -9,15 +9,21 @@
 import Foundation
 class RestauranteController {
     
-    var restaurantes: [Business] = []
+    var restaurante: Restaurante?
     
-    func getRestaurantes() {
-        ApiManager().getRestaurante(location: "SAO") { (arrayBussiness, error) in
+    func getRestaurantes(completion: @escaping (Bool) -> Void) {
+        ApiManager().getRestaurante(location: "Sao Paulo SP") { (restaurant, error) in
             if !error {
-                if let array = arrayBussiness {
-                    self.restaurantes.append(contentsOf: array)
-                }
+                self.restaurante = restaurant
+                completion(true)
+            } else {
+                completion(false)
             }
         }
     }
+    
+    func devolveBusiness() -> [Business]? {
+        return self.restaurante?.businesses
+    }
+    
 }
