@@ -36,8 +36,7 @@
 		0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A6236274E900061996 /* RestaurantSearch.swift */; };
 		0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A8236280B200061996 /* RestaurantController.swift */; };
 		0CC167EC2378915F00151DAE /* RestauranteInformacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */; };
-		94718232AF000B6DD88E1585 /* Pods_AppReceitaReceberRestauranteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */; };
-		A5B3118B091858A772F98AF4 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */; };
+		0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC9F01238751B600B7553D /* UpLoadDados.swift */; };
 		C6692A1DA7C9871C2F7B003A /* Pods_AppReceitaReceberRestaurante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,14 +94,9 @@
 		0CBC91A6236274E900061996 /* RestaurantSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSearch.swift; sourceTree = "<group>"; };
 		0CBC91A8236280B200061996 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 		0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteInformacoesViewController.swift; sourceTree = "<group>"; };
+		0CFC9F01238751B600B7553D /* UpLoadDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpLoadDados.swift; sourceTree = "<group>"; };
 		3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.debug.xcconfig"; sourceTree = "<group>"; };
-		4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestauranteTests.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestauranteTests/Pods-AppReceitaReceberRestauranteTests.release.xcconfig"; sourceTree = "<group>"; };
-		A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestauranteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A94AED5EB8975D10F29EB8E2 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestaurante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8A130E0BE532766999907C4 /* Pods-AppReceitaReceberRestauranteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestauranteTests.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestauranteTests/Pods-AppReceitaReceberRestauranteTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E860D0F1E911C8EAA94039A0 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94718232AF000B6DD88E1585 /* Pods_AppReceitaReceberRestauranteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B3118B091858A772F98AF4 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +191,7 @@
 				0CB2FB6A235347D5004D6EA9 /* SceneDelegate.swift */,
 				0CB2FB6E235347D5004D6EA9 /* Main.storyboard */,
 				0CB2FB71235347D6004D6EA9 /* Assets.xcassets */,
+				0CFC9F01238751B600B7553D /* UpLoadDados.swift */,
 				0C13CA71235D153C0037F5EE /* GoogleService-Info.plist */,
 				0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */,
 			);
@@ -277,10 +270,6 @@
 			children = (
 				3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */,
 				06CC69613BE539C37663450B /* Pods-AppReceitaReceberRestaurante.release.xcconfig */,
-				A94AED5EB8975D10F29EB8E2 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig */,
-				E860D0F1E911C8EAA94039A0 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig */,
-				D8A130E0BE532766999907C4 /* Pods-AppReceitaReceberRestauranteTests.debug.xcconfig */,
-				4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -289,8 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */,
-				B99AD4213BD604163F8DF3D9 /* Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests.framework */,
-				A5BCDF4EC8DB5C5389430C67 /* Pods_AppReceitaReceberRestauranteTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,7 +309,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CB2FB92235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestauranteTests" */;
 			buildPhases = (
-				E46BF718C974D2D08C1FCDF1 /* [CP] Check Pods Manifest.lock */,
 				0CB2FB77235347D7004D6EA9 /* Sources */,
 				0CB2FB78235347D7004D6EA9 /* Frameworks */,
 				0CB2FB79235347D7004D6EA9 /* Resources */,
@@ -341,12 +327,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CB2FB95235347D7004D6EA9 /* Build configuration list for PBXNativeTarget "AppReceitaReceberRestauranteUITests" */;
 			buildPhases = (
-				81D19551C9A8841EDEBDF051 /* [CP] Check Pods Manifest.lock */,
 				0CB2FB82235347D7004D6EA9 /* Sources */,
 				0CB2FB83235347D7004D6EA9 /* Frameworks */,
 				0CB2FB84235347D7004D6EA9 /* Resources */,
-				38B748EA95EFD77731320C17 /* [CP] Embed Pods Frameworks */,
-				DE99D6BF3A3DD982901496D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -448,23 +431,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		38B748EA95EFD77731320C17 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		769E81EE71BF1A1D91CE98E1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -481,28 +447,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AppReceitaReceberRestaurante-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81D19551C9A8841EDEBDF051 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -526,45 +470,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE99D6BF3A3DD982901496D2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests/Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E46BF718C974D2D08C1FCDF1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AppReceitaReceberRestauranteTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -573,6 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C3BD62D237873E70014BE6E /* RestaurantePreviewView.swift in Sources */,
+				0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */,
 				0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */,
 				0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */,
 				0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */,
@@ -794,7 +700,6 @@
 		};
 		0CB2FB93235347D7004D6EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8A130E0BE532766999907C4 /* Pods-AppReceitaReceberRestauranteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -816,7 +721,6 @@
 		};
 		0CB2FB94235347D7004D6EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B53E984B1EA90ADC30D675A /* Pods-AppReceitaReceberRestauranteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -838,7 +742,6 @@
 		};
 		0CB2FB96235347D7004D6EA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A94AED5EB8975D10F29EB8E2 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -858,7 +761,6 @@
 		};
 		0CB2FB97235347D7004D6EA9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E860D0F1E911C8EAA94039A0 /* Pods-AppReceitaReceberRestaurante-AppReceitaReceberRestauranteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -24,6 +24,7 @@ class PinPersonalizacao: UIView {
     
   
     func setupView() {
+        
         let imageView = UIImageView(image: foto)
         imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         imageView.layer.cornerRadius = 25

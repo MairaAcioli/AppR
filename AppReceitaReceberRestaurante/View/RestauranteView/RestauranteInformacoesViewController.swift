@@ -11,6 +11,7 @@ import UIKit
 class RestauranteInformacoesViewController: UIViewController {
 
   var passedData = (nomeRestaurante: "Figo", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "200")
+    
         
         override func viewDidLoad() {
             super.viewDidLoad()

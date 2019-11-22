@@ -11,7 +11,11 @@ import Foundation
 import UIKit
 
 
+
+
 class GenericController {
+    
+    
     
     var tipo: TipoDado = .receber
     var array = [

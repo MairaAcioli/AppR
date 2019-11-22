@@ -9,6 +9,7 @@
 import UIKit
 
 class ReceberViewController: UIViewController {
+    
     @IBOutlet weak var buscaSearchBar: UISearchBar!
     
     @IBOutlet weak var receberTableView: UITableView!

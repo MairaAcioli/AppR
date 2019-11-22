@@ -14,6 +14,8 @@ import GoogleMaps
 
 import GooglePlaces
 
+//import FirebaseCore
+
 
 
 
@@ -31,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     GMSPlacesClient.provideAPIKey("AIzaSyBj7nJO701dWDzeC3gFhVrLjEO5ncBJeZk")
         
         FirebaseApp.configure()
+        
+//        var upLoad: UpLoadDados = UpLoadDados()
+//        upLoad.upLoad()
         
         return true
     }

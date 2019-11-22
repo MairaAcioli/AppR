@@ -11,6 +11,7 @@ import UIKit
 
 class RestaurantePreviewView: UIView {
     
+   
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -58,8 +59,9 @@ class RestaurantePreviewView: UIView {
         precoRestauranteLabel.heightAnchor.constraint(equalToConstant: 40).isActive = true
     }
 
-private var restaurante: Business?
-
+//private var restaurante: Business?
+    
+     
 let containerView: UIView = {
     
     let view = UIView()
@@ -77,7 +79,7 @@ let imageView: UIImageView = {
 let nomeRestauranteLabel: UILabel = {
     
     let label = UILabel()
-    label.text = "restaurante?.name"
+    label.text = "restaurante.title"
     label.font = UIFont.boldSystemFont(ofSize: 28)
     label.textColor = UIColor.black
     label.backgroundColor = UIColor.white
