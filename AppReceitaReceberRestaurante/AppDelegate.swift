@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     GMSServices.provideAPIKey("AIzaSyBj7nJO701dWDzeC3gFhVrLjEO5ncBJeZk")
         
     GMSPlacesClient.provideAPIKey("AIzaSyBj7nJO701dWDzeC3gFhVrLjEO5ncBJeZk")
-        
+    
         FirebaseApp.configure()
         
 //        var upLoad: UpLoadDados = UpLoadDados()

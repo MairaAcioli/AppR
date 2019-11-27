@@ -24,7 +24,13 @@ class AberturaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if UserDefaults.standard.bool(forKey: "logado") {
+            self.goToMenu()
+         
+        }
+        
        setUpAbertura()
+      
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +45,14 @@ class AberturaViewController: UIViewController {
         videoPlayer = nil
         self.navigationController?.isNavigationBarHidden = false
     }
+    
+    func goToMenu() {
+        if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
+              let nvc = UINavigationController(rootViewController: menuVC)
+            self.present(nvc, animated: false, completion: nil)
+        }
+    }
+
     
     func setUpAbertura(){
         

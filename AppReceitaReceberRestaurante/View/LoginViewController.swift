@@ -25,14 +25,15 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
-    @IBOutlet weak var fotoLoginImageView: UIImageView!
+//    @IBOutlet weak var fotoLoginImageView: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
        setUpLoginTextField()
-       self.fotoLoginImageView.image = UIImage(named: "login")
+//       self.fotoLoginImageView.image = UIImage(named: "login")
         
         self.emailTextField.text = "maira@teste.com"
         self.senhaTextField.text = "maira1234@"
@@ -55,15 +56,17 @@ class LoginViewController: UIViewController {
             }
             else{
                 
-                if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
-                      let nvc = UINavigationController(rootViewController: menuVC)
-                    
-                    self.view.window?.rootViewController = nvc
-                    self.view.window?.makeKeyAndVisible()
-                }
+                self.goToMenu()
             }
         }
         
+    }
+    
+    func goToMenu() {
+        if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
+              let nvc = UINavigationController(rootViewController: menuVC)
+            self.present(nvc, animated: true, completion: nil)
+        }
     }
     
     func setUpLoginTextField() {

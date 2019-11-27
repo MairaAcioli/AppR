@@ -13,22 +13,31 @@ import GoogleMaps
 
 import GooglePlaces
 
+//struct MyPlaces {
+//    var title: String
+//    var lat: Double
+//    var long: Double
+//}
 
 
 
-class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate {
+class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate{
 
 
     var controller: RestauranteController? = RestauranteController()
-    let regiao: CLLocationDistance = 800
+    let regiao: CLLocationDistance = 2000
     var mapView: GMSMapView?
+//    var restauranteEscolhido: MyPlaces?
+    
+     let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "boloDeRolo")!, bordaCor: .white, tag: 1)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.setupViews()
         
+        mapView?.delegate = self
+
         self.controller?.getRestaurantes(completion: { (success) in
             if success {
                 DispatchQueue.main.async {
@@ -38,50 +47,80 @@ class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate {
         })
         
         
+        
+//
+
+              
+        
         GMSServices.provideAPIKey("AIzaSyAZA2glzbuUiYlTJbqGFkh_qtLjHl7wVkw")
         GMSPlacesClient.provideAPIKey("AIzaSyAZA2glzbuUiYlTJbqGFkh_qtLjHl7wVkw")
 
-        let camera = GMSCameraPosition.camera(withLatitude: -23.592669, longitude: -46.664963, zoom: 15)
         
+        
+        let camera = GMSCameraPosition.camera(withLatitude: -23.592669, longitude: -46.664963, zoom: 15)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
-
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -23.592669, longitude: -46.664963)
-        marker.title = "Casa"
-        marker.snippet = "São Paulo, Brasil"
-//        marker.icon = UIImage(named: "pinRestaurante")
-        marker.appearAnimation = .pop
-        marker.tracksViewChanges = true
+             let temp: UITextField = UITextField(frame: CGRect(x: 20, y: 20, width: 200, height: 50))
         
-        marker.map = mapView
-        
+                  self.mapView?.addSubview(temp)
+                      
+//        let marker = GMSMarker()
+//        marker.position = CLLocationCoordinate2D(latitude: -23.592669, longitude: -46.664963)
+//        marker.title = "Casa"
+//        marker.snippet = "São Paulo, Brasil"
+//
+//        marker.appearAnimation = .pop
+//        marker.tracksViewChanges = true
+//
+//        marker.map = mapView
+//
         mapView?.translatesAutoresizingMaskIntoConstraints = false
         mapView?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mapView?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         mapView?.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         mapView?.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
+      
+        mapView?.isIndoorEnabled = false
+        mapView?.isTrafficEnabled = true
+        mapView?.isMyLocationEnabled = true
         
+        mapView?.settings.compassButton = true
+        
+//        mapView?.didAddSubview(pinPersonalizacao)
+        
+        
+        
+    
     }
-
 
     func addPinMap() {
         guard let arrayBussiness = self.controller?.devolveBusiness() else {return}
-        let restaurant = RestaurantePreviewView(frame: CGRect(x: 0, y: 0, width: 100, height: 200))
+//
+//
         
+//        var markerImage = UIImage(named: "boloDeRolo")!
+
+
         for bussiness in arrayBussiness {
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2D(latitude: bussiness.coordinates?.latitude ?? 0, longitude: bussiness.coordinates?.longitude ?? 0)
+            
             marker.title = bussiness.name
             marker.snippet = bussiness.categories?.first?.title
-            marker.iconView = restaurant
-            marker.appearAnimation = .pop
-            marker.tracksViewChanges = true
             
+            marker.iconView = pinPersonalizacao
+
+            marker.appearAnimation = .pop
+            
+            marker.groundAnchor = CGPoint(x: 0, y: 0)
+         
             marker.map = mapView
+            
+            
         }
+        
         
     }
     
@@ -98,15 +137,17 @@ class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate {
 //       }
 //
 //    let txtFieldSearch: UITextField = {
-//        let tf=UITextField()
+//        let tf = UITextField()
 //        tf.borderStyle = .roundedRect
 //        tf.backgroundColor = .white
 //        tf.layer.borderColor = UIColor.darkGray.cgColor
 //        tf.placeholder="Search for a location"
 //        tf.translatesAutoresizingMaskIntoConstraints=false
+//
+//
 //        return tf
 //    }()
-//
+////
 //    func setupTextField(textField: UITextField, img: UIImage){
 //        textField.leftViewMode = UITextField.ViewMode.always
 //        let imageView = UIImageView(frame: CGRect(x: 5, y: 5, width: 20, height: 20))

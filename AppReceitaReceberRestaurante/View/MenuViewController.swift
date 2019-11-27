@@ -19,6 +19,8 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UserDefaults.standard.set(true, forKey: "logado")
     
     
     }

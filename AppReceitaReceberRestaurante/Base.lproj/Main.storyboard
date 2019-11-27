@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="swi-Hd-1Zc">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -171,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6re-Ww-kGF">
-                                <rect key="frame" x="40" y="128" width="334" height="290"/>
+                                <rect key="frame" x="40" y="128" width="334" height="250"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y2e-yb-QV7">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
@@ -194,7 +194,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POT-84-Lqt">
-                                        <rect key="frame" x="0.0" y="162" width="334" height="128"/>
+                                        <rect key="frame" x="0.0" y="162" width="334" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -206,22 +206,12 @@
                                     <constraint firstItem="C5Z-fx-b7Z" firstAttribute="height" secondItem="RIy-SH-1Te" secondAttribute="height" id="pN4-3W-oae"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-6H-ds0">
-                                <rect key="frame" x="40" y="448" width="334" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="T8I-6H-ds0" secondAttribute="height" multiplier="167:200" priority="999" id="eHO-fG-Wf0"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="96H-Wb-WGz" firstAttribute="trailing" secondItem="T8I-6H-ds0" secondAttribute="trailing" constant="40" id="1TW-ap-6Ph"/>
-                            <constraint firstItem="T8I-6H-ds0" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" constant="40" id="3ik-2r-WU5"/>
-                            <constraint firstItem="T8I-6H-ds0" firstAttribute="bottom" secondItem="96H-Wb-WGz" secondAttribute="bottom" constant="-14" id="BQI-Mk-a3G"/>
                             <constraint firstItem="6re-Ww-kGF" firstAttribute="top" secondItem="96H-Wb-WGz" secondAttribute="top" constant="40" id="Jsd-Jc-EAZ"/>
                             <constraint firstItem="6re-Ww-kGF" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" constant="40" id="MEI-Uc-p3b"/>
                             <constraint firstItem="96H-Wb-WGz" firstAttribute="trailing" secondItem="6re-Ww-kGF" secondAttribute="trailing" constant="40" id="Nob-Xh-zhe"/>
-                            <constraint firstItem="T8I-6H-ds0" firstAttribute="top" secondItem="6re-Ww-kGF" secondAttribute="bottom" constant="30" id="mGI-0h-0xq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="96H-Wb-WGz"/>
                     </view>
@@ -229,7 +219,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="y2e-yb-QV7" id="1gG-ta-tTj"/>
                         <outlet property="errorLabel" destination="POT-84-Lqt" id="q2x-lf-K9x"/>
-                        <outlet property="fotoLoginImageView" destination="T8I-6H-ds0" id="hIl-ja-zfb"/>
                         <outlet property="loginButton" destination="C5Z-fx-b7Z" id="l2M-7Z-pcT"/>
                         <outlet property="senhaTextField" destination="RIy-SH-1Te" id="nKO-s0-ppL"/>
                     </connections>
@@ -270,8 +259,7 @@
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="45"/>
                                 <state key="normal" title="RESTAURANTE" backgroundImage="menu"/>
                                 <connections>
-                                    <action selector="buttonTap:" destination="12e-Ih-wQT" eventType="touchUpInside" id="Pig-gY-zrc"/>
-                                    <segue destination="rwy-cC-3EH" kind="showDetail" id="nhd-mD-xzQ"/>
+                                    <segue destination="rwy-cC-3EH" kind="presentation" id="QfU-Vo-JSr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -349,6 +337,23 @@
             </objects>
             <point key="canvasLocation" x="1142" y="104"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R6m-6W-mfk">
+            <objects>
+                <navigationController id="ve5-R5-6cU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IpM-EF-9gC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x7E-t0-5hU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rwy-cC-3EH" kind="relationship" relationship="rootViewController" id="IVe-ha-GLq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lgX-NZ-bid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="-650"/>
+        </scene>
         <!--Restaurante Mapa View Controller-->
         <scene sceneID="Oed-Aj-Ud9">
             <objects>
@@ -356,9 +361,22 @@
                     <view key="view" contentMode="scaleToFill" id="KyR-mr-X98">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-DH-xyl">
+                                <rect key="frame" x="0.0" y="31" width="414" height="811"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AcM-DH-xyl" firstAttribute="top" secondItem="KyR-mr-X98" secondAttribute="top" constant="31" id="Lu2-IM-Q0k"/>
+                            <constraint firstAttribute="bottom" secondItem="AcM-DH-xyl" secondAttribute="bottom" id="UN1-3L-iLe"/>
+                            <constraint firstItem="AcM-DH-xyl" firstAttribute="leading" secondItem="Ybd-hW-KOO" secondAttribute="leading" id="Wen-bF-iyk"/>
+                            <constraint firstItem="AcM-DH-xyl" firstAttribute="trailing" secondItem="Ybd-hW-KOO" secondAttribute="trailing" id="yCB-iw-Ibc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ybd-hW-KOO"/>
                     </view>
+                    <navigationItem key="navigationItem" id="K9q-4S-2fB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sxl-tU-1j4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -513,4 +531,7 @@
         <image name="menuReceber" width="1280" height="760"/>
         <image name="menuReceita" width="1280" height="761"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QfU-Vo-JSr"/>
+    </inferredMetricsTieBreakers>
 </document>

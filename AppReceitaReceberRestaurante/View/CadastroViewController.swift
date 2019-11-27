@@ -33,7 +33,7 @@ class CadastroViewController: UIViewController {
     
    
     @IBOutlet weak var fotoCadastroImageView: UIImageView!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,9 +84,11 @@ class CadastroViewController: UIViewController {
    
     @IBAction func cadastroTapped(_ sender: Any) {
     
-        //valida senha
+        //validar senha
         
         let error = validarCadastro()
+        
+       
         
         if error != nil {
            

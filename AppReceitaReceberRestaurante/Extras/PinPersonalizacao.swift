@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+
+
+
 class PinPersonalizacao: UIView {
     
     var foto: UIImage!
@@ -33,7 +36,7 @@ class PinPersonalizacao: UIView {
         imageView.clipsToBounds = true
         
         let label = UILabel(frame: CGRect(x: 0, y: 45, width: 50, height: 10))
-        label.text = "ˆ"
+        label.text = ""
         label.font = UIFont.systemFont(ofSize: 24)
         label.textColor = bordaCor
         label.textAlignment = .center

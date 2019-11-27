@@ -16,6 +16,8 @@
 		0C3BD62B23785FD10014BE6E /* PinPersonalizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BD62A23785FD10014BE6E /* PinPersonalizacao.swift */; };
 		0C3BD62D237873E70014BE6E /* RestaurantePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BD62C237873E70014BE6E /* RestaurantePreviewView.swift */; };
 		0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C5370F32360BE13006BD76D /* videoAbertura.mp4 */; };
+		0C7D7551238CB7A2002D3670 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */; };
+		0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */; };
 		0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */; };
 		0CAF6BCF23668BEE001F3124 /* RestauranteMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */; };
 		0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6E252354BE850039FC41 /* MenuViewController.swift */; };
@@ -69,6 +71,7 @@
 		0C3BD62A23785FD10014BE6E /* PinPersonalizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPersonalizacao.swift; sourceTree = "<group>"; };
 		0C3BD62C237873E70014BE6E /* RestaurantePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantePreviewView.swift; sourceTree = "<group>"; };
 		0C5370F32360BE13006BD76D /* videoAbertura.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAbertura.mp4; sourceTree = "<group>"; };
+		0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemVindoViewController.swift; sourceTree = "<group>"; };
 		0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteMapaViewController.swift; sourceTree = "<group>"; };
 		0CAF6E252354BE850039FC41 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 				0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */,
 				0C12A650235D715C00CBFEE5 /* Constantes.swift */,
 				0C3BD62A23785FD10014BE6E /* PinPersonalizacao.swift */,
+				0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -167,6 +171,7 @@
 				E31080918D687415E013A53C /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		0CB2FB66235347D5004D6EA9 /* Products */ = {
 			isa = PBXGroup;
@@ -392,6 +397,7 @@
 				0CB2FBA023535588004D6EA9 /* ReceberTableViewCell.xib in Resources */,
 				0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */,
 				0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */,
+				0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */,
 				0CB2FB72235347D6004D6EA9 /* Assets.xcassets in Resources */,
 				0CB2FB70235347D5004D6EA9 /* Main.storyboard in Resources */,
 			);
@@ -480,6 +486,7 @@
 				0C3BD62D237873E70014BE6E /* RestaurantePreviewView.swift in Sources */,
 				0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */,
 				0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */,
+				0C7D7551238CB7A2002D3670 /* UIImage+Extension.swift in Sources */,
 				0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */,
 				0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */,
 				0CAF6BCF23668BEE001F3124 /* RestauranteMapaViewController.swift in Sources */,
