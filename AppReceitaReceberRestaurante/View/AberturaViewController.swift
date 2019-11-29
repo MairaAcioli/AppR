@@ -23,20 +23,26 @@ class AberturaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         setUpAbertura()
 
         if UserDefaults.standard.bool(forKey: "logado") {
             self.goToMenu()
          
         }
         
-       setUpAbertura()
+      
       
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
-        setUpVideo()
+        
+        if !UserDefaults.standard.bool(forKey: "logado"){
+            setUpVideo()
+        }
     }
+
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -47,6 +53,7 @@ class AberturaViewController: UIViewController {
     }
     
     func goToMenu() {
+        self.videoPlayer?.pause()
         if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
               let nvc = UINavigationController(rootViewController: menuVC)
             self.present(nvc, animated: false, completion: nil)

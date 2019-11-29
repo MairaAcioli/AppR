@@ -40,7 +40,7 @@ class CadastroViewController: UIViewController {
 
        
         setUpCadastroTextField()
-        self.fotoCadastroImageView.image = UIImage(named: "cadastro")
+        self.fotoCadastroImageView.image = UIImage(named: "degradeFundo")
     }
     
 

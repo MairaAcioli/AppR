@@ -18,7 +18,7 @@ class Utilities {
         
         tf.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: UIScreen.main.bounds.width - 80, height: 1)
 
-        tf.backgroundColor = UIColor.init(red: 150/255, green: 150/255, blue: 150/255, alpha: 1).cgColor
+        tf.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1).cgColor
         
         //tirar a bordar do text field
         textfield.borderStyle = .none
@@ -30,17 +30,17 @@ class Utilities {
     
     static func styleFilledButton(_ button:UIButton){
         
-        button.backgroundColor = UIColor.init(red: 150/255, green: 150/255, blue: 150/255, alpha: 1)
+        button.backgroundColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
         button.layer.cornerRadius = 10.0
-        button.tintColor = UIColor.white
+        button.tintColor = UIColor.systemPink
     }
     
     static func styleHollowButton(_ button:UIButton){
         
         button.layer.borderWidth = 2
-        button.layer.borderColor = UIColor.gray.cgColor
+        button.layer.borderColor = UIColor.white.cgColor
         button.layer.cornerRadius = 10.0
-        button.tintColor = UIColor.gray
+        button.tintColor = UIColor.white
         
     }
     

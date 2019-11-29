@@ -13,23 +13,18 @@ import GoogleMaps
 
 import GooglePlaces
 
-//struct MyPlaces {
-//    var title: String
-//    var lat: Double
-//    var long: Double
-//}
 
 
 
 class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate{
 
 
+    
     var controller: RestauranteController? = RestauranteController()
     let regiao: CLLocationDistance = 2000
     var mapView: GMSMapView?
-//    var restauranteEscolhido: MyPlaces?
-    
-     let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "boloDeRolo")!, bordaCor: .white, tag: 1)
+
+    let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "boloDeRolo")!, bordaCor: .white, tag: 1)
     
     
     override func viewDidLoad() {
@@ -47,8 +42,6 @@ class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate{
         })
         
         
-        
-//
 
               
         
@@ -65,16 +58,6 @@ class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate{
         
                   self.mapView?.addSubview(temp)
                       
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2D(latitude: -23.592669, longitude: -46.664963)
-//        marker.title = "Casa"
-//        marker.snippet = "São Paulo, Brasil"
-//
-//        marker.appearAnimation = .pop
-//        marker.tracksViewChanges = true
-//
-//        marker.map = mapView
-//
         mapView?.translatesAutoresizingMaskIntoConstraints = false
         mapView?.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mapView?.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
@@ -84,24 +67,12 @@ class RestauranteMapaViewController: UIViewController, GMSMapViewDelegate{
       
         mapView?.isIndoorEnabled = false
         mapView?.isTrafficEnabled = true
-        mapView?.isMyLocationEnabled = true
-        
         mapView?.settings.compassButton = true
         
-//        mapView?.didAddSubview(pinPersonalizacao)
-        
-        
-        
-    
     }
 
     func addPinMap() {
         guard let arrayBussiness = self.controller?.devolveBusiness() else {return}
-//
-//
-        
-//        var markerImage = UIImage(named: "boloDeRolo")!
-
 
         for bussiness in arrayBussiness {
             let marker = GMSMarker()

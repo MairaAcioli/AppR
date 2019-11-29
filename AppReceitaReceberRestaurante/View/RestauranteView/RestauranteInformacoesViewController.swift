@@ -18,6 +18,7 @@ class RestauranteInformacoesViewController: UIViewController {
             self.view.backgroundColor = UIColor.white
             
             setupViews()
+            
         }
         
         func setupViews() {

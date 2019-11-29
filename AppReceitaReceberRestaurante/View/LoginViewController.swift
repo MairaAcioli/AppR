@@ -25,6 +25,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var degradeFundoImageView: UIImageView!
+    
+    
 //    @IBOutlet weak var fotoLoginImageView: UIImageView!
     
     
@@ -38,6 +41,7 @@ class LoginViewController: UIViewController {
         self.emailTextField.text = "maira@teste.com"
         self.senhaTextField.text = "maira1234@"
         
+        self.degradeFundoImageView.image = UIImage(named: "degradeFundo")
     }
     
 
