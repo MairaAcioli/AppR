@@ -13,16 +13,6 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lci-v1-8MF">
-                    <rect key="frame" x="20" y="244" width="57" height="19"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="19" id="AqC-bo-ibz"/>
-                        <constraint firstAttribute="width" constant="57" id="LxE-6s-sO7"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0D-1f-qnw">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                     <constraints>
@@ -40,12 +30,22 @@
                         <constraint firstAttribute="height" constant="200" id="CJL-tj-vst"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NomeRestaurante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nk-9f-XV2">
-                    <rect key="frame" x="20" y="215" width="142" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nk-9f-XV2">
+                    <rect key="frame" x="20" y="215" width="0.0" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="Gsb-Zf-Hod"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lci-v1-8MF">
+                    <rect key="frame" x="20" y="244" width="57" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="AqC-bo-ibz"/>
+                        <constraint firstAttribute="width" constant="57" id="LxE-6s-sO7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>

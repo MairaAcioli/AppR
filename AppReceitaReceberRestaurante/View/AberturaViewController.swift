@@ -56,6 +56,7 @@ class AberturaViewController: UIViewController {
         self.videoPlayer?.pause()
         if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
               let nvc = UINavigationController(rootViewController: menuVC)
+            nvc.modalPresentationStyle = .fullScreen
             self.present(nvc, animated: false, completion: nil)
         }
     }

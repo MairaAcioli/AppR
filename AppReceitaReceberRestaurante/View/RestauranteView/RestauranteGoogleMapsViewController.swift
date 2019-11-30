@@ -16,9 +16,7 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
    
    
     @IBOutlet weak var mapView: GMSMapView!
-    
-    var tappedMarker : GMSMarker?
-    
+        
     var restauranteCustomInfoWindow : RestauranteCustomInfoWindow?
     
     let regiao: CLLocationDistance = 2000
@@ -27,21 +25,28 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
     
     let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "boloDeRolo")!, bordaCor: .white, tag: 1)
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        let camera = GMSCameraPosition.camera(withLatitude: -23.592669, longitude: -46.664963, zoom: 15)
+        
+        let camera = GMSCameraPosition.camera(withLatitude: -23.592669, longitude: -46.664963, zoom: 14)
         mapView.camera = camera
         
-        
-        self.tappedMarker = GMSMarker()
-       
         self.restauranteCustomInfoWindow = RestauranteCustomInfoWindow().loadView()
         self.restauranteCustomInfoWindow?.delegate = self
         
+       
+        
         self.mapView.delegate = self
-        mapView?.isMyLocationEnabled = true
+        mapView.isMyLocationEnabled = true
+        
+        mapView?.isIndoorEnabled = false
+        mapView?.isTrafficEnabled = true
+        mapView?.settings.compassButton = true
+        
+        self.restauranteCustomInfoWindow?.setUpRestauranteWindow()
         
         self.controller?.getRestaurantes(completion: { (success) in
             if success {
@@ -64,6 +69,7 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
                let marker = GMSMarker()
                marker.position = CLLocationCoordinate2D(latitude: bussiness.coordinates?.latitude ?? 0, longitude: bussiness.coordinates?.longitude ?? 0)
                
+            
 //               marker.title = bussiness.name
 //               marker.snippet = bussiness.categories?.first?.title
                
@@ -71,11 +77,17 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
 
                marker.appearAnimation = .pop
                
-               marker.map = mapView
+               marker.map = self.mapView
+            
                marker.groundAnchor = CGPoint(x: 0, y: 0)
                marker.infoWindowAnchor = CGPoint(x: 0, y: 0)
-            
+               marker.tracksViewChanges = true
               
+               marker.isFlat = false
+               marker.rotation = 0
+               
+            
+                
                mapView?.selectedMarker = marker
                
                
@@ -87,12 +99,14 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         restauranteCustomInfoWindow?.removeFromSuperview()
+        
     }
     
     func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-        let position = tappedMarker?.position
-        restauranteCustomInfoWindow?.center = mapView.projection.point(for: position!)
+        
+        restauranteCustomInfoWindow?.center = mapView.projection.point(for: position.target)
         restauranteCustomInfoWindow?.center.y -= 150
+       
     }
     
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
@@ -100,9 +114,7 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
        }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        
-        tappedMarker = marker
-        
+                
         let position = marker.position
         mapView.animate(toLocation: position)
         let point = mapView.projection.point(for: position)
@@ -119,7 +131,6 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
         return false
     }
     
-   
     override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()
       }

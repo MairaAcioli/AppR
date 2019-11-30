@@ -239,7 +239,7 @@
         <!--Menu View Controller-->
         <scene sceneID="jsf-XO-HGN">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="12e-Ih-wQT" customClass="MenuViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" extendedLayoutIncludesOpaqueBars="YES" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="12e-Ih-wQT" customClass="MenuViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KYR-9Q-siG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,7 +248,7 @@
                                 <rect key="frame" x="22" y="83" width="370" height="223"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="45"/>
-                                <state key="normal" title="RECEBER" backgroundImage="menuReceber"/>
+                                <state key="normal" title="NA SALA" backgroundImage="menuReceber"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="12e-Ih-wQT" eventType="touchUpInside" id="pKE-bx-Cb0"/>
                                 </connections>
@@ -257,7 +257,7 @@
                                 <rect key="frame" x="22" y="341" width="370" height="223"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="45"/>
-                                <state key="normal" title="RECEITA" backgroundImage="menuReceita"/>
+                                <state key="normal" title="NA COZINHA" backgroundImage="menuReceita"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="12e-Ih-wQT" eventType="touchUpInside" id="EWa-y4-rav"/>
                                 </connections>
@@ -266,7 +266,7 @@
                                 <rect key="frame" x="22" y="599" width="370" height="223"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="45"/>
-                                <state key="normal" title="RESTAURANTE" backgroundImage="menu"/>
+                                <state key="normal" title="POR AI" backgroundImage="menu"/>
                                 <connections>
                                     <segue destination="2U7-e2-dun" kind="show" id="xav-Mm-75g"/>
                                 </connections>
@@ -349,13 +349,13 @@
         <!--Restaurante Google Maps View Controller-->
         <scene sceneID="E3d-OU-T8K">
             <objects>
-                <viewController storyboardIdentifier="RestauranteGoogleMapsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2U7-e2-dun" customClass="RestauranteGoogleMapsViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestauranteGoogleMapsViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2U7-e2-dun" customClass="RestauranteGoogleMapsViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lGW-Dn-NCP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84b-rg-aLt" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>

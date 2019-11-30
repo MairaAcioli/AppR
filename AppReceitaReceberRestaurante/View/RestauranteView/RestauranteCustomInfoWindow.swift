@@ -29,10 +29,13 @@ class RestauranteCustomInfoWindow: UIView {
     
     var view : UIView!
     
+    var restauranteController: RestauranteController? = RestauranteController()
+    
     @IBAction func informacoesButton(_ sender: UIButton) -> Void {
         self.delegate?.clicouNoBotao()
 
     }
+   
     
     
     override init(frame: CGRect) {
@@ -46,7 +49,15 @@ class RestauranteCustomInfoWindow: UIView {
     }
     
     
-    
+    func setUpRestauranteWindow() {
+        guard let arrayBussiness = self.restauranteController?.devolveBusiness() else {return}
+        for bussiness in arrayBussiness {
+            nameLabel.text = bussiness.name
+            categoriesLabel.text = bussiness.categories?.first?.title
+//            fotoPinPersonalizacaoImageView.image = bussiness.imageURL
+        }
+    }
+
     
     func loadView() -> RestauranteCustomInfoWindow{
        

@@ -9,8 +9,10 @@
 import UIKit
 
 class RestauranteInformacoesViewController: UIViewController {
-
-  var passedData = (nomeRestaurante: "Figo", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "200")
+ 
+    
+  var controller: RestauranteController? = RestauranteController()
+  var passedData = (nomeRestaurante: "Ghee Banqueteria", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "350")
     
         
         override func viewDidLoad() {
@@ -18,6 +20,10 @@ class RestauranteInformacoesViewController: UIViewController {
             self.view.backgroundColor = UIColor.white
             
             setupViews()
+            
+//            self.addCoteudo()
+            
+
             
         }
         
@@ -43,10 +49,12 @@ class RestauranteInformacoesViewController: UIViewController {
             imageView.image = passedData.foto
             
             containerView.addSubview(nomeRestauranteLabel)
+            
             nomeRestauranteLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 15).isActive = true
             nomeRestauranteLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor).isActive = true
             nomeRestauranteLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -15).isActive = true
             nomeRestauranteLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
+            
             nomeRestauranteLabel.text = passedData.nomeRestaurante
             
             containerView.addSubview(precoRestauranteLabel)
@@ -61,9 +69,12 @@ class RestauranteInformacoesViewController: UIViewController {
             categoriaRestauranteLabel.topAnchor.constraint(equalTo: precoRestauranteLabel.bottomAnchor, constant: 10).isActive = true
             categoriaRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
             categoriaRestauranteLabel.text = "comida saudável"
+           
             categoriaRestauranteLabel.sizeToFit()
         }
         
+    
+    
         let myScrollView: UIScrollView = {
             let scrollView = UIScrollView()
             scrollView.translatesAutoresizingMaskIntoConstraints = false
@@ -114,4 +125,20 @@ class RestauranteInformacoesViewController: UIViewController {
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
+    
+//    func addCoteudo() {
+//        guard let arrayBussiness = self.controller?.devolveBusiness() else {return}
+//
+//        for bussiness in arrayBussiness {
+//            nomeRestauranteLabel.text = bussiness.name
+//            categoriaRestauranteLabel.text = bussiness.categories?.description
+//            precoRestauranteLabel.text = bussiness.price.map { $0.rawValue }
+////            imageView.image = bussiness.imageURL
+            
+            
+            
+
+        
+        
     }
+   
