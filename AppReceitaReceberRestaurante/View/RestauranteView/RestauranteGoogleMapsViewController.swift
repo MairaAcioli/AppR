@@ -74,6 +74,8 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
 //               marker.snippet = bussiness.categories?.first?.title
                
                marker.iconView = pinPersonalizacao
+            
+            
 
                marker.appearAnimation = .pop
                
