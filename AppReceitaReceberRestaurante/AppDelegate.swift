@@ -37,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        var upLoad: UpLoadDados = UpLoadDados()
 //        upLoad.upLoad()
         
+        
         return true
     }
 

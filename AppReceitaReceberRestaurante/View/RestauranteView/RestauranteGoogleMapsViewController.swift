@@ -101,6 +101,7 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
     
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         restauranteCustomInfoWindow?.removeFromSuperview()
+       
         
     }
     

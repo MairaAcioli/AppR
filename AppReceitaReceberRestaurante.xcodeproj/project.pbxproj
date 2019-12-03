@@ -20,6 +20,8 @@
 		0C3BD62B23785FD10014BE6E /* PinPersonalizacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BD62A23785FD10014BE6E /* PinPersonalizacao.swift */; };
 		0C3BD62D237873E70014BE6E /* RestaurantePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3BD62C237873E70014BE6E /* RestaurantePreviewView.swift */; };
 		0C3E4D7C2393332400A1FC34 /* ReceberEmpresasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E4D7B2393332400A1FC34 /* ReceberEmpresasViewController.swift */; };
+		0C3E61CD2396F09600461306 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E61CB2396F09600461306 /* CustomCollectionViewCell.swift */; };
+		0C3E61CE2396F09600461306 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E61CC2396F09600461306 /* CustomCollectionViewCell.xib */; };
 		0C4160772390280E00AF1453 /* RestauranteGoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4160762390280E00AF1453 /* RestauranteGoogleMapsViewController.swift */; };
 		0C4160792390396900AF1453 /* RestauranteCustomInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4160782390396900AF1453 /* RestauranteCustomInfoWindow.xib */; };
 		0C41607B23903B2000AF1453 /* RestauranteCustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41607A23903B2000AF1453 /* RestauranteCustomInfoWindow.swift */; };
@@ -83,6 +85,8 @@
 		0C3BD62A23785FD10014BE6E /* PinPersonalizacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPersonalizacao.swift; sourceTree = "<group>"; };
 		0C3BD62C237873E70014BE6E /* RestaurantePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantePreviewView.swift; sourceTree = "<group>"; };
 		0C3E4D7B2393332400A1FC34 /* ReceberEmpresasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceberEmpresasViewController.swift; sourceTree = "<group>"; };
+		0C3E61CB2396F09600461306 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		0C3E61CC2396F09600461306 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		0C4160762390280E00AF1453 /* RestauranteGoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteGoogleMapsViewController.swift; sourceTree = "<group>"; };
 		0C4160782390396900AF1453 /* RestauranteCustomInfoWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestauranteCustomInfoWindow.xib; sourceTree = "<group>"; };
 		0C41607A23903B2000AF1453 /* RestauranteCustomInfoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteCustomInfoWindow.swift; sourceTree = "<group>"; };
@@ -155,6 +159,13 @@
 			path = Extras;
 			sourceTree = "<group>";
 		};
+		0C3E61CF239723D700461306 /* ReceitaView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReceitaView;
+			sourceTree = "<group>";
+		};
 		0CAF6BCD23668AAD001F3124 /* RestauranteView */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +190,8 @@
 				0C0E604923918F1C00F76B72 /* ReceberPautaViewController.swift */,
 				0C0E604B23918F8600F76B72 /* ReceberPautaTableViewCell.swift */,
 				0C0E604C23918F8600F76B72 /* ReceberPautaTableViewCell.xib */,
+				0C3E61CB2396F09600461306 /* CustomCollectionViewCell.swift */,
+				0C3E61CC2396F09600461306 /* CustomCollectionViewCell.xib */,
 			);
 			path = ReceberView;
 			sourceTree = "<group>";
@@ -256,8 +269,9 @@
 		0CB2FB99235347F3004D6EA9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0CAF6BCD23668AAD001F3124 /* RestauranteView */,
 				0CAF6E222354BDF70039FC41 /* ReceberView */,
+				0C3E61CF239723D700461306 /* ReceitaView */,
+				0CAF6BCD23668AAD001F3124 /* RestauranteView */,
 				0CAF6E252354BE850039FC41 /* MenuViewController.swift */,
 				0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */,
 				0C13CA68235CF1100037F5EE /* LoginViewController.swift */,
@@ -422,6 +436,7 @@
 				0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */,
 				0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */,
 				0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */,
+				0C3E61CE2396F09600461306 /* CustomCollectionViewCell.xib in Resources */,
 				0C0E604E23918F8600F76B72 /* ReceberPautaTableViewCell.xib in Resources */,
 				0C4160792390396900AF1453 /* RestauranteCustomInfoWindow.xib in Resources */,
 				0CB2FB72235347D6004D6EA9 /* Assets.xcassets in Resources */,
@@ -514,6 +529,7 @@
 				0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */,
 				0C2B4E6C239265B5000E6A99 /* ReceitaViewController.swift in Sources */,
 				0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */,
+				0C3E61CD2396F09600461306 /* CustomCollectionViewCell.swift in Sources */,
 				0C7D7551238CB7A2002D3670 /* UIImage+Extension.swift in Sources */,
 				0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */,
 				0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */,

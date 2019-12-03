@@ -39,12 +39,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lci-v1-8MF">
-                    <rect key="frame" x="20" y="244" width="57" height="19"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="19" id="AqC-bo-ibz"/>
-                        <constraint firstAttribute="width" constant="57" id="LxE-6s-sO7"/>
-                    </constraints>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lci-v1-8MF">
+                    <rect key="frame" x="20" y="244" width="260" height="19"/>
                     <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -52,16 +48,17 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Lci-v1-8MF" firstAttribute="top" secondItem="5nk-9f-XV2" secondAttribute="bottom" constant="5" id="GWV-tU-47L"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Lci-v1-8MF" secondAttribute="bottom" constant="37" id="Htg-Wh-Cbg"/>
                 <constraint firstItem="b0D-1f-qnw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RYN-Rl-KTs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Lci-v1-8MF" secondAttribute="bottom" constant="37" id="TAA-bb-J8x"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Lci-v1-8MF" secondAttribute="trailing" constant="20" id="Vmd-YB-0Cg"/>
                 <constraint firstItem="Csg-or-40O" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="WbS-lk-WLt"/>
                 <constraint firstItem="Csg-or-40O" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="a3I-V8-QYg"/>
                 <constraint firstItem="b0D-1f-qnw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="a46-SW-yOU"/>
                 <constraint firstItem="Csg-or-40O" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bqp-F6-HvI"/>
+                <constraint firstItem="Lci-v1-8MF" firstAttribute="top" secondItem="Csg-or-40O" secondAttribute="bottom" constant="44" id="caY-Hz-55b"/>
                 <constraint firstItem="b0D-1f-qnw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="gXr-j2-XbO"/>
-                <constraint firstItem="Lci-v1-8MF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="grD-O8-9La"/>
                 <constraint firstItem="5nk-9f-XV2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="pKw-9Z-dy0"/>
+                <constraint firstItem="Lci-v1-8MF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="rqD-IT-T6I"/>
                 <constraint firstItem="b0D-1f-qnw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tIR-SF-DOJ"/>
                 <constraint firstItem="5nk-9f-XV2" firstAttribute="top" secondItem="Csg-or-40O" secondAttribute="bottom" constant="15" id="wNO-8W-Pk7"/>
             </constraints>

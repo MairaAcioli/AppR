@@ -31,6 +31,8 @@ class RestauranteCustomInfoWindow: UIView {
     
     var restauranteController: RestauranteController? = RestauranteController()
     
+    var modelRestaurante: Business?
+    
     @IBAction func informacoesButton(_ sender: UIButton) -> Void {
         self.delegate?.clicouNoBotao()
 
@@ -50,12 +52,15 @@ class RestauranteCustomInfoWindow: UIView {
     
     
     func setUpRestauranteWindow() {
-        guard let arrayBussiness = self.restauranteController?.devolveBusiness() else {return}
-        for bussiness in arrayBussiness {
-            nameLabel.text = bussiness.name
-            categoriesLabel.text = bussiness.categories?.first?.title
-//            fotoPinPersonalizacaoImageView.image = bussiness.imageURL
-        }
+//        guard let arrayBussiness = self.restauranteController?.devolveBusiness() else {return}
+//        for bussiness in arrayBussiness {
+//            nameLabel.text = bussiness.name
+//            categoriesLabel.text = bussiness.categories?.first?.title
+////            fotoPinPersonalizacaoImageView.image = bussiness.imageURL
+//        }
+        nameLabel.text = "Figo"
+        categoriesLabel.text = "comida saudável, chef inovadora preocupada com o bem estar do cliente"
+    
     }
 
     
