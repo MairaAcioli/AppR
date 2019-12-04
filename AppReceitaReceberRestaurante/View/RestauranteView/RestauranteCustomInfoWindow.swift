@@ -51,16 +51,23 @@ class RestauranteCustomInfoWindow: UIView {
     }
     
     
-    func setUpRestauranteWindow() {
+    func setUpRestauranteWindow(value: Business?) {
 //        guard let arrayBussiness = self.restauranteController?.devolveBusiness() else {return}
 //        for bussiness in arrayBussiness {
 //            nameLabel.text = bussiness.name
 //            categoriesLabel.text = bussiness.categories?.first?.title
 ////            fotoPinPersonalizacaoImageView.image = bussiness.imageURL
 //        }
-        nameLabel.text = "Figo"
-        categoriesLabel.text = "comida saudável, chef inovadora preocupada com o bem estar do cliente"
-    
+        
+        if let _value = value {
+            
+            nameLabel.text = _value.name
+            categoriesLabel.text = _value.phone
+               
+        }
+//        nameLabel.text = "Figo"
+//        categoriesLabel.text = "comida saudável, chef inovadora preocupada com o bem estar do cliente"
+//
     }
 
     

@@ -46,7 +46,7 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
         mapView?.isTrafficEnabled = true
         mapView?.settings.compassButton = true
         
-        self.restauranteCustomInfoWindow?.setUpRestauranteWindow()
+        self.restauranteCustomInfoWindow?.setUpRestauranteWindow(value: nil)
         
         self.controller?.getRestaurantes(completion: { (success) in
             if success {
@@ -70,11 +70,11 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
                marker.position = CLLocationCoordinate2D(latitude: bussiness.coordinates?.latitude ?? 0, longitude: bussiness.coordinates?.longitude ?? 0)
                
             
-//               marker.title = bussiness.name
+               marker.title = bussiness.name
 //               marker.snippet = bussiness.categories?.first?.title
                
                marker.iconView = pinPersonalizacao
-            
+              
             
 
                marker.appearAnimation = .pop
@@ -129,6 +129,13 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
         restauranteCustomInfoWindow?.layer.backgroundColor = opaqueWhite.cgColor
         restauranteCustomInfoWindow?.layer.cornerRadius = 8
         restauranteCustomInfoWindow?.center = mapView.projection.point(for: position)
+        
+         print(" marker.title\( marker.title)")
+        
+        
+        guard let arrayBussiness = self.controller?.devolveBusiness() else {return false}
+        self.restauranteCustomInfoWindow?.setUpRestauranteWindow(value: arrayBussiness.filter({$0.name == marker.title}).first)
+        
         self.mapView.addSubview(restauranteCustomInfoWindow!)
         
         return false

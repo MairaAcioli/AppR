@@ -26,7 +26,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     func setupViewNaCollection(){
 
         self.tagLabel.text = "chá da tarde"
-
+//        self.tagLabel.text = genericData?.tag
 
         self.tagLabel.textColor = .black
         self.tagLabel.layer.borderWidth = 1

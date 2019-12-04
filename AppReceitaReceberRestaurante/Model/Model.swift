@@ -33,6 +33,8 @@ struct GenericData {
     var nomeEmpresa2: String
     var descricaoEmpresa2: String
     
+    var tag: String 
+    
     
 }
 

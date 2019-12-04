@@ -19,8 +19,8 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avK-4d-FDy">
                         <rect key="frame" x="16" y="16" width="118" height="45"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="118" id="AW0-Sr-reV"/>
-                            <constraint firstAttribute="height" constant="45" id="Psg-xH-fEC"/>
+                            <constraint firstAttribute="width" constant="118" id="C4G-qA-3im"/>
+                            <constraint firstAttribute="height" constant="45" id="md6-H4-FvA"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
                         <nil key="textColor"/>
@@ -39,7 +39,7 @@
             <connections>
                 <outlet property="tagLabel" destination="avK-4d-FDy" id="lP3-BK-DPt"/>
             </connections>
-            <point key="canvasLocation" x="7.2463768115942031" y="19.084821428571427"/>
+            <point key="canvasLocation" x="7.2463768115942031" y="18.75"/>
         </collectionViewCell>
     </objects>
 </document>
