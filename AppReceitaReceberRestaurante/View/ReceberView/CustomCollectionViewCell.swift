@@ -34,6 +34,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
         self.tagLabel.layer.borderColor = UIColor.black.cgColor
         self.tagLabel.tintColor = UIColor.white
         self.tagLabel.layer.cornerRadius = 5
+        
+         self.tagLabel.textColor = .label
        
                
     }

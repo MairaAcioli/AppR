@@ -73,7 +73,7 @@ class RestauranteInformacoesViewController: UIViewController {
             categoriaRestauranteLabel.sizeToFit()
         }
         
-    
+         
     
         let myScrollView: UIScrollView = {
             let scrollView = UIScrollView()
@@ -125,6 +125,8 @@ class RestauranteInformacoesViewController: UIViewController {
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
+    
+    
     
 //    func addCoteudo() {
 //        guard let arrayBussiness = self.controller?.devolveBusiness() else {return}

@@ -173,7 +173,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstItem="pN8-kg-ew6" firstAttribute="leading" secondItem="q08-oT-vd7" secondAttribute="trailing" constant="22" id="Aix-nj-Bmd"/>
                         <constraint firstItem="pN8-kg-ew6" firstAttribute="top" secondItem="xQw-un-z2b" secondAttribute="top" constant="35" id="CFa-VF-LWr"/>
@@ -221,7 +221,7 @@
                             <state key="normal" title="ver no site"/>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstItem="L4I-SX-83E" firstAttribute="top" secondItem="b4j-de-fRY" secondAttribute="top" constant="15" id="Ded-kH-exH"/>
                         <constraint firstItem="KSY-qF-3DJ" firstAttribute="top" secondItem="4OF-MN-PAf" secondAttribute="bottom" constant="53" id="Dkv-GM-x6R"/>

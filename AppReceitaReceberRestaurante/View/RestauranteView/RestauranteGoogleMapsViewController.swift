@@ -129,6 +129,7 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
         restauranteCustomInfoWindow?.layer.backgroundColor = opaqueWhite.cgColor
         restauranteCustomInfoWindow?.layer.cornerRadius = 8
         restauranteCustomInfoWindow?.center = mapView.projection.point(for: position)
+        restauranteCustomInfoWindow?.backgroundColor = .systemBackground
         
          print(" marker.title\( marker.title)")
         

@@ -63,6 +63,10 @@ class RestauranteCustomInfoWindow: UIView {
             
             nameLabel.text = _value.name
             categoriesLabel.text = _value.phone
+            
+            nameLabel.textColor = .label
+            categoriesLabel.textColor = .label
+            
                
         }
 //        nameLabel.text = "Figo"
