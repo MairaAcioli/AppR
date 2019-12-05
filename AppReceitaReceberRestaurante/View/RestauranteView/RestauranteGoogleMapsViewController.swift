@@ -25,11 +25,14 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
     
     let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "boloDeRolo")!, bordaCor: .white, tag: 1)
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+       
+       
+
         
         let camera = GMSCameraPosition.camera(withLatitude: -23.592669, longitude: -46.664963, zoom: 14)
         mapView.camera = camera
@@ -157,3 +160,4 @@ extension RestauranteGoogleMapsViewController: RestauranteCustomInfoWindowDelega
     }
     
 }
+

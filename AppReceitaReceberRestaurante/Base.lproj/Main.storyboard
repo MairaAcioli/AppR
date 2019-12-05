@@ -412,6 +412,7 @@
                                 <state key="normal" title="NA COZINHA" backgroundImage="menuReceita"/>
                                 <connections>
                                     <action selector="buttonTap:" destination="12e-Ih-wQT" eventType="touchUpInside" id="EWa-y4-rav"/>
+                                    <segue destination="uoQ-nG-kq4" kind="show" id="DMJ-vD-eSb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iT-q6-WNs">
@@ -464,6 +465,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sR6-b7-NYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1997" y="102"/>
+        </scene>
+        <!--Receita View Controller-->
+        <scene sceneID="2S6-Kb-9zp">
+            <objects>
+                <viewController storyboardIdentifier="ReceitaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uoQ-nG-kq4" customClass="ReceitaViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a21-IP-xJc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-IY-b1A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GCq-pC-Lgz">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="N1k-IY-b1A" firstAttribute="trailing" secondItem="IM6-id-Dra" secondAttribute="trailing" id="7uJ-bC-gEa"/>
+                            <constraint firstItem="N1k-IY-b1A" firstAttribute="top" secondItem="IM6-id-Dra" secondAttribute="top" id="Alq-fk-Bqf"/>
+                            <constraint firstItem="N1k-IY-b1A" firstAttribute="leading" secondItem="IM6-id-Dra" secondAttribute="leading" id="bFZ-5D-ljs"/>
+                            <constraint firstItem="N1k-IY-b1A" firstAttribute="bottom" secondItem="IM6-id-Dra" secondAttribute="bottom" id="u8j-vV-cZt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IM6-id-Dra"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rAC-4E-lLM"/>
+                    <connections>
+                        <outlet property="receitaCollectionView" destination="N1k-IY-b1A" id="15V-l6-XJo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBy-Nt-aeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857.971014492754" y="103.79464285714285"/>
         </scene>
         <!--Bem Vindo View Controller-->
         <scene sceneID="pBX-3t-uxV">

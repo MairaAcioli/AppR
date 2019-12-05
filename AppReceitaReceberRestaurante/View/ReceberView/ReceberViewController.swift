@@ -28,6 +28,7 @@ class ReceberViewController: UIViewController {
         super.viewDidLoad()
         
         receberController = GenericController(tipo: tipo)
+       
         receberTableView.register(UINib(nibName: "ReceberTableViewCell", bundle: nil), forCellReuseIdentifier: "ReceberTableViewCell")
         receberTableView.delegate = self
         receberTableView.dataSource = self
