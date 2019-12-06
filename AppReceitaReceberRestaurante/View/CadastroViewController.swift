@@ -86,7 +86,7 @@ class CadastroViewController: BaseViewController {
     
         //validar senha
         
-        self.showLoading()
+      
         
         let error = validarCadastro()
         
@@ -144,7 +144,7 @@ class CadastroViewController: BaseViewController {
 
     func transicaoParaBemVindo(){
         
-        let bemVindoViewController = storyboard?.instantiateViewController(identifier: Constantes.Storyboard.bemVindoViewController) as? BemVindoViewController
+        let bemVindoViewController = storyboard?.instantiateViewController(identifier: "BemVindoViewController") as? BemVindoViewController
         
         view.window?.rootViewController = bemVindoViewController
         view.window?.makeKeyAndVisible()

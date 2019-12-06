@@ -7,41 +7,69 @@
 //
 
 import UIKit
+import Foundation
 
-class BemVindoViewController: UIViewController {
+class BemVindoViewController: BaseViewController {
 
    
-    @IBOutlet weak var bemVindoLabel: UILabel!
+    @IBOutlet weak var perfilTableView: UITableView!
     
-    @IBOutlet weak var menuButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
-        setUpMenu()
+        
+        self.perfilTableView.delegate = self
+        self.perfilTableView.dataSource = self
+        self.perfilTableView.register(UINib(nibName: "PerfilTableViewCell", bundle: nil), forCellReuseIdentifier: "PerfilTableViewCell")
+    
+//        setUpMenu()
         
     }
     
 
-    @IBAction func proximaTelaMenuButton(_ sender: UIButton) {
+//    @IBAction func proximaTelaMenuButton(_ sender: UIButton) {
+//
+//        
+//        if let vc = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
+//            
+//            let nvc = UINavigationController(rootViewController: vc)
+//            nvc.modalPresentationStyle = .fullScreen
+//            self.present(nvc, animated: true, completion: nil)
+//        }
+//       
+//    }
 
-        
-        if let vc = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
+//
+//    func setUpMenu(){
+//
+//        Utilities.styleFilledButton(menuButton)
+//
+//
+//    }
+
+}
+
+
+extension BemVindoViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    
+         if let perfilCell = tableView.dequeueReusableCell(withIdentifier: "PerfilTableViewCell", for: indexPath) as? PerfilTableViewCell {
             
-            let nvc = UINavigationController(rootViewController: vc)
-            nvc.modalPresentationStyle = .fullScreen
-            self.present(nvc, animated: true, completion: nil)
+            perfilCell.setUpPerfil()
+            
+            return perfilCell
+        
         }
-       
-    }
-
+        
     
-    func setUpMenu(){
-        
-        Utilities.styleFilledButton(menuButton)
-        
-        
-    }
-
+      return UITableViewCell()
+    
+  
+}
 }

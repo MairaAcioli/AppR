@@ -23,13 +23,13 @@ class CustomCollectionViewCell: UICollectionViewCell {
         
     }
 
-    func setupViewNaCollection(){
+    func setupViewNaCollection(receber: GenericData){
 
-        self.tagLabel.text = "chá da tarde"
+        self.tagLabel.text = receber.tag
 //        self.tagLabel.text = genericData?.tag
 
         self.tagLabel.textColor = .black
-        self.tagLabel.layer.borderWidth = 1
+        self.tagLabel.layer.borderWidth = 0.5
         
         self.tagLabel.layer.borderColor = UIColor.label.cgColor
         self.tagLabel.tintColor = UIColor.white
@@ -43,3 +43,5 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     
 }
+
+

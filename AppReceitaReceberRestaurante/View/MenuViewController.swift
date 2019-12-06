@@ -8,7 +8,9 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+import FirebaseAuth
+
+class MenuViewController: BaseViewController, UITabBarDelegate {
 
     @IBOutlet weak var receberButton: UIButton!
     
@@ -17,11 +19,14 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var restauranteButton: UIButton!
     
     
+    var perfil: BemVindoViewController!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UserDefaults.standard.set(true, forKey: "logado")
-    
+        self.perfil = BemVindoViewController()
     
     }
     
@@ -39,7 +44,23 @@ class MenuViewController: UIViewController {
        
     }
     
- 
+    @IBAction func logOutButton(_ sender: Any) {
+        
+        self.singOut()
+        
+    }
+
+    func singOut(){
+        
+        do {
+            try
+                Auth.auth().signOut()
+            self.dismiss(animated: true)
+        } catch let error {
+            print("Falha ao deslogar", error)
+        }
+    }
+    
   
     @IBAction func buttonTap(_ sender: UIButton) {
         guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}

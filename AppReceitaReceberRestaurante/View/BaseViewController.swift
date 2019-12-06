@@ -24,11 +24,12 @@ class BaseViewController: UIViewController {
             self.animationLoadingView = AnimationView()
          
             self.animationLoadingView?.frame = self.view.frame
-    //        self.animationLoadingView?.backgroundColor = .black
+            self.animationLoadingView?.backgroundColor = .systemBackground
             let loadAnimation = Animation.named("9329-loading")
             animationLoadingView?.animation = loadAnimation
             
             self.view.addSubview(self.animationLoadingView ?? UIView())
+            
             
             animationLoadingView?.play()
             

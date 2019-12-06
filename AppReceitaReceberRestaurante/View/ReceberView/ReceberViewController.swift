@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class ReceberViewController: UIViewController {
+class ReceberViewController: BaseViewController {
     
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -29,9 +29,9 @@ class ReceberViewController: UIViewController {
         
         receberController = GenericController(tipo: tipo)
        
-        receberTableView.register(UINib(nibName: "ReceberTableViewCell", bundle: nil), forCellReuseIdentifier: "ReceberTableViewCell")
-        receberTableView.delegate = self
-        receberTableView.dataSource = self
+        self.receberTableView.register(UINib(nibName: "ReceberTableViewCell", bundle: nil), forCellReuseIdentifier: "ReceberTableViewCell")
+        self.receberTableView.delegate = self
+        self.receberTableView.dataSource = self
         
         
         self.collectionView.delegate = self
@@ -92,17 +92,26 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
        
         let cell : CustomCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
         
-        cell.setupViewNaCollection()
+        cell.setupViewNaCollection(receber: receberController.devolveReceber(index: indexPath.row))
     
         return cell
         
     }
     
-    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//
+//
+//
+//    }
+//
     
 }
-
-
+//
+//if let vc = storyboard?.instantiateViewController(identifier: "ReceberGaleriaViewController") as? ReceberGaleriaViewController {
+//          
+//          vc.receberModel = receberController.devolveReceber(index: indexPath.row)
+//          navigationController?.pushViewController(vc, animated: true)
+//          
     
 
 

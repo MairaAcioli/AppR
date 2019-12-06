@@ -12,7 +12,7 @@ import FirebaseAuth
 
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
 
   
     
@@ -47,11 +47,15 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginTapped(_ sender: Any) {
         
+        self.showLoading()
+        
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         let senha = senhaTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
         Auth.auth().signIn(withEmail: email, password: senha) { (result, error) in
+            
+            
             
             if error != nil {
                 
@@ -60,6 +64,7 @@ class LoginViewController: UIViewController {
             }
             else{
                 
+                self.hiddenLoading()
                 self.goToMenu()
             }
         }

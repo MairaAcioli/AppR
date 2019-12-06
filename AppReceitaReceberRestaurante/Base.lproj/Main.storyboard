@@ -128,11 +128,14 @@
                     </view>
                     <connections>
                         <outlet property="descricaoEmpresa1LAbel" destination="FE7-1v-kTd" id="877-jJ-eOG"/>
+                        <outlet property="descricaoEmpresa2Label" destination="KSY-qF-3DJ" id="6NZ-mV-KKD"/>
                         <outlet property="efeitoBlur" destination="2KG-bc-Vh0" id="Bfj-pl-Sfu"/>
                         <outlet property="empresa1View" destination="xQw-un-z2b" id="Qs2-SM-wrN"/>
                         <outlet property="empresa2View" destination="b4j-de-fRY" id="uiH-no-Iwc"/>
                         <outlet property="logoEmpresa1ImageView" destination="q08-oT-vd7" id="PJV-fT-d79"/>
+                        <outlet property="logoEmpresa2ImageView" destination="L4I-SX-83E" id="8hA-p6-VCS"/>
                         <outlet property="nomeEmpresa1Label" destination="pN8-kg-ew6" id="Egv-8w-gWd"/>
+                        <outlet property="nomeEmpresa2Label" destination="4OF-MN-PAf" id="ArL-x8-NX0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVO-f0-k9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -219,6 +222,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKF-S0-1uT">
                             <rect key="frame" x="114" y="156" width="72" height="30"/>
                             <state key="normal" title="ver no site"/>
+                            <connections>
+                                <action selector="verNoSite2Button:" destination="CnB-cQ-Xb5" eventType="touchUpInside" id="Cyb-eA-4Aj"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -428,10 +434,20 @@
                                 <rect key="frame" x="0.0" y="813" width="414" height="83"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem systemItem="favorites" id="QkY-WY-0O3"/>
-                                    <tabBarItem systemItem="more" id="38N-Va-cx5"/>
+                                    <tabBarItem image="person.circle" catalog="system" id="QkY-WY-0O3"/>
+                                    <tabBarItem image="person.crop.circle.fill.badge.minus" catalog="system" id="38N-Va-cx5"/>
                                 </items>
+                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-CJ-gXv">
+                                <rect key="frame" x="346" y="44" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
+                                <state key="normal" title="LogOut"/>
+                                <connections>
+                                    <action selector="logOutButton:" destination="12e-Ih-wQT" eventType="touchUpInside" id="e6P-PQ-5se"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -514,43 +530,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem-vindo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fS-Ez-yjr">
-                                <rect key="frame" x="165" y="437.66666666666669" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeO-pK-KId">
-                                <rect key="frame" x="100" y="801" width="214" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="31D-Au-9dW"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
-                                <state key="normal" title="Menu"/>
-                                <connections>
-                                    <action selector="proximaTelaMenuButton:" destination="qix-2a-t13" eventType="touchUpInside" id="5YD-KT-aQw"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-X4-1qP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7fS-Ez-yjr" firstAttribute="centerX" secondItem="jpN-HG-zmU" secondAttribute="centerX" id="VHN-ha-V7A"/>
-                            <constraint firstItem="XeO-pK-KId" firstAttribute="centerX" secondItem="dnE-fu-38T" secondAttribute="centerX" id="Yl3-tk-ab9"/>
-                            <constraint firstItem="dnE-fu-38T" firstAttribute="bottom" secondItem="XeO-pK-KId" secondAttribute="bottom" constant="25" id="bp5-fL-vWi"/>
-                            <constraint firstItem="XeO-pK-KId" firstAttribute="leading" secondItem="dnE-fu-38T" secondAttribute="leading" constant="100" id="uEh-Kz-vJf"/>
-                            <constraint firstItem="7fS-Ez-yjr" firstAttribute="centerY" secondItem="jpN-HG-zmU" secondAttribute="centerY" id="vFY-b8-Hse"/>
+                            <constraint firstItem="fAV-X4-1qP" firstAttribute="top" secondItem="dnE-fu-38T" secondAttribute="top" id="16q-Bb-ahk"/>
+                            <constraint firstItem="dnE-fu-38T" firstAttribute="bottom" secondItem="fAV-X4-1qP" secondAttribute="bottom" constant="-34" id="2mg-F6-F79"/>
+                            <constraint firstItem="fAV-X4-1qP" firstAttribute="trailing" secondItem="dnE-fu-38T" secondAttribute="trailing" id="5mb-CM-DdT"/>
+                            <constraint firstItem="fAV-X4-1qP" firstAttribute="leading" secondItem="dnE-fu-38T" secondAttribute="leading" id="6qX-Gw-0D8"/>
+                            <constraint firstAttribute="bottom" secondItem="fAV-X4-1qP" secondAttribute="bottom" id="JjL-ia-gnZ"/>
+                            <constraint firstItem="fAV-X4-1qP" firstAttribute="leading" secondItem="dnE-fu-38T" secondAttribute="leading" id="YvX-i2-znR"/>
+                            <constraint firstItem="fAV-X4-1qP" firstAttribute="top" secondItem="dnE-fu-38T" secondAttribute="top" id="f8r-0R-LVO"/>
+                            <constraint firstItem="dnE-fu-38T" firstAttribute="trailing" secondItem="fAV-X4-1qP" secondAttribute="trailing" id="pvH-AM-zAp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dnE-fu-38T"/>
                     </view>
                     <navigationItem key="navigationItem" id="gK0-pA-TV4"/>
                     <connections>
-                        <outlet property="bemVindoLabel" destination="7fS-Ez-yjr" id="LZD-aL-cM4"/>
-                        <outlet property="menuButton" destination="XeO-pK-KId" id="rcB-tG-iT1"/>
+                        <outlet property="perfilTableView" destination="fAV-X4-1qP" id="VMm-CE-Upc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cl-nF-k17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="104"/>
+            <point key="canvasLocation" x="1140.5797101449277" y="103.79464285714285"/>
         </scene>
         <!--Restaurante Google Maps View Controller-->
         <scene sceneID="E3d-OU-T8K">
@@ -575,7 +580,9 @@
                         <viewLayoutGuide key="safeArea" id="9If-40-S9J"/>
                     </view>
                     <navigationItem key="navigationItem" id="NnB-dS-XzP">
-                        <barButtonItem key="backBarButtonItem" title=" " id="K7P-lx-QPA"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="K7P-lx-QPA">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="84b-rg-aLt" id="ysp-qX-whw"/>
@@ -700,7 +707,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-Dc-e8k">
                                         <rect key="frame" x="0.0" y="300" width="334" height="24"/>
                                         <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -745,6 +752,8 @@
         <image name="menu" width="3600" height="2400"/>
         <image name="menuReceber" width="1280" height="760"/>
         <image name="menuReceita" width="1280" height="761"/>
+        <image name="person.circle" catalog="system" width="64" height="60"/>
+        <image name="person.crop.circle.fill.badge.minus" catalog="system" width="64" height="50"/>
     </resources>
     <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
