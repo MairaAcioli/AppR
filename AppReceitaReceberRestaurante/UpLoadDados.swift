@@ -10,6 +10,8 @@ import UIKit
 
 import FirebaseDatabase
 
+import FirebaseAuth
+
 class UpLoadDados: NSObject {
     
     func upLoad() {
@@ -56,5 +58,26 @@ class UpLoadDados: NSObject {
         }
         
     }
+    
+    func downLoad(){
+        
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
+        
+        let usuarioID = Auth.auth().currentUser?.uid
+        ref.child("tela/receber").child(usuarioID!).observeSingleEvent(of: .value, with: { (snapshot) in
+          // Get user value
+          let value = snapshot.value as? NSDictionary
+          let titulo = value?["dict"] as? String ?? ""
+//          let user = User(titulo: titulo)
+
+          // ...
+          }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
+    }
+    
 
 }

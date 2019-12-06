@@ -25,11 +25,12 @@ class ReceitaCollectionViewCell: UICollectionViewCell {
 
      func setupReceitaNaCollection(){
 
-        self.nomeReceitaLabel.text = "Steak Tartar - chef Lu Zaidan"
+        self.nomeReceitaLabel.text = "Steak Tartare por Lu Zaidan"
         self.nomeReceitaLabel.textColor = .black
         self.nomeReceitaLabel.textColor = .label
         
         self.fotoReceita.image = UIImage(named: "amorDeOutono05")
+//        self.fotoReceita.layer.cornerRadius = 10
         
             
 }

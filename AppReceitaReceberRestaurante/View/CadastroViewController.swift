@@ -14,7 +14,7 @@ import Firebase
 
 import FirebaseFirestore
 
-class CadastroViewController: UIViewController {
+class CadastroViewController: BaseViewController {
 
    
   
@@ -86,6 +86,8 @@ class CadastroViewController: UIViewController {
     
         //validar senha
         
+        self.showLoading()
+        
         let error = validarCadastro()
         
        
@@ -118,6 +120,9 @@ class CadastroViewController: UIViewController {
                             self.mostrarErro("Erro ao salvar os dados")
                         }
                     }
+                    
+                    
+                    self.hiddenLoading()
                     
                     self.transicaoParaBemVindo()
                     

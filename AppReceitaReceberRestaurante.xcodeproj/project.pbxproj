@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C00BDB52399CEC00095E009 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00BDB42399CEC00095E009 /* BaseViewController.swift */; };
+		0C00BDB72399CFD30095E009 /* 9329-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C00BDB62399CFD30095E009 /* 9329-loading.json */; };
 		0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C12A650235D715C00CBFEE5 /* Constantes.swift */; };
 		0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */; };
 		0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA68235CF1100037F5EE /* LoginViewController.swift */; };
@@ -70,6 +72,8 @@
 
 /* Begin PBXFileReference section */
 		06CC69613BE539C37663450B /* Pods-AppReceitaReceberRestaurante.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.release.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.release.xcconfig"; sourceTree = "<group>"; };
+		0C00BDB42399CEC00095E009 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0C00BDB62399CFD30095E009 /* 9329-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9329-loading.json"; sourceTree = "<group>"; };
 		0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C12A650235D715C00CBFEE5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +153,6 @@
 		0C13CA6E235D029E0037F5EE /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				0C3BD62C237873E70014BE6E /* RestaurantePreviewView.swift */,
 				0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */,
 				0C12A650235D715C00CBFEE5 /* Constantes.swift */,
 				0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */,
@@ -170,6 +173,7 @@
 		0CAF6BCD23668AAD001F3124 /* RestauranteView */ = {
 			isa = PBXGroup;
 			children = (
+				0C3BD62C237873E70014BE6E /* RestaurantePreviewView.swift */,
 				0C3BD62A23785FD10014BE6E /* PinPersonalizacao.swift */,
 				0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */,
 				0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */,
@@ -220,6 +224,7 @@
 		0CB2FB67235347D5004D6EA9 /* AppReceitaReceberRestaurante */ = {
 			isa = PBXGroup;
 			children = (
+				0C00BDB62399CFD30095E009 /* 9329-loading.json */,
 				0CBC91A12362722500061996 /* Network */,
 				0CD26DB3235E371900907B1C /* Media */,
 				0C13CA6E235D029E0037F5EE /* Extras */,
@@ -275,6 +280,7 @@
 				0C13CA68235CF1100037F5EE /* LoginViewController.swift */,
 				0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */,
 				0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */,
+				0C00BDB42399CEC00095E009 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -430,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB2FBA023535588004D6EA9 /* ReceberTableViewCell.xib in Resources */,
+				0C00BDB72399CFD30095E009 /* 9329-loading.json in Resources */,
 				0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */,
 				0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */,
 				0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */,
@@ -525,6 +532,7 @@
 				0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */,
 				0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */,
 				0C3E61CD2396F09600461306 /* CustomCollectionViewCell.swift in Sources */,
+				0C00BDB52399CEC00095E009 /* BaseViewController.swift in Sources */,
 				0C7D7551238CB7A2002D3670 /* UIImage+Extension.swift in Sources */,
 				0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */,
 				0C13CA70235D03140037F5EE /* PersonalizacaoTextField.swift in Sources */,

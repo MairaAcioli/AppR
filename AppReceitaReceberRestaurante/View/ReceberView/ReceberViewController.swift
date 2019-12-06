@@ -38,6 +38,9 @@ class ReceberViewController: UIViewController {
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewCell")
         
+      
+        
+        
         
     }
 }
@@ -54,6 +57,8 @@ extension ReceberViewController: UITableViewDelegate, UITableViewDataSource{
             
             receberCell.setUpReceber(receber: receberController.devolveReceber(index: indexPath.row))
             
+//            receberCell.layer.borderColor = UIColor.label.cgColor
+            
             return receberCell
         }
         
@@ -65,6 +70,7 @@ extension ReceberViewController: UITableViewDelegate, UITableViewDataSource{
             
             vc.receberModel = receberController.devolveReceber(index: indexPath.row)
             navigationController?.pushViewController(vc, animated: true)
+            
             
         }
      

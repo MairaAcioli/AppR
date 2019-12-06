@@ -455,7 +455,9 @@
                         <viewLayoutGuide key="safeArea" id="Ads-WD-xB7"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZR2-HK-FTV">
-                        <barButtonItem key="backBarButtonItem" title="   " id="LG7-ad-vI6"/>
+                        <barButtonItem key="backBarButtonItem" title="   " id="LG7-ad-vI6">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="receberButton" destination="x5U-1h-lc0" id="CAg-zj-bf8"/>
@@ -474,14 +476,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-IY-b1A">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-IY-b1A">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GCq-pC-Lgz">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="20" sectionInsetReference="layoutMargins" id="GCq-pC-Lgz">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="20" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -638,7 +640,9 @@
                         <viewLayoutGuide key="safeArea" id="BKP-4v-y2u"/>
                     </view>
                     <navigationItem key="navigationItem" id="Il7-nu-75M">
-                        <barButtonItem key="backBarButtonItem" title=" " id="5fC-LG-NVK"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="5fC-LG-NVK">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="L7b-bc-qhe" id="VAt-rM-16t"/>
