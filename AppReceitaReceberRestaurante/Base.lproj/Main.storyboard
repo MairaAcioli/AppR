@@ -430,20 +430,13 @@
                                     <segue destination="2U7-e2-dun" kind="show" id="ZfV-HN-sz1"/>
                                 </connections>
                             </button>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Em9-09-600">
-                                <rect key="frame" x="0.0" y="813" width="414" height="83"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem image="person.circle" catalog="system" id="QkY-WY-0O3"/>
-                                    <tabBarItem image="person.crop.circle.fill.badge.minus" catalog="system" id="38N-Va-cx5"/>
-                                </items>
-                                <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tabBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-CJ-gXv">
-                                <rect key="frame" x="346" y="44" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
-                                <state key="normal" title="LogOut"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-CJ-gXv">
+                                <rect key="frame" x="354" y="17" width="40" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="7u7-cM-bx1"/>
+                                    <constraint firstAttribute="height" constant="53" id="K2t-Bc-qQb"/>
+                                </constraints>
+                                <state key="normal" image="person.badge.minus" catalog="system"/>
                                 <connections>
                                     <action selector="logOutButton:" destination="12e-Ih-wQT" eventType="touchUpInside" id="e6P-PQ-5se"/>
                                 </connections>
@@ -451,19 +444,18 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="kL6-CJ-gXv" firstAttribute="top" secondItem="KYR-9Q-siG" secondAttribute="top" constant="16" id="6CE-BF-tuX"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="Cxj-zo-mKH" secondAttribute="trailing" constant="22" id="ETt-pM-0Tg"/>
+                            <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="kL6-CJ-gXv" secondAttribute="trailing" constant="20" id="EvP-to-Hjo"/>
                             <constraint firstItem="Cxj-zo-mKH" firstAttribute="leading" secondItem="Ads-WD-xB7" secondAttribute="leading" constant="22" id="JOB-pX-Qyc"/>
                             <constraint firstItem="6iT-q6-WNs" firstAttribute="leading" secondItem="Ads-WD-xB7" secondAttribute="leading" constant="22" id="Kr9-NG-rl9"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="6iT-q6-WNs" secondAttribute="trailing" constant="22" id="LDI-RZ-jlY"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="top" secondItem="Ads-WD-xB7" secondAttribute="top" constant="39" id="LgA-lA-fqY"/>
-                            <constraint firstItem="Em9-09-600" firstAttribute="leading" secondItem="Ads-WD-xB7" secondAttribute="leading" id="OFw-As-IQc"/>
                             <constraint firstItem="Cxj-zo-mKH" firstAttribute="top" secondItem="x5U-1h-lc0" secondAttribute="bottom" constant="35" id="OqO-He-gOT"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="leading" secondItem="Cxj-zo-mKH" secondAttribute="trailing" constant="-370" id="Q1g-o3-axH"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="x5U-1h-lc0" secondAttribute="trailing" constant="22" id="TW6-1F-AEv"/>
                             <constraint firstItem="6iT-q6-WNs" firstAttribute="top" secondItem="Cxj-zo-mKH" secondAttribute="bottom" constant="35" id="WLx-V9-hFm"/>
-                            <constraint firstItem="Em9-09-600" firstAttribute="trailing" secondItem="Ads-WD-xB7" secondAttribute="trailing" id="gLF-te-UIh"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="height" secondItem="Cxj-zo-mKH" secondAttribute="height" id="jR2-r5-gyO"/>
-                            <constraint firstAttribute="bottom" secondItem="Em9-09-600" secondAttribute="bottom" id="kIo-4g-mwT"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="height" secondItem="6iT-q6-WNs" secondAttribute="height" id="sGK-iW-Vcg"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="bottom" secondItem="6iT-q6-WNs" secondAttribute="bottom" constant="40" id="tMj-0o-rWZ"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="leading" secondItem="Ads-WD-xB7" secondAttribute="leading" constant="22" id="xQE-dN-s52"/>
@@ -482,7 +474,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sR6-b7-NYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1997" y="102"/>
+            <point key="canvasLocation" x="1995.6521739130437" y="101.78571428571428"/>
         </scene>
         <!--Receita View Controller-->
         <scene sceneID="2S6-Kb-9zp">
@@ -521,41 +513,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBy-Nt-aeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2857.971014492754" y="103.79464285714285"/>
-        </scene>
-        <!--Bem Vindo View Controller-->
-        <scene sceneID="pBX-3t-uxV">
-            <objects>
-                <viewController storyboardIdentifier="BemVindoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qix-2a-t13" customClass="BemVindoViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jpN-HG-zmU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fAV-X4-1qP">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="fAV-X4-1qP" firstAttribute="top" secondItem="dnE-fu-38T" secondAttribute="top" id="16q-Bb-ahk"/>
-                            <constraint firstItem="dnE-fu-38T" firstAttribute="bottom" secondItem="fAV-X4-1qP" secondAttribute="bottom" constant="-34" id="2mg-F6-F79"/>
-                            <constraint firstItem="fAV-X4-1qP" firstAttribute="trailing" secondItem="dnE-fu-38T" secondAttribute="trailing" id="5mb-CM-DdT"/>
-                            <constraint firstItem="fAV-X4-1qP" firstAttribute="leading" secondItem="dnE-fu-38T" secondAttribute="leading" id="6qX-Gw-0D8"/>
-                            <constraint firstAttribute="bottom" secondItem="fAV-X4-1qP" secondAttribute="bottom" id="JjL-ia-gnZ"/>
-                            <constraint firstItem="fAV-X4-1qP" firstAttribute="leading" secondItem="dnE-fu-38T" secondAttribute="leading" id="YvX-i2-znR"/>
-                            <constraint firstItem="fAV-X4-1qP" firstAttribute="top" secondItem="dnE-fu-38T" secondAttribute="top" id="f8r-0R-LVO"/>
-                            <constraint firstItem="dnE-fu-38T" firstAttribute="trailing" secondItem="fAV-X4-1qP" secondAttribute="trailing" id="pvH-AM-zAp"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="dnE-fu-38T"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gK0-pA-TV4"/>
-                    <connections>
-                        <outlet property="perfilTableView" destination="fAV-X4-1qP" id="VMm-CE-Upc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1cl-nF-k17" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1140.5797101449277" y="103.79464285714285"/>
         </scene>
         <!--Restaurante Google Maps View Controller-->
         <scene sceneID="E3d-OU-T8K">
@@ -752,8 +709,7 @@
         <image name="menu" width="3600" height="2400"/>
         <image name="menuReceber" width="1280" height="760"/>
         <image name="menuReceita" width="1280" height="761"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
-        <image name="person.crop.circle.fill.badge.minus" catalog="system" width="64" height="50"/>
+        <image name="person.badge.minus" catalog="system" width="64" height="58"/>
     </resources>
     <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

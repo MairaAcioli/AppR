@@ -19,14 +19,14 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
     @IBOutlet weak var restauranteButton: UIButton!
     
     
-    var perfil: BemVindoViewController!
+    var menu: MenuViewController!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         UserDefaults.standard.set(true, forKey: "logado")
-        self.perfil = BemVindoViewController()
+        self.menu = MenuViewController()
     
     }
     

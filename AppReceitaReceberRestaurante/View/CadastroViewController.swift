@@ -124,7 +124,7 @@ class CadastroViewController: BaseViewController {
                     
                     self.hiddenLoading()
                     
-                    self.transicaoParaBemVindo()
+                    self.transicaoParaMenu()
                     
                 }
             }
@@ -142,11 +142,11 @@ class CadastroViewController: BaseViewController {
         
     }
 
-    func transicaoParaBemVindo(){
+    func transicaoParaMenu(){
         
-        let bemVindoViewController = storyboard?.instantiateViewController(identifier: "BemVindoViewController") as? BemVindoViewController
+        let menuVindoViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
         
-        view.window?.rootViewController = bemVindoViewController
+        view.window?.rootViewController = menuVindoViewController
         view.window?.makeKeyAndVisible()
     }
     

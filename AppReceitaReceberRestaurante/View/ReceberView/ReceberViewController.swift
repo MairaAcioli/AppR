@@ -38,7 +38,8 @@ class ReceberViewController: BaseViewController {
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewCell")
         
-      
+        let uploadData = UpLoadDados()
+        uploadData.downLoad()
         
         
         
@@ -98,12 +99,15 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
         
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
+////    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+////
+//////        if receberController.devolveReceber(index: indexPath.row).tag == "aperitivo" {
+//////
+//////        }
 //
 //
 //    }
-//
+////
     
 }
 //

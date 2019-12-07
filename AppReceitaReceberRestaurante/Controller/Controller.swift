@@ -42,6 +42,8 @@ class GenericController {
         return array.count
     }
     
+
+    
     
     func devolveReceber(index: Int) -> GenericData{
         return array[index]

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C00BDB52399CEC00095E009 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00BDB42399CEC00095E009 /* BaseViewController.swift */; };
 		0C00BDB72399CFD30095E009 /* 9329-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C00BDB62399CFD30095E009 /* 9329-loading.json */; };
-		0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C12A650235D715C00CBFEE5 /* Constantes.swift */; };
 		0C13CA67235CF0FA0037F5EE /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */; };
 		0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA68235CF1100037F5EE /* LoginViewController.swift */; };
 		0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */; };
@@ -28,7 +27,6 @@
 		0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C5370F32360BE13006BD76D /* videoAbertura.mp4 */; };
 		0C7D7551238CB7A2002D3670 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */; };
 		0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */; };
-		0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */; };
 		0CAF6BCF23668BEE001F3124 /* RestauranteMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */; };
 		0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAF6E252354BE850039FC41 /* MenuViewController.swift */; };
 		0CB2FB69235347D5004D6EA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FB68235347D5004D6EA9 /* AppDelegate.swift */; };
@@ -49,8 +47,6 @@
 		0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A6236274E900061996 /* RestaurantSearch.swift */; };
 		0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A8236280B200061996 /* RestaurantController.swift */; };
 		0CC167EC2378915F00151DAE /* RestauranteInformacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */; };
-		0CF1F0E5239AF32D006637E6 /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF1F0E3239AF32D006637E6 /* PerfilTableViewCell.swift */; };
-		0CF1F0E6239AF32D006637E6 /* PerfilTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CF1F0E4239AF32D006637E6 /* PerfilTableViewCell.xib */; };
 		0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC9F01238751B600B7553D /* UpLoadDados.swift */; };
 		C6692A1DA7C9871C2F7B003A /* Pods_AppReceitaReceberRestaurante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */; };
 /* End PBXBuildFile section */
@@ -77,7 +73,6 @@
 		0C00BDB42399CEC00095E009 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0C00BDB62399CFD30095E009 /* 9329-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9329-loading.json"; sourceTree = "<group>"; };
 		0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0C12A650235D715C00CBFEE5 /* Constantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		0C13CA68235CF1100037F5EE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AberturaViewController.swift; sourceTree = "<group>"; };
@@ -95,7 +90,6 @@
 		0C41607A23903B2000AF1453 /* RestauranteCustomInfoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteCustomInfoWindow.swift; sourceTree = "<group>"; };
 		0C5370F32360BE13006BD76D /* videoAbertura.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAbertura.mp4; sourceTree = "<group>"; };
 		0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BemVindoViewController.swift; sourceTree = "<group>"; };
 		0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteMapaViewController.swift; sourceTree = "<group>"; };
 		0CAF6E252354BE850039FC41 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0CB2FB65235347D5004D6EA9 /* AppReceitaReceberRestaurante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppReceitaReceberRestaurante.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,8 +115,6 @@
 		0CBC91A6236274E900061996 /* RestaurantSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantSearch.swift; sourceTree = "<group>"; };
 		0CBC91A8236280B200061996 /* RestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantController.swift; sourceTree = "<group>"; };
 		0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteInformacoesViewController.swift; sourceTree = "<group>"; };
-		0CF1F0E3239AF32D006637E6 /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
-		0CF1F0E4239AF32D006637E6 /* PerfilTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilTableViewCell.xib; sourceTree = "<group>"; };
 		0CFC9F01238751B600B7553D /* UpLoadDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpLoadDados.swift; sourceTree = "<group>"; };
 		3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.debug.xcconfig"; sourceTree = "<group>"; };
 		ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestaurante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				0C13CA6F235D03140037F5EE /* PersonalizacaoTextField.swift */,
-				0C12A650235D715C00CBFEE5 /* Constantes.swift */,
 				0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */,
 			);
 			path = Extras;
@@ -281,9 +272,6 @@
 				0C13CA6C235CF2D10037F5EE /* AberturaViewController.swift */,
 				0C13CA66235CF0FA0037F5EE /* CadastroViewController.swift */,
 				0C13CA68235CF1100037F5EE /* LoginViewController.swift */,
-				0CA4A423235DE2BB004B15F8 /* BemVindoViewController.swift */,
-				0CF1F0E3239AF32D006637E6 /* PerfilTableViewCell.swift */,
-				0CF1F0E4239AF32D006637E6 /* PerfilTableViewCell.xib */,
 				0CAF6E252354BE850039FC41 /* MenuViewController.swift */,
 				0C00BDB42399CEC00095E009 /* BaseViewController.swift */,
 			);
@@ -445,7 +433,6 @@
 				0C00BDB72399CFD30095E009 /* 9329-loading.json in Resources */,
 				0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */,
 				0C13CA72235D153C0037F5EE /* GoogleService-Info.plist in Resources */,
-				0CF1F0E6239AF32D006637E6 /* PerfilTableViewCell.xib in Resources */,
 				0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */,
 				0C3E61CE2396F09600461306 /* CustomCollectionViewCell.xib in Resources */,
 				0C19A3072398785B00FA08A3 /* ReceitaCollectionViewCell.xib in Resources */,
@@ -546,9 +533,7 @@
 				0CAF6BCF23668BEE001F3124 /* RestauranteMapaViewController.swift in Sources */,
 				0CB2FB9F23535588004D6EA9 /* ReceberTableViewCell.swift in Sources */,
 				0CB2FBA223536743004D6EA9 /* ReceberViewController.swift in Sources */,
-				0C12A651235D715C00CBFEE5 /* Constantes.swift in Sources */,
 				0C4160772390280E00AF1453 /* RestauranteGoogleMapsViewController.swift in Sources */,
-				0CA4A424235DE2BB004B15F8 /* BemVindoViewController.swift in Sources */,
 				0C41607B23903B2000AF1453 /* RestauranteCustomInfoWindow.swift in Sources */,
 				0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */,
 				0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */,
@@ -560,7 +545,6 @@
 				0C3BD62B23785FD10014BE6E /* PinPersonalizacao.swift in Sources */,
 				0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */,
 				0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */,
-				0CF1F0E5239AF32D006637E6 /* PerfilTableViewCell.swift in Sources */,
 				0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */,
 				0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */,
 				0CC167EC2378915F00151DAE /* RestauranteInformacoesViewController.swift in Sources */,

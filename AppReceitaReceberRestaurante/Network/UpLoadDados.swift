@@ -13,10 +13,11 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class UpLoadDados: NSObject {
+    var array: [GenericData] = []
     
     func upLoad() {
         var tipo: TipoDado = .receber
-        var array = [
+         array = [
            GenericData(titulo: "Aperitivos e Amigos", fotoPrincipal:  "aperitivosEAmigos", conteudo: "Chamar os melhores amigos e fazer aquela tábua de aperitivos maravilhosa. A Bia Rocha, da Duas Gastronomia preparou uma mesa inédita com frutas, geléia, queijo, bolos e nutas. Queremos mostrar uma tábua de aperitivos que se diferencia por trazer ingredientes práticos e que tem uma apresentação única que une charme com as peças da Cosi Home.", conteudoDetalhes: nil, categoria: "Duas Gastronomia", fotosArray: ["aperitivosEAmigos01", "aperitivosEAmigos02", "aperitivosEAmigos03", "aperitivosEAmigos04","aperitivosEAmigos05", "aperitivosEAmigos06", "aperitivosEAmigos07", "aperitivosEAmigos08", "aperitivosEAmigos09", "aperitivosEAmigos10"], tipoDeDado: .receber, logoEmpresa1: "logoCosi", nomeEmpresa1: "Cosi Home", descricaoEmpresa1: "Objetos de decor genuinos e funcionais", logoEmpresa2: "logoDuas", nomeEmpresa2: "Duas Gastronomia", descricaoEmpresa2: "Festas e eventos com cardápios personalizados e exclusivos", tag: "aperitivo"),
                 
                 GenericData(titulo: "Amor de Outono", fotoPrincipal:  "amorDeOutono01", conteudo: "Bolo de Rolo em São Paulo", conteudoDetalhes: nil, categoria: "Ghee Banqueteria", fotosArray: ["amorDeOutono02", "amorDeOutono03", "amorDeOutono04","amorDeOutono05", "amorDeOutono06", "amorDeOutono07", "amorDeOutono08", "amorDeOutono09", "amorDeOutono10", "amorDeOutono11", "amorDeOutono12", "amorDeOutono13", "amorDeOutono14", "amorDeOutono15"], tipoDeDado: .receber, logoEmpresa1: "logoCosi", nomeEmpresa1: "Cosi Home", descricaoEmpresa1: "Objetos de decor genuinos e funcionais", logoEmpresa2: "logoDuas", nomeEmpresa2: "Duas Gastronomia", descricaoEmpresa2: "Festas e eventos com cardápios personalizados e exclusivos", tag: "aperitivo"),
@@ -65,13 +66,17 @@ class UpLoadDados: NSObject {
         ref = Database.database().reference()
         
         let usuarioID = Auth.auth().currentUser?.uid
-        ref.child("tela/receber").child(usuarioID!).observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("tela/receber").observeSingleEvent(of: .value, with: { (snapshot) in
           // Get user value
-          let value = snapshot.value as? NSDictionary
-          let titulo = value?["dict"] as? String ?? ""
-//          let user = User(titulo: titulo)
+//            let value = snapshot.value as? Array<Any>
+            
+//            for newValue in value {
+             //   model
+//                model.titulo =  value["titulo"]
+//            }
+            
 
-          // ...
+            
           }) { (error) in
             print(error.localizedDescription)
         }
