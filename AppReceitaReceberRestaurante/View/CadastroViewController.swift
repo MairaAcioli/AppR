@@ -15,9 +15,9 @@ import Firebase
 import FirebaseFirestore
 
 class CadastroViewController: BaseViewController {
-
-   
-  
+    
+    
+    
     @IBOutlet weak var nomeTextField: UITextField!
     
     @IBOutlet weak var sobrenomeTextFiled: UITextField!
@@ -31,39 +31,39 @@ class CadastroViewController: BaseViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
-   
+    
     @IBOutlet weak var fotoCadastroImageView: UIImageView!
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        
         setUpCadastroTextField()
         self.fotoCadastroImageView.image = UIImage(named: "degradeFundo")
     }
     
-
+    
     
     func setUpCadastroTextField() {
         
         errorLabel.alpha = 0
-      
+        
         Utilities.styleTextField(nomeTextField)
         Utilities.styleTextField(sobrenomeTextFiled)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(senhaTextField)
         Utilities.styleFilledButton(cadastroButton)
-            
-            
-            
-        }
+        
+        
+        
+    }
     
     func validarCadastro() -> String? {
         
         if nomeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || sobrenomeTextFiled.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || senhaTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-        
-        return "Por favor, preencha todos os campos."
+            
+            return "Por favor, preencha todos os campos."
             
         }
         
@@ -80,20 +80,20 @@ class CadastroViewController: BaseViewController {
         }
         return nil
     }
-
-   
-    @IBAction func cadastroTapped(_ sender: Any) {
     
+    
+    @IBAction func cadastroTapped(_ sender: Any) {
+        
         //validar senha
         
-      
+        
         
         let error = validarCadastro()
         
-       
+        
         
         if error != nil {
-           
+            
             mostrarErro(error!)
         }
         else {
@@ -129,11 +129,11 @@ class CadastroViewController: BaseViewController {
                 }
             }
             
-         
+            
             
         }
-          
-    
+        
+        
     }
     
     func mostrarErro(_ message:String) {
@@ -141,7 +141,7 @@ class CadastroViewController: BaseViewController {
         errorLabel.alpha = 1
         
     }
-
+    
     func transicaoParaMenu(){
         
         let menuVindoViewController = storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController
@@ -150,5 +150,27 @@ class CadastroViewController: BaseViewController {
         view.window?.makeKeyAndVisible()
     }
     
+    
+}
+
+extension CadastroViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField.isEqual(self.nomeTextField) {
+            self.sobrenomeTextFiled.becomeFirstResponder()
+        } else {
+            if textField.isEqual(self.sobrenomeTextFiled) {
+                self.emailTextField.becomeFirstResponder()
+            } else {
+                if textField.isEqual(self.emailTextField) {
+                    self.senhaTextField.becomeFirstResponder()
+                } else {
+                    self.senhaTextField.resignFirstResponder()
+                }
+            }
+        }
+        return true
+    }
     
 }

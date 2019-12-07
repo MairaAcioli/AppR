@@ -94,3 +94,17 @@ class LoginViewController: BaseViewController {
 
 }
 
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField.isEqual(self.emailTextField){
+            self.senhaTextField.becomeFirstResponder()
+        }
+        
+        return true
+    }
+}
+    
+   
+
