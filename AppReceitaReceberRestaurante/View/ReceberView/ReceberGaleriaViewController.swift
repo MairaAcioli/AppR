@@ -45,6 +45,9 @@ class ReceberGaleriaViewController: UIViewController, UIScrollViewDelegate {
 
             galeriaReceberScrollView.contentSize.width = galeriaReceberScrollView.frame.width * CGFloat(i + 1)
             galeriaReceberScrollView.addSubview(imageView)
+            
+            conteudoReceberTextView.isEditable = false
+            conteudoReceberTextView.showsVerticalScrollIndicator = false
 
 
         }
