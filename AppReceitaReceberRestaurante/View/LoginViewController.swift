@@ -13,8 +13,8 @@ import FirebaseAuth
 
 
 class LoginViewController: BaseViewController {
-
-  
+    
+    
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -28,15 +28,15 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var degradeFundoImageView: UIImageView!
     
     
-//    @IBOutlet weak var fotoLoginImageView: UIImageView!
+    //    @IBOutlet weak var fotoLoginImageView: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       setUpLoginTextField()
-//       self.fotoLoginImageView.image = UIImage(named: "login")
+        setUpLoginTextField()
+        //       self.fotoLoginImageView.image = UIImage(named: "login")
         
         self.emailTextField.text = "maira@teste.com"
         self.senhaTextField.text = "maira1234@"
@@ -44,7 +44,7 @@ class LoginViewController: BaseViewController {
         self.degradeFundoImageView.image = UIImage(named: "degradeFundo")
     }
     
-
+    
     @IBAction func loginTapped(_ sender: Any) {
         
         self.showLoading()
@@ -73,7 +73,7 @@ class LoginViewController: BaseViewController {
     
     func goToMenu() {
         if let menuVC = self.storyboard?.instantiateViewController(identifier: "MenuViewController") as? MenuViewController {
-              let nvc = UINavigationController(rootViewController: menuVC)
+            let nvc = UINavigationController(rootViewController: menuVC)
             nvc.modalPresentationStyle = .fullScreen
             self.present(nvc, animated: true, completion: nil)
         }
@@ -91,20 +91,27 @@ class LoginViewController: BaseViewController {
         
     }
     
-
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if textField.isEqual(self.emailTextField){
-            self.senhaTextField.becomeFirstResponder()
+        if textField.text! == "" {
+            return false
+        } else if textField == emailTextField {
+            textField.resignFirstResponder()
+            senhaTextField.becomeFirstResponder()
+            return true
+        } else if textField == senhaTextField {
+            textField.resignFirstResponder()
+            return true
+        }else {
+            return false
         }
-        
-        return true
     }
 }
-    
-   
+
+
 

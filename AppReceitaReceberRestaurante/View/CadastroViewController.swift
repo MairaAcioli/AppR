@@ -56,6 +56,11 @@ class CadastroViewController: BaseViewController {
         Utilities.styleFilledButton(cadastroButton)
         
         
+        self.hiddenLoading()
+        
+        
+        
+        
         
     }
     
@@ -155,22 +160,28 @@ class CadastroViewController: BaseViewController {
 
 extension CadastroViewController: UITextFieldDelegate {
     
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        if textField.isEqual(self.nomeTextField) {
-            self.sobrenomeTextFiled.becomeFirstResponder()
-        } else {
-            if textField.isEqual(self.sobrenomeTextFiled) {
-                self.emailTextField.becomeFirstResponder()
-            } else {
-                if textField.isEqual(self.emailTextField) {
-                    self.senhaTextField.becomeFirstResponder()
-                } else {
-                    self.senhaTextField.resignFirstResponder()
-                }
-            }
+        if textField.text! == "" {
+            return false
+        } else if textField == nomeTextField {
+            textField.resignFirstResponder()
+            sobrenomeTextFiled.becomeFirstResponder()
+            return true
+        } else if textField == sobrenomeTextFiled {
+            textField.resignFirstResponder()
+            emailTextField.becomeFirstResponder()
+            return true
+        } else if textField == emailTextField{
+            textField.resignFirstResponder()
+            senhaTextField.becomeFirstResponder()
+            return true
+        }else if textField == senhaTextField{
+            textField.resignFirstResponder()
+            return true
+        }else {
+            return false
         }
-        return true
     }
-    
 }
