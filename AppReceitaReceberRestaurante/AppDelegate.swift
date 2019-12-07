@@ -37,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        var upLoad: UpLoadDados = UpLoadDados()
 //        upLoad.upLoad()
         
+//        var envioDadosReceita: UpDownLoadDadosDatabase = UpDownLoadDadosDatabase()
+//        envioDadosReceita.upLoad()
+        
         
         return true
     }

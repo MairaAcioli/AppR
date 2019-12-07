@@ -24,8 +24,16 @@ class ReceberViewController: BaseViewController {
     
     var genericData: GenericData?
     
+//    var arrayAperitivo = [
+//    GenericData(titulo: "Aperitivos e Amigos", fotoPrincipal:  "aperitivosEAmigos", conteudo: "Chamar os melhores amigos e fazer aquela tábua de aperitivos maravilhosa. A Bia Rocha, da Duas Gastronomia preparou uma mesa inédita com frutas, geléia, queijo, bolos e nutas. Queremos mostrar uma tábua de aperitivos que se diferencia por trazer ingredientes práticos e que tem uma apresentação única que une charme com as peças da Cosi Home.", conteudoDetalhes: nil, categoria: "Duas Gastronomia", fotosArray: ["aperitivosEAmigos01", "aperitivosEAmigos02", "aperitivosEAmigos03", "aperitivosEAmigos04","aperitivosEAmigos05", "aperitivosEAmigos06", "aperitivosEAmigos07", "aperitivosEAmigos08", "aperitivosEAmigos09", "aperitivosEAmigos10"], tipoDeDado: .receber, logoEmpresa1: "logoCosi", nomeEmpresa1: "Cosi Home", descricaoEmpresa1: "Objetos de decor genuinos e funcionais", logoEmpresa2: "logoDuas", nomeEmpresa2: "Duas Gastronomia", descricaoEmpresa2: "Festas e eventos com cardápios personalizados e exclusivos", tag: "aperitivo"),
+//
+//    GenericData(titulo: "Amor de Outono", fotoPrincipal:  "amorDeOutono01", conteudo: "Bolo de Rolo em São Paulo", conteudoDetalhes: nil, categoria: "Ghee Banqueteria", fotosArray: ["amorDeOutono02", "amorDeOutono03", "amorDeOutono04","amorDeOutono05", "amorDeOutono06", "amorDeOutono07", "amorDeOutono08", "amorDeOutono09", "amorDeOutono10", "amorDeOutono11", "amorDeOutono12", "amorDeOutono13", "amorDeOutono14", "amorDeOutono15"], tipoDeDado: .receber, logoEmpresa1: "logoCosi", nomeEmpresa1: "Cosi Home", descricaoEmpresa1: "Objetos de decor genuinos e funcionais", logoEmpresa2: "logoDuas", nomeEmpresa2: "Duas Gastronomia", descricaoEmpresa2: "Festas e eventos com cardápios personalizados e exclusivos", tag: "aperitivo")
+//    ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         receberController = GenericController(tipo: tipo)
        
@@ -49,6 +57,8 @@ class ReceberViewController: BaseViewController {
 extension ReceberViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       
+       
         return receberController.numberOfRowsInSectionReceber()
     }
     
@@ -67,6 +77,7 @@ extension ReceberViewController: UITableViewDelegate, UITableViewDataSource{
 }
         
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         if let vc = storyboard?.instantiateViewController(identifier: "ReceberGaleriaViewController") as? ReceberGaleriaViewController {
             
             vc.receberModel = receberController.devolveReceber(index: indexPath.row)
@@ -84,6 +95,10 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return self.receberController.array.count
+        
+     
+        
+        
         //return self.arrayCars.count
         
     }
@@ -94,22 +109,34 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
         let cell : CustomCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
         
         cell.setupViewNaCollection(receber: receberController.devolveReceber(index: indexPath.row))
-    
+            
+            
         return cell
         
     }
     
-////    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-////
-//////        if receberController.devolveReceber(index: indexPath.row).tag == "aperitivo" {
-//////
-//////        }
-//
-//
-//    }
-////
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+       
+        
+        if receberController.devolveReceber(index: indexPath.row).tag == "aperitivo" {
+            
+          
+                          
+                
+            }
+//            criar array aperitivo e trocar esse receberController.array.count
+            
+            
+            receberTableView.reloadData()
+
+        }
+
+
+    }
+
     
-}
+
 //
 //if let vc = storyboard?.instantiateViewController(identifier: "ReceberGaleriaViewController") as? ReceberGaleriaViewController {
 //          

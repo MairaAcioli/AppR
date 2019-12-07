@@ -26,7 +26,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     func setupViewNaCollection(receber: GenericData){
 
         self.tagLabel.text = receber.tag
-//        self.tagLabel.text = genericData?.tag
+
 
         self.tagLabel.textColor = .black
         self.tagLabel.layer.borderWidth = 0.5

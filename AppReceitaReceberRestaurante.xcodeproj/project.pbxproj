@@ -24,6 +24,10 @@
 		0C4160772390280E00AF1453 /* RestauranteGoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4160762390280E00AF1453 /* RestauranteGoogleMapsViewController.swift */; };
 		0C4160792390396900AF1453 /* RestauranteCustomInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4160782390396900AF1453 /* RestauranteCustomInfoWindow.xib */; };
 		0C41607B23903B2000AF1453 /* RestauranteCustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41607A23903B2000AF1453 /* RestauranteCustomInfoWindow.swift */; };
+		0C4D44AB239C2086009AEDF5 /* ReceitaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D44AA239C2086009AEDF5 /* ReceitaModel.swift */; };
+		0C4D44AF239C2425009AEDF5 /* ReceitaDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D44AE239C2425009AEDF5 /* ReceitaDatabase.swift */; };
+		0C4D44B1239C371D009AEDF5 /* ReceitaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D44B0239C371D009AEDF5 /* ReceitaController.swift */; };
+		0C4D44B3239C427A009AEDF5 /* ReceitaModoDePreparoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D44B2239C427A009AEDF5 /* ReceitaModoDePreparoViewController.swift */; };
 		0C5370F42360BE13006BD76D /* videoAbertura.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0C5370F32360BE13006BD76D /* videoAbertura.mp4 */; };
 		0C7D7551238CB7A2002D3670 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */; };
 		0C8E7D64238B71CE00912408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0889B8237D949000BD1F17 /* LaunchScreen.storyboard */; };
@@ -88,6 +92,10 @@
 		0C4160762390280E00AF1453 /* RestauranteGoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteGoogleMapsViewController.swift; sourceTree = "<group>"; };
 		0C4160782390396900AF1453 /* RestauranteCustomInfoWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestauranteCustomInfoWindow.xib; sourceTree = "<group>"; };
 		0C41607A23903B2000AF1453 /* RestauranteCustomInfoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteCustomInfoWindow.swift; sourceTree = "<group>"; };
+		0C4D44AA239C2086009AEDF5 /* ReceitaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModel.swift; sourceTree = "<group>"; };
+		0C4D44AE239C2425009AEDF5 /* ReceitaDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaDatabase.swift; sourceTree = "<group>"; };
+		0C4D44B0239C371D009AEDF5 /* ReceitaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaController.swift; sourceTree = "<group>"; };
+		0C4D44B2239C427A009AEDF5 /* ReceitaModoDePreparoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceitaModoDePreparoViewController.swift; sourceTree = "<group>"; };
 		0C5370F32360BE13006BD76D /* videoAbertura.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoAbertura.mp4; sourceTree = "<group>"; };
 		0C7D7550238CB7A2002D3670 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		0CAF6BCE23668BEE001F3124 /* RestauranteMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteMapaViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBA68EF23987C030056AB8D /* ReceitaViewController.swift */,
+				0C4D44B2239C427A009AEDF5 /* ReceitaModoDePreparoViewController.swift */,
 				0C19A3042398785B00FA08A3 /* ReceitaCollectionViewCell.swift */,
 				0C19A3052398785B00FA08A3 /* ReceitaCollectionViewCell.xib */,
 			);
@@ -258,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB2FB9B23534B23004D6EA9 /* Model.swift */,
+				0C4D44AA239C2086009AEDF5 /* ReceitaModel.swift */,
 				0CBC91A6236274E900061996 /* RestaurantSearch.swift */,
 			);
 			path = Model;
@@ -283,6 +293,7 @@
 			children = (
 				0CB2FBA523536AF1004D6EA9 /* Controller.swift */,
 				0CBC91A8236280B200061996 /* RestaurantController.swift */,
+				0C4D44B0239C371D009AEDF5 /* ReceitaController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +304,7 @@
 				0CFC9F01238751B600B7553D /* UpLoadDados.swift */,
 				0CBC91A22362723E00061996 /* API.swift */,
 				0CBC91A42362740000061996 /* ApiManager.swift */,
+				0C4D44AE239C2425009AEDF5 /* ReceitaDatabase.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -536,11 +548,13 @@
 				0C4160772390280E00AF1453 /* RestauranteGoogleMapsViewController.swift in Sources */,
 				0C41607B23903B2000AF1453 /* RestauranteCustomInfoWindow.swift in Sources */,
 				0CAF6E262354BE850039FC41 /* MenuViewController.swift in Sources */,
+				0C4D44B3239C427A009AEDF5 /* ReceitaModoDePreparoViewController.swift in Sources */,
 				0CB2FB6B235347D5004D6EA9 /* SceneDelegate.swift in Sources */,
 				0C3E4D7C2393332400A1FC34 /* ReceberEmpresasViewController.swift in Sources */,
 				0CBA68F023987C030056AB8D /* ReceitaViewController.swift in Sources */,
 				0CBC91A52362740000061996 /* ApiManager.swift in Sources */,
 				0C19A3062398785B00FA08A3 /* ReceitaCollectionViewCell.swift in Sources */,
+				0C4D44B1239C371D009AEDF5 /* ReceitaController.swift in Sources */,
 				0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */,
 				0C3BD62B23785FD10014BE6E /* PinPersonalizacao.swift in Sources */,
 				0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */,
@@ -548,9 +562,11 @@
 				0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */,
 				0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */,
 				0CC167EC2378915F00151DAE /* RestauranteInformacoesViewController.swift in Sources */,
+				0C4D44AF239C2425009AEDF5 /* ReceitaDatabase.swift in Sources */,
 				0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */,
 				0CBC91A32362723E00061996 /* API.swift in Sources */,
 				0CB2FBA623536AF1004D6EA9 /* Controller.swift in Sources */,
+				0C4D44AB239C2086009AEDF5 /* ReceitaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

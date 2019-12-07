@@ -12,6 +12,7 @@ class RestauranteInformacoesViewController: UIViewController {
  
     
   var controller: RestauranteController? = RestauranteController()
+    
   var passedData = (nomeRestaurante: "Ghee Banqueteria", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "350")
     
         
