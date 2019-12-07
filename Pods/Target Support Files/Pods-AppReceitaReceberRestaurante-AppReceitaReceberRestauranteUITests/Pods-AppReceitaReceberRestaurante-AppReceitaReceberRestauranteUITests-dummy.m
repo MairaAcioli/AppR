@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests : NSObject
-@end
-@implementation PodsDummy_Pods_AppReceitaReceberRestaurante_AppReceitaReceberRestauranteUITests
-@end
