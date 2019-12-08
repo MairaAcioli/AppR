@@ -40,6 +40,12 @@ class CadastroViewController: BaseViewController {
         
         
         setUpCadastroTextField()
+        
+        self.nomeTextField.delegate = self
+        self.sobrenomeTextFiled.delegate = self
+        self.emailTextField.delegate = self
+        self.senhaTextField.delegate = self
+        
         self.fotoCadastroImageView.image = UIImage(named: "degradeFundo")
     }
     
@@ -66,7 +72,7 @@ class CadastroViewController: BaseViewController {
     
     func validarCadastro() -> String? {
         
-        self.showLoading()
+//        self.showLoading()
         
         if nomeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || sobrenomeTextFiled.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || senhaTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
@@ -84,6 +90,7 @@ class CadastroViewController: BaseViewController {
         if Utilities.validarSenha(senhaSegura) == false {
             //se a senha não for segura
             
+            self.senhaTextField.text = "" 
             return "Por favor, digite uma senha mais segura. Contendo ao menos 8 letras, números e caracteres especiais."
             
             
@@ -165,28 +172,24 @@ class CadastroViewController: BaseViewController {
 
 extension CadastroViewController: UITextFieldDelegate {
     
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
-        if textField.text! == "" {
-            return false
-        } else if textField == nomeTextField {
-            textField.resignFirstResponder()
-            sobrenomeTextFiled.becomeFirstResponder()
-            return true
-        } else if textField == sobrenomeTextFiled {
-            textField.resignFirstResponder()
-            emailTextField.becomeFirstResponder()
-            return true
-        } else if textField == emailTextField{
-            textField.resignFirstResponder()
-            senhaTextField.becomeFirstResponder()
-            return true
-        }else if textField == senhaTextField{
-            textField.resignFirstResponder()
-            return true
-        }else {
-            return false
+            
+            if textField.isEqual(self.nomeTextField) {
+                self.sobrenomeTextFiled.becomeFirstResponder()
+            } else {
+                if textField.isEqual(self.sobrenomeTextFiled) {
+                    self.emailTextField.becomeFirstResponder()
+                } else {
+                    if textField.isEqual(self.emailTextField) {
+                        self.senhaTextField.becomeFirstResponder()
+                    } else {
+                        self.senhaTextField.resignFirstResponder()
+                    }
+                }
+            }
+             return true
         }
+       
     }
-}
+
+

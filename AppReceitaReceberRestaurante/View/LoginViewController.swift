@@ -47,7 +47,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        self.showLoading()
+        //        self.showLoading()
         
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -55,16 +55,16 @@ class LoginViewController: BaseViewController {
         
         Auth.auth().signIn(withEmail: email, password: senha) { (result, error) in
             
-            
+//        self.hiddenLoading()
             
             if error != nil {
-                
+    
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             }
             else{
                 
-                self.hiddenLoading()
+            
                 self.goToMenu()
             }
         }
@@ -98,20 +98,13 @@ extension LoginViewController: UITextFieldDelegate {
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField.text! == "" {
-            return false
-        } else if textField == emailTextField {
-            textField.resignFirstResponder()
-            senhaTextField.becomeFirstResponder()
-            return true
-        } else if textField == senhaTextField {
-            textField.resignFirstResponder()
-            return true
-        }else {
-            return false
+        
+        if textField.isEqual(self.emailTextField) {
+            self.senhaTextField.becomeFirstResponder()
+        } else {
+            self.senhaTextField.resignFirstResponder()
         }
+        return true
     }
 }
-
-
 
