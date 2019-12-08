@@ -31,6 +31,7 @@ class ReceberEmpresasViewController: UIViewController {
     
    var dados: GenericData?
    var receberController: GenericController!
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,7 @@ class ReceberEmpresasViewController: UIViewController {
         
         self.animacaoEntradaView()
         self.setUpView1()
+       
       
         
     }
@@ -48,7 +50,8 @@ class ReceberEmpresasViewController: UIViewController {
     func setUpView1(){
           
         nomeEmpresa1Label.text = "Cosi Home"
-        descricaoEmpresa1LAbel.text = "coisinhas fofas para sua casa"
+        
+        descricaoEmpresa1LAbel.text = "coisinhas fofas e diferentes"
         logoEmpresa1ImageView.image = UIImage(named: "logoCosi")
           
         nomeEmpresa1Label.textColor = .label
@@ -58,22 +61,29 @@ class ReceberEmpresasViewController: UIViewController {
 //        descricaoEmpresa1LAbel.text = receber.descricaoEmpresa1
 //        logoEmpresa1ImageView.image = UIImage(named: receber.logoEmpresa1)
         
-        nomeEmpresa2Label.text = "Duas Gastronomia"
-        descricaoEmpresa2Label.text = "buffet diferente e creativo"
-        logoEmpresa2ImageView.image = UIImage(named: "logoDuas")
-                 
-               nomeEmpresa2Label.textColor = .label
-               descricaoEmpresa2Label.textColor = .label
-       
+        
     }
+    
+//    func setUpView2(){
+//        
+//        nomeEmpresa2Label.text = "Duas Gastronomia"
+//         descricaoEmpresa2Label.text = "buffet diferente e creativo"
+//         logoEmpresa2ImageView.image = UIImage(named: "logoDuas")
+//                  
+//                nomeEmpresa2Label.textColor = .label
+//                descricaoEmpresa2Label.textColor = .label
+//        
+//        
+//    }
     
     func animacaoEntradaView() {
         
         self.view.addSubview(empresa1View)
-        self.view.addSubview(empresa2View)
+//        self.view.addSubview(empresa2View)
         
         empresa1View.center = self.view.center
-        empresa2View.alignmentRect(forFrame: CGRect.init(x: 100, y: 200, width: 300, height: 200))
+        
+//        empresa2View.centerYAnchor
         
         }
         

@@ -43,11 +43,12 @@ class GenericController {
     }
     
 
-    
-    
     func devolveReceber(index: Int) -> GenericData{
         return array[index]
     }
+    
+    
+    
     
 }
 
