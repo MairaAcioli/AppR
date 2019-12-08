@@ -81,7 +81,7 @@ class ReceberGaleriaViewController: UIViewController, UIScrollViewDelegate {
         
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ReceberEmpresasViewController") as? ReceberEmpresasViewController {
            
-             self.addChild(vc)
+            self.addChild(vc)
             vc.view.frame = self.view.frame
             self.view.addSubview(vc.view)
             self.didMove(toParent: self)

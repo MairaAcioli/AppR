@@ -13,7 +13,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var tagLabel: UILabel!
     
-    var genericData: GenericData?
+//    var genericData: GenericData?
     
     
     override func awakeFromNib() {

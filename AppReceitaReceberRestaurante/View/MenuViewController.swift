@@ -61,27 +61,27 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
         }
     }
     
-  
-    @IBAction func buttonTap(_ sender: UIButton) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}
-        
-        
-        switch sender {
-        case receberButton:
-            vc.tipo = .receber
-            navigationController?.pushViewController(vc, animated: true)
-            
-        case receitaButton:
-            vc.tipo = .receita
-            navigationController?.pushViewController(vc, animated: true)
-            
-       case restauranteButton:
-            vc.tipo = .restaurante
-            navigationController?.pushViewController(vc, animated: true)
-        default:
-            return
-        }
-    }
+//  
+//    @IBAction func buttonTap(_ sender: UIButton) {
+//        guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}
+//        
+//        
+//        switch sender {
+//        case receberButton:
+//            vc.tipo = .receber
+//            navigationController?.pushViewController(vc, animated: true)
+//            
+//        case receitaButton:
+//            vc.tipo = .receita
+//            navigationController?.pushViewController(vc, animated: true)
+//            
+//       case restauranteButton:
+//            vc.tipo = .restaurante
+//            navigationController?.pushViewController(vc, animated: true)
+//        default:
+//            return
+//        }
+//    }
     
     
 }

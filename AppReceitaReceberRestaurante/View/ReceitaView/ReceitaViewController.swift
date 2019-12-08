@@ -61,11 +61,10 @@ return UICollectionViewCell()
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if let vc = storyboard?.instantiateViewController(identifier: "ReceitaModoDePreparoViewController") as? ReceitaModoDePreparoViewController {
-               
-            vc.setupReceita(receita: receitaController.devolveReceita(index: indexPath.row))
-           
             
-                   navigationController?.pushViewController(vc, animated: true)
+            vc.receitaModel = receitaController.devolveReceita(index: indexPath.row)
+           
+          navigationController?.pushViewController(vc, animated: true)
                    
                    
                }
@@ -74,3 +73,7 @@ return UICollectionViewCell()
     }
   
 }
+
+
+//vc.receberModel = receberController.devolveReceber(index: indexPath.row)
+//           navigationController?.pushViewController(vc, animated: true)

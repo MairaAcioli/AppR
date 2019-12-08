@@ -42,14 +42,13 @@ class ReceberEmpresasViewController: UIViewController {
         self.animacaoEntradaView()
         self.setUpView1()
       
-       
         
     }
     
     func setUpView1(){
           
         nomeEmpresa1Label.text = "Cosi Home"
-        descricaoEmpresa1LAbel.text = "coisas descoladas para casa"
+        descricaoEmpresa1LAbel.text = "coisinhas fofas para sua casa"
         logoEmpresa1ImageView.image = UIImage(named: "logoCosi")
           
         nomeEmpresa1Label.textColor = .label

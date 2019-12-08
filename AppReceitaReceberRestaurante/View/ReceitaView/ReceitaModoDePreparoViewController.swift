@@ -24,13 +24,17 @@ class ReceitaModoDePreparoViewController: UIViewController {
     @IBOutlet weak var ingredientesModoDePreparoTextView: UITextView!
     
     
-    var receitaController: ReceitaController = ReceitaController()
+//    var receitaController: ReceitaController = ReceitaController()
+    var receitaModel: ReceitaModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupReceita(receita: receitaController.devolveReceita(index: 0))
-       
+        self.ingredientesModoDePreparoTextView.isEditable = false
+        self.ingredientesModoDePreparoTextView.showsVerticalScrollIndicator = false
+        
+//        self.setupReceita(receita: receitaController.devolveReceita(index: 0))
+        self.setupReceita(receita: receitaModel!)
 
     }
     

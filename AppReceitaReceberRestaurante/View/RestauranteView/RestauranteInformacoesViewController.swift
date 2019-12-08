@@ -86,6 +86,8 @@ class RestauranteInformacoesViewController: UIViewController {
         
         let containerView: UIView = {
             let view = UIView()
+            view.backgroundColor = UIColor.systemBackground
+            
             view.translatesAutoresizingMaskIntoConstraints = false
             return view
         }()
@@ -102,8 +104,9 @@ class RestauranteInformacoesViewController: UIViewController {
         let nomeRestauranteLabel: UILabel = {
             let label = UILabel()
             label.text = "NomeRestaurante"
-            label.font = UIFont.systemFont(ofSize: 28)
+            label.font = UIFont.systemFont(ofSize: 20)
             label.textColor = UIColor.black
+            label.textColor = .label
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
@@ -111,7 +114,7 @@ class RestauranteInformacoesViewController: UIViewController {
         let precoRestauranteLabel: UILabel = {
             let label = UILabel()
             label.text = "PrecoRestaurante"
-            label.font = UIFont.boldSystemFont(ofSize: 18)
+            label.font = UIFont.boldSystemFont(ofSize: 13)
             label.textColor = UIColor.systemPink
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
@@ -121,8 +124,9 @@ class RestauranteInformacoesViewController: UIViewController {
             let label = UILabel()
             label.text = "CategoriaRestaurante"
             label.numberOfLines = 0
-            label.font = UIFont.systemFont(ofSize: 20)
+            label.font = UIFont.systemFont(ofSize: 17)
             label.textColor = UIColor.gray
+            label.textColor = .label
             label.translatesAutoresizingMaskIntoConstraints = false
             return label
         }()
