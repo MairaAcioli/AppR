@@ -80,7 +80,9 @@ class ReceberGaleriaViewController: UIViewController, UIScrollViewDelegate {
     @IBAction func mostrarEmpresasButton(_ sender: Any) {
         
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ReceberEmpresasViewController") as? ReceberEmpresasViewController {
-           
+            
+            vc.dados = receberModel
+            
             self.addChild(vc)
             vc.view.frame = self.view.frame
             self.view.addSubview(vc.view)

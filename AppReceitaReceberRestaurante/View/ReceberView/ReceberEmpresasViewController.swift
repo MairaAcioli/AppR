@@ -26,10 +26,9 @@ class ReceberEmpresasViewController: UIViewController {
     
     @IBOutlet weak var descricaoEmpresa2Label: UILabel!
     
-    
     @IBOutlet weak var efeitoBlur: UIVisualEffectView!
     
-   var dados: GenericData?
+   var dados: GenericData!
    var receberController: GenericController!
  
     
@@ -48,19 +47,21 @@ class ReceberEmpresasViewController: UIViewController {
     }
     
     func setUpView1(){
-          
-        nomeEmpresa1Label.text = "Cosi Home"
         
-        descricaoEmpresa1LAbel.text = "coisinhas fofas e diferentes"
-        logoEmpresa1ImageView.image = UIImage(named: "logoCosi")
+        nomeEmpresa1Label.text = dados.nomeEmpresa1
+               descricaoEmpresa1LAbel.text = dados.descricaoEmpresa1
+               logoEmpresa1ImageView.image = UIImage(named: dados.logoEmpresa1)
+               
           
+//        nomeEmpresa1Label.text = dados?.nomeEmpresa1
+//
+//        descricaoEmpresa1LAbel.text = "coisinhas fofas e diferentes"
+//        logoEmpresa1ImageView.image = UIImage(named: "logoCosi")
+//
         nomeEmpresa1Label.textColor = .label
         descricaoEmpresa1LAbel.textColor = .label
         
-//        nomeEmpresa1Label.text = receber.nomeEmpresa1
-//        descricaoEmpresa1LAbel.text = receber.descricaoEmpresa1
-//        logoEmpresa1ImageView.image = UIImage(named: receber.logoEmpresa1)
-        
+       
         
     }
     
@@ -89,7 +90,7 @@ class ReceberEmpresasViewController: UIViewController {
         
         @IBAction func verNoSite1Button(_ sender: Any) {
             
-            if let url = URL(string: "https://www.cosihome.com.br") {
+            if let url = URL(string: dados.siteEmpresa1) {
                 UIApplication.shared.open(url)
                 
                 

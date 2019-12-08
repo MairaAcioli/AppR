@@ -50,7 +50,7 @@ class ReceitaModoDePreparoViewController: UIViewController {
         self.chefReceitaLabel.textColor = .black
         self.chefReceitaLabel.textColor = .label
         
-        self.ingredientesModoDePreparoTextView.text = "INGREDIENTES:   " + receita.ingredientes + "  " + "MODO DE PREPARO:   " + receita.modoDePreparo
+        self.ingredientesModoDePreparoTextView.text = "INGREDIENTES:   " + receita.ingredientes + "\n\nMODO DE PREPARO:   " + receita.modoDePreparo
         self.ingredientesModoDePreparoTextView.textColor = .black
         self.ingredientesModoDePreparoTextView.textColor = .label
         

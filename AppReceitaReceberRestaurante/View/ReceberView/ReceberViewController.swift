@@ -45,10 +45,10 @@ class ReceberViewController: BaseViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         self.collectionView.register(UINib(nibName: "CustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CustomCollectionViewCell")
-        
-        let uploadData = UpLoadDados()
-        uploadData.downLoad()
-        
+//        
+//        let uploadData = UpLoadDados()
+//        uploadData.downLoad()
+//        
         
         
     }

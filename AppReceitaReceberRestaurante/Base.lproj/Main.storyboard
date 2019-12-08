@@ -139,58 +139,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVO-f0-k9t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="xQw-un-z2b">
-                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN8-kg-ew6">
-                            <rect key="frame" x="108" y="35" width="172" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="21" id="Odd-5Q-V1S"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q08-oT-vd7">
-                            <rect key="frame" x="16" y="16" width="70" height="70"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="70" id="hIx-8u-mYw"/>
-                                <constraint firstAttribute="height" constant="70" id="yBc-BI-JzV"/>
-                            </constraints>
-                        </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN8-Th-psS">
-                            <rect key="frame" x="114" y="157" width="72" height="30"/>
-                            <state key="normal" title="ver no site"/>
-                            <connections>
-                                <action selector="verNoSite1Button:" destination="CnB-cQ-Xb5" eventType="touchUpInside" id="7Cx-7Z-pKz"/>
-                            </connections>
-                        </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE7-1v-kTd">
-                            <rect key="frame" x="20" y="109" width="260" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="21" id="aMh-qx-GJ0"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstItem="pN8-kg-ew6" firstAttribute="leading" secondItem="q08-oT-vd7" secondAttribute="trailing" constant="22" id="Aix-nj-Bmd"/>
-                        <constraint firstItem="pN8-kg-ew6" firstAttribute="top" secondItem="xQw-un-z2b" secondAttribute="top" constant="35" id="CFa-VF-LWr"/>
-                        <constraint firstItem="aN8-Th-psS" firstAttribute="top" secondItem="FE7-1v-kTd" secondAttribute="bottom" constant="27" id="OFB-4f-Rla"/>
-                        <constraint firstItem="FE7-1v-kTd" firstAttribute="centerX" secondItem="aN8-Th-psS" secondAttribute="centerX" id="Qf7-4E-BEy"/>
-                        <constraint firstItem="FE7-1v-kTd" firstAttribute="top" secondItem="pN8-kg-ew6" secondAttribute="bottom" constant="53" id="T58-RV-qBp"/>
-                        <constraint firstItem="FE7-1v-kTd" firstAttribute="centerX" secondItem="xQw-un-z2b" secondAttribute="centerX" id="c05-SJ-zVo"/>
-                        <constraint firstItem="pN8-kg-ew6" firstAttribute="trailing" secondItem="FE7-1v-kTd" secondAttribute="trailing" id="ebo-c2-zFo"/>
-                        <constraint firstItem="q08-oT-vd7" firstAttribute="top" secondItem="xQw-un-z2b" secondAttribute="top" constant="16" id="r0v-UO-Ja8"/>
-                        <constraint firstItem="dl1-kF-QHV" firstAttribute="trailing" secondItem="pN8-kg-ew6" secondAttribute="trailing" constant="20" id="vOd-Dg-RDq"/>
-                        <constraint firstItem="q08-oT-vd7" firstAttribute="leading" secondItem="dl1-kF-QHV" secondAttribute="leading" constant="16" id="yyW-Ts-Leu"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="dl1-kF-QHV"/>
-                </view>
                 <view contentMode="scaleToFill" id="b4j-de-fRY">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -221,7 +169,9 @@
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKF-S0-1uT">
                             <rect key="frame" x="114" y="156" width="72" height="30"/>
-                            <state key="normal" title="ver no site"/>
+                            <state key="normal" title="ver no site">
+                                <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
                                 <action selector="verNoSite2Button:" destination="CnB-cQ-Xb5" eventType="touchUpInside" id="Cyb-eA-4Aj"/>
                             </connections>
@@ -242,6 +192,61 @@
                         <constraint firstItem="4OF-MN-PAf" firstAttribute="leading" secondItem="L4I-SX-83E" secondAttribute="trailing" constant="22" id="iHZ-ni-tae"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="qlU-fs-35C"/>
+                </view>
+                <view contentMode="scaleToFill" id="xQw-un-z2b">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pN8-kg-ew6">
+                            <rect key="frame" x="108" y="35" width="172" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Odd-5Q-V1S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q08-oT-vd7">
+                            <rect key="frame" x="16" y="16" width="70" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="hIx-8u-mYw"/>
+                                <constraint firstAttribute="height" constant="70" id="yBc-BI-JzV"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN8-Th-psS">
+                            <rect key="frame" x="114" y="154" width="72" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Rdc-Br-qGp"/>
+                                <constraint firstAttribute="width" constant="72" id="VkM-4S-Gyg"/>
+                            </constraints>
+                            <state key="normal" title="ver no site">
+                                <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="verNoSite1Button:" destination="CnB-cQ-Xb5" eventType="touchUpInside" id="7Cx-7Z-pKz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE7-1v-kTd">
+                            <rect key="frame" x="20" y="109" width="260" height="18.333333333333329"/>
+                            <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="pN8-kg-ew6" firstAttribute="leading" secondItem="q08-oT-vd7" secondAttribute="trailing" constant="22" id="Aix-nj-Bmd"/>
+                        <constraint firstItem="pN8-kg-ew6" firstAttribute="top" secondItem="xQw-un-z2b" secondAttribute="top" constant="35" id="CFa-VF-LWr"/>
+                        <constraint firstItem="dl1-kF-QHV" firstAttribute="bottom" secondItem="aN8-Th-psS" secondAttribute="bottom" constant="16" id="GNA-tN-Ccq"/>
+                        <constraint firstItem="aN8-Th-psS" firstAttribute="centerX" secondItem="dl1-kF-QHV" secondAttribute="centerX" id="Kaw-Ca-c9T"/>
+                        <constraint firstItem="FE7-1v-kTd" firstAttribute="top" secondItem="pN8-kg-ew6" secondAttribute="bottom" constant="53" id="T58-RV-qBp"/>
+                        <constraint firstItem="FE7-1v-kTd" firstAttribute="centerX" secondItem="xQw-un-z2b" secondAttribute="centerX" id="c05-SJ-zVo"/>
+                        <constraint firstItem="pN8-kg-ew6" firstAttribute="trailing" secondItem="FE7-1v-kTd" secondAttribute="trailing" id="ebo-c2-zFo"/>
+                        <constraint firstItem="q08-oT-vd7" firstAttribute="top" secondItem="xQw-un-z2b" secondAttribute="top" constant="16" id="r0v-UO-Ja8"/>
+                        <constraint firstItem="dl1-kF-QHV" firstAttribute="trailing" secondItem="pN8-kg-ew6" secondAttribute="trailing" constant="20" id="vOd-Dg-RDq"/>
+                        <constraint firstItem="q08-oT-vd7" firstAttribute="leading" secondItem="dl1-kF-QHV" secondAttribute="leading" constant="16" id="yyW-Ts-Leu"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="dl1-kF-QHV"/>
                 </view>
             </objects>
             <point key="canvasLocation" x="4646.376811594203" y="-626.11607142857144"/>
@@ -356,7 +361,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POT-84-Lqt">
                                         <rect key="frame" x="0.0" y="162" width="334" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -474,7 +479,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sR6-b7-NYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1995.6521739130437" y="101.78571428571428"/>
+            <point key="canvasLocation" x="1730" y="104"/>
         </scene>
         <!-- -->
         <scene sceneID="2S6-Kb-9zp">
@@ -506,7 +511,9 @@
                         <viewLayoutGuide key="safeArea" id="IM6-id-Dra"/>
                     </view>
                     <navigationItem key="navigationItem" title=" " id="rAC-4E-lLM">
-                        <barButtonItem key="backBarButtonItem" title=" " id="pzg-5L-xwB"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="pzg-5L-xwB">
+                            <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="receitaCollectionView" destination="N1k-IY-b1A" id="15V-l6-XJo"/>
