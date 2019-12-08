@@ -55,6 +55,7 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
         do {
             try
                 Auth.auth().signOut()
+               
             self.dismiss(animated: true)
         } catch let error {
             print("Falha ao deslogar", error)

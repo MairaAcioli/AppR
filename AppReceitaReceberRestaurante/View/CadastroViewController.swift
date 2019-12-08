@@ -66,9 +66,14 @@ class CadastroViewController: BaseViewController {
     
     func validarCadastro() -> String? {
         
+        self.showLoading()
+        
         if nomeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || sobrenomeTextFiled.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || senhaTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
+        self.hiddenLoading()
+            
             return "Por favor, preencha todos os campos."
+            
             
         }
         
