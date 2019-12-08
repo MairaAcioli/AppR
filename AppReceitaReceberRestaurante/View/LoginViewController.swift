@@ -64,6 +64,7 @@ class LoginViewController: BaseViewController {
     
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
+                self.senhaTextField.text = "" 
             }
             else{
                 

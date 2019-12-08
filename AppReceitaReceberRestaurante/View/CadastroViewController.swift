@@ -41,6 +41,8 @@ class CadastroViewController: BaseViewController {
         
         setUpCadastroTextField()
         
+        self.hiddenLoading()
+        
         self.nomeTextField.delegate = self
         self.sobrenomeTextFiled.delegate = self
         self.emailTextField.delegate = self
@@ -72,7 +74,7 @@ class CadastroViewController: BaseViewController {
     
     func validarCadastro() -> String? {
         
-//        self.showLoading()
+        self.showLoading()
         
         if nomeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || sobrenomeTextFiled.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || senhaTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             
@@ -103,7 +105,7 @@ class CadastroViewController: BaseViewController {
         
         //validar senha
         
-        
+        self.showLoading()
         
         let error = validarCadastro()
         
@@ -121,6 +123,8 @@ class CadastroViewController: BaseViewController {
             let senha = senhaTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             Auth.auth().createUser(withEmail: email, password: senha) { (result, err) in
+                
+                self.hiddenLoading()
                 
                 if err != nil {
                     self.mostrarErro("Erro ao criar usuário")
