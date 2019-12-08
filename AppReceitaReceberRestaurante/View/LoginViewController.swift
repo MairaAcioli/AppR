@@ -36,6 +36,9 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         
         setUpLoginTextField()
+        
+        self.hiddenLoading()
+        
         //       self.fotoLoginImageView.image = UIImage(named: "login")
         
         self.emailTextField.text = "maira@teste.com"
@@ -47,7 +50,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        //        self.showLoading()
+                self.showLoading()
         
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -55,7 +58,7 @@ class LoginViewController: BaseViewController {
         
         Auth.auth().signIn(withEmail: email, password: senha) { (result, error) in
             
-//        self.hiddenLoading()
+         self.hiddenLoading()
             
             if error != nil {
     
@@ -64,7 +67,8 @@ class LoginViewController: BaseViewController {
             }
             else{
                 
-            
+               
+                self.hiddenLoading()
                 self.goToMenu()
             }
         }
