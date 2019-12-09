@@ -24,6 +24,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     }
 
     func setupViewNaCollection(receber: GenericData){
+    
+    
 
         self.tagLabel.text = receber.tag
 

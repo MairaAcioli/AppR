@@ -14,7 +14,7 @@ import Firebase
 
 import FirebaseFirestore
 
-class CadastroViewController: BaseViewController {
+class CadastroViewController: BaseViewController, UITextFieldDelegate {
 
    
   
@@ -74,6 +74,8 @@ class CadastroViewController: BaseViewController {
         if Utilities.validarSenha(senhaSegura) == false {
             //se a senha não for segura
             
+            
+           
             return "Por favor, digite uma senha mais segura. Contendo ao menos 8 letras, números e caracteres especiais."
             
             
@@ -150,5 +152,5 @@ class CadastroViewController: BaseViewController {
         view.window?.makeKeyAndVisible()
     }
     
-    
+   
 }

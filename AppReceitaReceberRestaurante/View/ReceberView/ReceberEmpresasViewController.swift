@@ -49,8 +49,8 @@ class ReceberEmpresasViewController: UIViewController {
     func setUpView1(){
         
         nomeEmpresa1Label.text = dados.nomeEmpresa1
-               descricaoEmpresa1LAbel.text = dados.descricaoEmpresa1
-               logoEmpresa1ImageView.image = UIImage(named: dados.logoEmpresa1)
+        descricaoEmpresa1LAbel.text = dados.descricaoEmpresa1
+        logoEmpresa1ImageView.image = UIImage(named: dados.logoEmpresa1)
                
           
 //        nomeEmpresa1Label.text = dados?.nomeEmpresa1

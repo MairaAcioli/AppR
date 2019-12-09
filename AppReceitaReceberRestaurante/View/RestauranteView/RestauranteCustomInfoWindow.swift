@@ -34,21 +34,31 @@ class RestauranteCustomInfoWindow: UIView {
     var modelRestaurante: Business?
     
     @IBAction func informacoesButton(_ sender: UIButton) -> Void {
+       
         self.delegate?.clicouNoBotao()
+        
+//        aqui manda os dados para
+//
+//        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RestauranteInformacoesViewController") as? RestauranteInformacoesViewController {
+//
+//                   vc.dados = modelRestaurante
+//
+        
+        
 
     }
    
     
-    
-    override init(frame: CGRect) {
-     super.init(frame: frame)
-    }
-    
-    
-    
-    required init?(coder aDecoder: NSCoder) {
-     super.init(coder: aDecoder)
-    }
+//
+//    override init(frame: CGRect) {
+//     super.init(frame: frame)
+//    }
+//
+//
+//
+//    required init?(coder aDecoder: NSCoder) {
+//     super.init(coder: aDecoder)
+//    }
     
     
     func setUpRestauranteWindow(value: Business?) {
@@ -78,8 +88,12 @@ class RestauranteCustomInfoWindow: UIView {
     func loadView() -> RestauranteCustomInfoWindow{
        
         let restauranteCustomInfoWindow = Bundle.main.loadNibNamed("RestauranteCustomInfoWindow", owner: self, options: nil)?[0] as! RestauranteCustomInfoWindow
+        
+        
+        
      return restauranteCustomInfoWindow
     }
 
 }
+
 

@@ -44,23 +44,49 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
        
     }
     
-    @IBAction func logOutButton(_ sender: Any) {
-        
-        self.singOut()
-        
-    }
-
-    func singOut(){
-        
-        do {
-            try
-                Auth.auth().signOut()
-            self.dismiss(animated: true)
-        } catch let error {
-            print("Falha ao deslogar", error)
-        }
-    }
-    
+//    @IBAction func logOutButton(_ sender: Any) {
+//        
+//        let alerta = UIAlertController(title: "Alerta", message: "Meu primeiro Alerta", preferredStyle: .actionSheet)
+//
+//               let btnOK = UIAlertAction(title: "OK", style: .default) { (alert) in
+//                   self.singOut()
+//               }
+//               
+//               let btnCancel = UIAlertAction(title: "CANCEL", style: .cancel, handler: nil)
+//        
+//              
+//               
+//               alerta.addAction(btnOK)
+//               alerta.addAction(btnCancel)
+//               
+//               
+//               self.present(alerta, animated: true, completion: nil)
+//        
+//        
+//        
+//    }
+//
+//    func singOut(){
+//
+//            do {
+//                try
+//                    Auth.auth().signOut()
+//                if let storyboard = self.storyboard {
+//                     UserDefaults.standard.set(false, forKey: "logado")
+//                    let vc = storyboard.instantiateViewController(identifier: "AberturaViewController") as? AberturaViewController ?? UIViewController()
+//                    vc.modalPresentationStyle = .fullScreen
+//                    self.present(vc, animated: true, completion: nil)
+//
+//
+//                }
+//
+//
+//    //            self.dismiss(animated: true)
+//            } catch let error {
+//                print("Falha ao deslogar", error)
+//            }
+//        }
+//
 //  
 //    @IBAction func buttonTap(_ sender: UIButton) {
 //        guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}

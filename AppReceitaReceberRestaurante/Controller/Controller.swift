@@ -48,9 +48,5 @@ class GenericController {
         return array[index]
     }
     
-    
-    
-    
+
 }
-
-

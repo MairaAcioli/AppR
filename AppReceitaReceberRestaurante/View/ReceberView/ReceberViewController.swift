@@ -99,7 +99,7 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
      
         
         
-        //return self.arrayCars.count
+      
         
     }
     
@@ -109,7 +109,9 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
         let cell : CustomCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
         
         cell.setupViewNaCollection(receber: receberController.devolveReceber(index: indexPath.row))
-            
+           
+
+        
             
         return cell
         
@@ -125,7 +127,7 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
                           
                 
             }
-//            criar array aperitivo e trocar esse receberController.array.count
+
             
             
             receberTableView.reloadData()
@@ -136,13 +138,3 @@ extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDe
     }
 
     
-
-//
-//if let vc = storyboard?.instantiateViewController(identifier: "ReceberGaleriaViewController") as? ReceberGaleriaViewController {
-//          
-//          vc.receberModel = receberController.devolveReceber(index: indexPath.row)
-//          navigationController?.pushViewController(vc, animated: true)
-//          
-    
-
-
