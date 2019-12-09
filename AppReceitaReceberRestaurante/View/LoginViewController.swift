@@ -28,9 +28,6 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var degradeFundoImageView: UIImageView!
     
     
-    //    @IBOutlet weak var fotoLoginImageView: UIImageView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +35,6 @@ class LoginViewController: BaseViewController {
         setUpLoginTextField()
         
         self.hiddenLoading()
-        
-        //       self.fotoLoginImageView.image = UIImage(named: "login")
         
         self.emailTextField.text = "maira@teste.com"
         self.senhaTextField.text = "maira1234@"
@@ -64,7 +59,7 @@ class LoginViewController: BaseViewController {
     
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
-                self.senhaTextField.text = "" 
+                self.senhaTextField.text = ""
             }
             else{
                 

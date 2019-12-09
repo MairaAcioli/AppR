@@ -19,7 +19,7 @@ class ReceberViewController: BaseViewController {
     let receberCell = ReceberTableViewCell()
     var receberController: GenericController!
     
-  
+    
     var tipo: TipoDado = .receber
     
     var genericData: GenericData?
@@ -28,10 +28,11 @@ class ReceberViewController: BaseViewController {
         super.viewDidLoad()
         
         receberController = GenericController(tipo: tipo)
-       
+        
         self.receberTableView.register(UINib(nibName: "ReceberTableViewCell", bundle: nil), forCellReuseIdentifier: "ReceberTableViewCell")
         self.receberTableView.delegate = self
         self.receberTableView.dataSource = self
+        self.receberTableView.tableFooterView = UIView()
         
         
         self.collectionView.delegate = self
@@ -53,19 +54,19 @@ extension ReceberViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
-    
+        
         if let receberCell = tableView.dequeueReusableCell(withIdentifier: "ReceberTableViewCell", for: indexPath) as? ReceberTableViewCell{
             
             receberCell.setUpReceber(receber: receberController.devolveReceber(index: indexPath.row))
             
-//            receberCell.layer.borderColor = UIColor.label.cgColor
+            //            receberCell.layer.borderColor = UIColor.label.cgColor
             
             return receberCell
         }
         
         return UITableViewCell()
-}
-        
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "ReceberGaleriaViewController") as? ReceberGaleriaViewController {
             
@@ -74,48 +75,47 @@ extension ReceberViewController: UITableViewDelegate, UITableViewDataSource{
             
             
         }
-     
+        
     }
     
 }
 
 extension ReceberViewController : UICollectionViewDataSource, UICollectionViewDelegate {
-   
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return self.receberController.array.count
+        return self.receberController.genericTag.count
         //return self.arrayCars.count
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-       
+        
         let cell : CustomCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
         
-        cell.setupViewNaCollection(receber: receberController.devolveReceber(index: indexPath.row))
-    
+        cell.setupViewNaCollection(receber: receberController.genericTag[indexPath.row])
+        
         return cell
         
     }
     
-////    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-////
-//////        if receberController.devolveReceber(index: indexPath.row).tag == "aperitivo" {
-//////
-//////        }
-//
-//
-//    }
-////
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.receberController.array = self.receberController.arrayBkp
+        if receberController.genericTag[indexPath.row].tag == "Todos" {
+            self.receberTableView.reloadData()
+        } else {
+            self.receberController.filtarArray(receber: receberController.genericTag[indexPath.row].tag)
+            self.receberTableView.reloadData()
+        }
+    }
 }
 //
 //if let vc = storyboard?.instantiateViewController(identifier: "ReceberGaleriaViewController") as? ReceberGaleriaViewController {
-//          
+//
 //          vc.receberModel = receberController.devolveReceber(index: indexPath.row)
 //          navigationController?.pushViewController(vc, animated: true)
-//          
-    
+//
+
 
 

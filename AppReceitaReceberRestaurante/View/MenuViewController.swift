@@ -55,8 +55,13 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
         do {
             try
                 Auth.auth().signOut()
+            if let storyboard = self.storyboard {
+                let vc = storyboard.instantiateViewController(identifier: "AberturaViewController") as? AberturaViewController ?? UIViewController()
+                self.present(vc, animated: true, completion: nil)
+            }
+            
                
-            self.dismiss(animated: true)
+//            self.dismiss(animated: true)
         } catch let error {
             print("Falha ao deslogar", error)
         }

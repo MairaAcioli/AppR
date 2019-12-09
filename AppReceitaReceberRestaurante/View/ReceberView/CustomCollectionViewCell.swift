@@ -23,7 +23,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         
     }
 
-    func setupViewNaCollection(receber: GenericData){
+    func setupViewNaCollection(receber: GenericTag){
 
         self.tagLabel.text = receber.tag
 //        self.tagLabel.text = genericData?.tag

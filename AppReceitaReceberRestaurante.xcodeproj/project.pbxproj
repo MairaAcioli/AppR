@@ -48,6 +48,7 @@
 		0CBC91A9236280B200061996 /* RestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC91A8236280B200061996 /* RestaurantController.swift */; };
 		0CC167EC2378915F00151DAE /* RestauranteInformacoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */; };
 		0CFC9F02238751B600B7553D /* UpLoadDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC9F01238751B600B7553D /* UpLoadDados.swift */; };
+		60F76C09239EE9AC003BE696 /* GenericTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F76C08239EE9AC003BE696 /* GenericTag.swift */; };
 		C6692A1DA7C9871C2F7B003A /* Pods_AppReceitaReceberRestaurante.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,7 @@
 		0CC167EB2378915F00151DAE /* RestauranteInformacoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranteInformacoesViewController.swift; sourceTree = "<group>"; };
 		0CFC9F01238751B600B7553D /* UpLoadDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpLoadDados.swift; sourceTree = "<group>"; };
 		3FFEDF3F341CE552119E586C /* Pods-AppReceitaReceberRestaurante.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppReceitaReceberRestaurante.debug.xcconfig"; path = "Target Support Files/Pods-AppReceitaReceberRestaurante/Pods-AppReceitaReceberRestaurante.debug.xcconfig"; sourceTree = "<group>"; };
+		60F76C08239EE9AC003BE696 /* GenericTag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTag.swift; sourceTree = "<group>"; };
 		ACFACD56039A375FE498EC82 /* Pods_AppReceitaReceberRestaurante.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppReceitaReceberRestaurante.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -257,6 +259,7 @@
 		0CB2FB98235347E0004D6EA9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60F76C08239EE9AC003BE696 /* GenericTag.swift */,
 				0CB2FB9B23534B23004D6EA9 /* Model.swift */,
 				0CBC91A6236274E900061996 /* RestaurantSearch.swift */,
 			);
@@ -546,6 +549,7 @@
 				0CBC91A7236274E900061996 /* RestaurantSearch.swift in Sources */,
 				0CB5D5B22353A95C001F2FC7 /* ReceberGaleriaViewController.swift in Sources */,
 				0C13CA6D235CF2D10037F5EE /* AberturaViewController.swift in Sources */,
+				60F76C09239EE9AC003BE696 /* GenericTag.swift in Sources */,
 				0CB2FB9C23534B23004D6EA9 /* Model.swift in Sources */,
 				0CC167EC2378915F00151DAE /* RestauranteInformacoesViewController.swift in Sources */,
 				0C13CA69235CF1100037F5EE /* LoginViewController.swift in Sources */,
