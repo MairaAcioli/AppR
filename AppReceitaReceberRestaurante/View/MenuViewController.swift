@@ -44,28 +44,43 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
        
     }
     
-    @IBAction func logOutButton(_ sender: Any) {
+  @IBAction func logOutButton(_ sender: Any) {
         
-        self.singOut()
+        let alerta = UIAlertController(title: "Atenção", message: "Deseja sair do aplicativo?", preferredStyle: .actionSheet)
+
+    let btnOK = UIAlertAction(title: "Sair", style: .destructive) { (alert) in
+                   self.singOut()
+               }
+               
+               let btnCancel = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+               
+               alerta.addAction(btnOK)
+               alerta.addAction(btnCancel)
+               
+               self.present(alerta, animated: true, completion: nil)
         
     }
 
-    func singOut(){
-        
-        do {
-            try
-                Auth.auth().signOut()
-            if let storyboard = self.storyboard {
-                let vc = storyboard.instantiateViewController(identifier: "AberturaViewController") as? AberturaViewController ?? UIViewController()
-                self.present(vc, animated: true, completion: nil)
+   func singOut(){
+       
+            do {
+                try
+                    Auth.auth().signOut()
+                if let storyboard = self.storyboard {
+                     UserDefaults.standard.set(false, forKey: "logado")
+                    let vc = storyboard.instantiateViewController(identifier: "AberturaViewController") as? AberturaViewController ?? UIViewController()
+                    vc.modalPresentationStyle = .fullScreen
+                    self.present(vc, animated: true, completion: nil)
+                    
+                
+                }
+                
+                   
+    //            self.dismiss(animated: true)
+            } catch let error {
+                print("Falha ao deslogar", error)
             }
-            
-               
-//            self.dismiss(animated: true)
-        } catch let error {
-            print("Falha ao deslogar", error)
         }
-    }
     
   
     @IBAction func buttonTap(_ sender: UIButton) {
