@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 
+import SDWebImage
+
 
 protocol RestauranteCustomInfoWindowDelegate: class {
 
@@ -73,6 +75,7 @@ class RestauranteCustomInfoWindow: UIView {
             
             nameLabel.text = _value.name
             categoriesLabel.text = _value.phone
+            fotoPinPersonalizacaoImageView.sd_setImage(with: URL(string: _value.imageURL!), placeholderImage: UIImage(named: "degradeFundo"))
             
             nameLabel.textColor = .label
             categoriesLabel.textColor = .label
