@@ -14,7 +14,7 @@ import SDWebImage
 
 protocol RestauranteCustomInfoWindowDelegate: class {
 
-    func clicouNoBotao()
+    func clicouNoBotao(value: Business?)
 }
 
 
@@ -37,7 +37,7 @@ class RestauranteCustomInfoWindow: UIView {
     
     @IBAction func informacoesButton(_ sender: UIButton) -> Void {
        
-        self.delegate?.clicouNoBotao()
+        self.delegate?.clicouNoBotao(value: modelRestaurante)
         
 //        aqui manda os dados para
 //
@@ -80,8 +80,11 @@ class RestauranteCustomInfoWindow: UIView {
             nameLabel.textColor = .label
             categoriesLabel.textColor = .label
             
+            
                
         }
+        
+        
 //        nameLabel.text = "Figo"
 //        categoriesLabel.text = "comida saudável, chef inovadora preocupada com o bem estar do cliente"
 //

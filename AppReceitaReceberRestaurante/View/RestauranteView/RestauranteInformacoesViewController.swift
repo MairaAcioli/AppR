@@ -15,20 +15,37 @@ class RestauranteInformacoesViewController: UIViewController {
     
   var passedData = (nomeRestaurante: "Ghee Banqueteria", foto: #imageLiteral(resourceName: "amorDeOutono06"), precoRestaurante: "350")
     
-        
+   var modelRestaurante: Business?
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             self.view.backgroundColor = UIColor.white
             
-            setupViews()
+            setupViews(value: modelRestaurante)
             
 //            self.addCoteudo()
             
 
             
         }
+    
+//      func setupReceitaNaCollection(receita: ReceitaModel){
+//
+//            self.nomeReceitaLabel.text = receita.titulo
+//            self.nomeReceitaLabel.textColor = .black
+//            self.nomeReceitaLabel.textColor = .label
+//
+//            self.fotoReceita.image = UIImage(named: receita.fotoReceita)
+//
+//    //        self.fotoReceita.layer.cornerRadius = 10
+//
+//
+//    }
         
-        func setupViews() {
+    func setupViews(value: Business?) {
+        
+        if let _value = value {
+            
             self.view.addSubview(myScrollView)
             myScrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
             myScrollView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
@@ -56,24 +73,24 @@ class RestauranteInformacoesViewController: UIViewController {
             nomeRestauranteLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -15).isActive = true
             nomeRestauranteLabel.heightAnchor.constraint(equalToConstant: 50).isActive = true
             
-            nomeRestauranteLabel.text = passedData.nomeRestaurante
+            nomeRestauranteLabel.text = _value.name
             
             containerView.addSubview(precoRestauranteLabel)
             precoRestauranteLabel.leftAnchor.constraint(equalTo: nomeRestauranteLabel.leftAnchor).isActive = true
             precoRestauranteLabel.topAnchor.constraint(equalTo: nomeRestauranteLabel.bottomAnchor).isActive = true
             precoRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
             precoRestauranteLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-            precoRestauranteLabel.text = "R$\(passedData.precoRestaurante)/pessoa"
+            precoRestauranteLabel.text = "R$\(_value.price)/pessoa"
           
             containerView.addSubview(categoriaRestauranteLabel)
             categoriaRestauranteLabel.leftAnchor.constraint(equalTo: nomeRestauranteLabel.leftAnchor).isActive = true
             categoriaRestauranteLabel.topAnchor.constraint(equalTo: precoRestauranteLabel.bottomAnchor, constant: 10).isActive = true
             categoriaRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
-            categoriaRestauranteLabel.text = "comida saudável"
+            categoriaRestauranteLabel.text = _value.phone
            
             categoriaRestauranteLabel.sizeToFit()
         }
-        
+    }
          
     
         let myScrollView: UIScrollView = {
