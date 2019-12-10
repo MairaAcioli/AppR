@@ -9,10 +9,12 @@
 import UIKit
 import Foundation
 
+import SDWebImage
+
 
 protocol RestauranteCustomInfoWindowDelegate: class {
 
-    func clicouNoBotao()
+    func clicouNoBotao(value: Business?)
 }
 
 
@@ -34,21 +36,31 @@ class RestauranteCustomInfoWindow: UIView {
     var modelRestaurante: Business?
     
     @IBAction func informacoesButton(_ sender: UIButton) -> Void {
-        self.delegate?.clicouNoBotao()
+       
+        self.delegate?.clicouNoBotao(value: modelRestaurante)
+        
+//        aqui manda os dados para
+//
+//        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RestauranteInformacoesViewController") as? RestauranteInformacoesViewController {
+//
+//                   vc.dados = modelRestaurante
+//
+        
+        
 
     }
    
     
-    
-    override init(frame: CGRect) {
-     super.init(frame: frame)
-    }
-    
-    
-    
-    required init?(coder aDecoder: NSCoder) {
-     super.init(coder: aDecoder)
-    }
+//
+//    override init(frame: CGRect) {
+//     super.init(frame: frame)
+//    }
+//
+//
+//
+//    required init?(coder aDecoder: NSCoder) {
+//     super.init(coder: aDecoder)
+//    }
     
     
     func setUpRestauranteWindow(value: Business?) {
@@ -63,12 +75,16 @@ class RestauranteCustomInfoWindow: UIView {
             
             nameLabel.text = _value.name
             categoriesLabel.text = _value.phone
+            fotoPinPersonalizacaoImageView.sd_setImage(with: URL(string: _value.imageURL!), placeholderImage: UIImage(named: "degradeFundo"))
             
             nameLabel.textColor = .label
             categoriesLabel.textColor = .label
             
+            
                
         }
+        
+        
 //        nameLabel.text = "Figo"
 //        categoriesLabel.text = "comida saudável, chef inovadora preocupada com o bem estar do cliente"
 //
@@ -78,8 +94,12 @@ class RestauranteCustomInfoWindow: UIView {
     func loadView() -> RestauranteCustomInfoWindow{
        
         let restauranteCustomInfoWindow = Bundle.main.loadNibNamed("RestauranteCustomInfoWindow", owner: self, options: nil)?[0] as! RestauranteCustomInfoWindow
+        
+        
+        
      return restauranteCustomInfoWindow
     }
 
 }
+
 

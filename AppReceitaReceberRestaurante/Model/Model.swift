@@ -28,10 +28,12 @@ struct GenericData {
     var logoEmpresa1: String
     var nomeEmpresa1: String
     var descricaoEmpresa1: String
+    var siteEmpresa1: String
     
     var logoEmpresa2: String
     var nomeEmpresa2: String
     var descricaoEmpresa2: String
+    var siteEmpresa2: String
     
     var tag: String 
     

@@ -14,6 +14,8 @@ class ReceitaViewController: BaseViewController {
     
     
     var receberController: GenericData!
+    
+    var receitaController: ReceitaController = ReceitaController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,9 +34,9 @@ extension ReceitaViewController : UICollectionViewDataSource, UICollectionViewDe
 
  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
      
-    return 20
+    return self.receitaController.arrayReceita.count
     
-    //return self.arrayCars.count
+    
      
  }
  
@@ -42,8 +44,8 @@ extension ReceitaViewController : UICollectionViewDataSource, UICollectionViewDe
      
     
     if let receitacvc = collectionView.dequeueReusableCell(withReuseIdentifier: "ReceitaCollectionViewCell", for: indexPath) as? ReceitaCollectionViewCell {
-    
-        receitacvc.setupReceitaNaCollection()
+        
+        receitacvc.setupReceitaNaCollection(receita: receitaController.devolveReceita(index: indexPath.row))
         receitacvc.layer.borderColor = UIColor.label.cgColor
         receitacvc.layer.borderWidth = 0.5
         receitacvc.layer.cornerRadius = 10
@@ -55,5 +57,23 @@ extension ReceitaViewController : UICollectionViewDataSource, UICollectionViewDe
 return UICollectionViewCell()
  
 }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if let vc = storyboard?.instantiateViewController(identifier: "ReceitaModoDePreparoViewController") as? ReceitaModoDePreparoViewController {
+            
+            vc.receitaModel = receitaController.devolveReceita(index: indexPath.row)
+           
+          navigationController?.pushViewController(vc, animated: true)
+                   
+                   
+               }
+        
+        
+    }
   
 }
+
+
+//vc.receberModel = receberController.devolveReceber(index: indexPath.row)
+//           navigationController?.pushViewController(vc, animated: true)

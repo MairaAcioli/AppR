@@ -45,7 +45,7 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
     }
     
   @IBAction func logOutButton(_ sender: Any) {
-        
+    
         let alerta = UIAlertController(title: "Atenção", message: "Deseja sair do aplicativo?", preferredStyle: .actionSheet)
 
     let btnOK = UIAlertAction(title: "Sair", style: .destructive) { (alert) in
@@ -61,8 +61,52 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
         
     }
 
-   func singOut(){
-       
+//   func singOut(){
+//       
+//            do {
+//                try
+//                    Auth.auth().signOut()
+//                if let storyboard = self.storyboard {
+//                     UserDefaults.standard.set(false, forKey: "logado")
+//                    let vc = storyboard.instantiateViewController(identifier: "AberturaViewController") as? AberturaViewController ?? UIViewController()
+//                    vc.modalPresentationStyle = .fullScreen
+//                    self.present(vc, animated: true, completion: nil)
+//                    
+//                
+//                }
+//                
+//                   
+//    //            self.dismiss(animated: true)
+//            } catch let error {
+//                print("Falha ao deslogar", error)
+//            }
+//        }
+    
+  
+    @IBAction func buttonTap(_ sender: UIButton) {
+        guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}
+        
+        let alerta = UIAlertController(title: "Log Out", message: "certeza que deseja sair?", preferredStyle: .actionSheet)
+
+               let btnOK = UIAlertAction(title: "OK", style: .default) { (alert) in
+                   self.singOut()
+               }
+               
+               let btnCancel = UIAlertAction(title: "CANCEL", style: .cancel, handler: nil)
+        
+              
+               
+               alerta.addAction(btnOK)
+               alerta.addAction(btnCancel)
+               
+               
+               self.present(alerta, animated: true, completion: nil)
+        
+        
+    }
+
+    func singOut(){
+
             do {
                 try
                     Auth.auth().signOut()
@@ -71,38 +115,38 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
                     let vc = storyboard.instantiateViewController(identifier: "AberturaViewController") as? AberturaViewController ?? UIViewController()
                     vc.modalPresentationStyle = .fullScreen
                     self.present(vc, animated: true, completion: nil)
-                    
-                
+
+
                 }
-                
-                   
+
+
     //            self.dismiss(animated: true)
             } catch let error {
                 print("Falha ao deslogar", error)
             }
         }
-    
-  
-    @IBAction func buttonTap(_ sender: UIButton) {
-        guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}
-        
-        
-        switch sender {
-        case receberButton:
-            vc.tipo = .receber
-            navigationController?.pushViewController(vc, animated: true)
-            
-        case receitaButton:
-            vc.tipo = .receita
-            navigationController?.pushViewController(vc, animated: true)
-            
-       case restauranteButton:
-            vc.tipo = .restaurante
-            navigationController?.pushViewController(vc, animated: true)
-        default:
-            return
-        }
-    }
+//
+//  
+//    @IBAction func buttonTap(_ sender: UIButton) {
+//        guard let vc = storyboard?.instantiateViewController(identifier: "ReceberViewController") as? ReceberViewController else {return}
+//        
+//        
+//        switch sender {
+//        case receberButton:
+//            vc.tipo = .receber
+//            navigationController?.pushViewController(vc, animated: true)
+//            
+//        case receitaButton:
+//            vc.tipo = .receita
+//            navigationController?.pushViewController(vc, animated: true)
+//            
+//       case restauranteButton:
+//            vc.tipo = .restaurante
+//            navigationController?.pushViewController(vc, animated: true)
+//        default:
+//            return
+//        }
+//    }
     
     
 }

@@ -18,7 +18,7 @@ target 'AppReceitaReceberRestaurante' do
   pod 'GooglePlaces'
   pod 'Firebase/Database'
   pod 'lottie-ios'	
-
+  pod 'SDWebImage'
 
 
 

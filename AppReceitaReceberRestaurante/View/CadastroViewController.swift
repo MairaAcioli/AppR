@@ -15,9 +15,9 @@ import Firebase
 import FirebaseFirestore
 
 class CadastroViewController: BaseViewController {
-    
-    
-    
+
+   
+  
     @IBOutlet weak var nomeTextField: UITextField!
     
     @IBOutlet weak var sobrenomeTextFiled: UITextField!
@@ -171,7 +171,7 @@ class CadastroViewController: BaseViewController {
         view.window?.makeKeyAndVisible()
     }
     
-    
+   
 }
 
 extension CadastroViewController: UITextFieldDelegate {

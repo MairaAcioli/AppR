@@ -11,6 +11,8 @@ import GoogleMaps
 import GooglePlaces
 
 
+
+
 class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate {
     
    
@@ -23,9 +25,9 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
     
     var controller: RestauranteController? = RestauranteController()
     
-    let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "boloDeRolo")!, bordaCor: .white, tag: 1)
+    let pinPersonalizacao = PinPersonalizacao(frame: CGRect(x: 0, y: 0, width: 100, height: 200), foto: UIImage(named: "icon2")!, bordaCor: .white, tag: 1)
     
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -152,12 +154,14 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
 }
 
 extension RestauranteGoogleMapsViewController: RestauranteCustomInfoWindowDelegate {
-    func clicouNoBotao() {
-         if let informacoesRestaurante = self.storyboard?.instantiateViewController(identifier: "RestauranteInformacoesViewController") as? RestauranteInformacoesViewController {
-            self.navigationController?.pushViewController(informacoesRestaurante, animated: true)
-         }
-    
+    func clicouNoBotao(value: Business?) {
+            
+        if let informacoesRestaurante = self.storyboard?.instantiateViewController(identifier: "RestauranteInformacoesViewController") as? RestauranteInformacoesViewController {
+                self.navigationController?.pushViewController(informacoesRestaurante, animated: true)
+             }
     }
     
+    
+
 }
 

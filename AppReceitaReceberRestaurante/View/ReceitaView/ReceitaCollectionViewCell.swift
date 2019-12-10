@@ -15,6 +15,7 @@ class ReceitaCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nomeReceitaLabel: UILabel!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,13 +24,14 @@ class ReceitaCollectionViewCell: UICollectionViewCell {
         
     }
 
-     func setupReceitaNaCollection(){
+    func setupReceitaNaCollection(receita: ReceitaModel){
 
-        self.nomeReceitaLabel.text = "Steak Tartare por Lu Zaidan"
+        self.nomeReceitaLabel.text = receita.titulo
         self.nomeReceitaLabel.textColor = .black
         self.nomeReceitaLabel.textColor = .label
         
-        self.fotoReceita.image = UIImage(named: "amorDeOutono05")
+        self.fotoReceita.image = UIImage(named: receita.fotoReceita)
+            
 //        self.fotoReceita.layer.cornerRadius = 10
         
             

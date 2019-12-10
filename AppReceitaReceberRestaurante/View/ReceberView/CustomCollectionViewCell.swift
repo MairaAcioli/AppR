@@ -13,7 +13,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var tagLabel: UILabel!
     
-    var genericData: GenericData?
+//    var genericData: GenericData?
     
     
     override func awakeFromNib() {
@@ -26,7 +26,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     func setupViewNaCollection(receber: GenericTag){
 
         self.tagLabel.text = receber.tag
-//        self.tagLabel.text = genericData?.tag
+
+        
 
         self.tagLabel.textColor = .black
         self.tagLabel.layer.borderWidth = 0.5
