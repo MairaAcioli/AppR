@@ -434,11 +434,11 @@
                                     <segue destination="2U7-e2-dun" kind="show" id="vp2-uV-kAZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-CJ-gXv">
-                                <rect key="frame" x="354" y="17" width="40" height="53"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-CJ-gXv">
+                                <rect key="frame" x="354" y="30" width="40" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="7u7-cM-bx1"/>
-                                    <constraint firstAttribute="height" constant="53" id="K2t-Bc-qQb"/>
+                                    <constraint firstAttribute="height" constant="53" id="pcu-Ne-Dv1"/>
+                                    <constraint firstAttribute="width" constant="40" id="yPV-gN-xjQ"/>
                                 </constraints>
                                 <state key="normal" image="person.badge.minus" catalog="system"/>
                                 <connections>
@@ -448,9 +448,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kL6-CJ-gXv" firstAttribute="top" secondItem="KYR-9Q-siG" secondAttribute="top" constant="16" id="6CE-BF-tuX"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="Cxj-zo-mKH" secondAttribute="trailing" constant="22" id="ETt-pM-0Tg"/>
-                            <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="kL6-CJ-gXv" secondAttribute="trailing" constant="20" id="EvP-to-Hjo"/>
                             <constraint firstItem="Cxj-zo-mKH" firstAttribute="leading" secondItem="Ads-WD-xB7" secondAttribute="leading" constant="22" id="JOB-pX-Qyc"/>
                             <constraint firstItem="6iT-q6-WNs" firstAttribute="leading" secondItem="Ads-WD-xB7" secondAttribute="leading" constant="22" id="Kr9-NG-rl9"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="6iT-q6-WNs" secondAttribute="trailing" constant="22" id="LDI-RZ-jlY"/>
@@ -458,7 +456,9 @@
                             <constraint firstItem="Cxj-zo-mKH" firstAttribute="top" secondItem="x5U-1h-lc0" secondAttribute="bottom" constant="35" id="OqO-He-gOT"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="leading" secondItem="Cxj-zo-mKH" secondAttribute="trailing" constant="-370" id="Q1g-o3-axH"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="x5U-1h-lc0" secondAttribute="trailing" constant="22" id="TW6-1F-AEv"/>
+                            <constraint firstItem="Ads-WD-xB7" firstAttribute="trailing" secondItem="kL6-CJ-gXv" secondAttribute="trailing" constant="20" id="VE8-sS-34N"/>
                             <constraint firstItem="6iT-q6-WNs" firstAttribute="top" secondItem="Cxj-zo-mKH" secondAttribute="bottom" constant="35" id="WLx-V9-hFm"/>
+                            <constraint firstItem="x5U-1h-lc0" firstAttribute="top" secondItem="kL6-CJ-gXv" secondAttribute="bottom" id="fHd-qc-iXb"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="height" secondItem="Cxj-zo-mKH" secondAttribute="height" id="jR2-r5-gyO"/>
                             <constraint firstItem="x5U-1h-lc0" firstAttribute="height" secondItem="6iT-q6-WNs" secondAttribute="height" id="sGK-iW-Vcg"/>
                             <constraint firstItem="Ads-WD-xB7" firstAttribute="bottom" secondItem="6iT-q6-WNs" secondAttribute="bottom" constant="40" id="tMj-0o-rWZ"/>
@@ -791,5 +791,5 @@
         <image name="menuReceita" width="1280" height="761"/>
         <image name="person.badge.minus" catalog="system" width="64" height="58"/>
     </resources>
-    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

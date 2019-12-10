@@ -39,37 +39,11 @@ class RestauranteCustomInfoWindow: UIView {
        
         self.delegate?.clicouNoBotao(value: modelRestaurante)
         
-//        aqui manda os dados para
-//
-//        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RestauranteInformacoesViewController") as? RestauranteInformacoesViewController {
-//
-//                   vc.dados = modelRestaurante
-//
-        
-        
 
     }
    
     
-//
-//    override init(frame: CGRect) {
-//     super.init(frame: frame)
-//    }
-//
-//
-//
-//    required init?(coder aDecoder: NSCoder) {
-//     super.init(coder: aDecoder)
-//    }
-    
-    
     func setUpRestauranteWindow(value: Business?) {
-//        guard let arrayBussiness = self.restauranteController?.devolveBusiness() else {return}
-//        for bussiness in arrayBussiness {
-//            nameLabel.text = bussiness.name
-//            categoriesLabel.text = bussiness.categories?.first?.title
-////            fotoPinPersonalizacaoImageView.image = bussiness.imageURL
-//        }
         
         if let _value = value {
             
@@ -80,14 +54,9 @@ class RestauranteCustomInfoWindow: UIView {
             nameLabel.textColor = .label
             categoriesLabel.textColor = .label
             
-            
                
         }
-        
-        
-//        nameLabel.text = "Figo"
-//        categoriesLabel.text = "comida saudável, chef inovadora preocupada com o bem estar do cliente"
-//
+ 
     }
 
     
@@ -96,8 +65,8 @@ class RestauranteCustomInfoWindow: UIView {
         let restauranteCustomInfoWindow = Bundle.main.loadNibNamed("RestauranteCustomInfoWindow", owner: self, options: nil)?[0] as! RestauranteCustomInfoWindow
         
         
-        
      return restauranteCustomInfoWindow
+        
     }
 
 }

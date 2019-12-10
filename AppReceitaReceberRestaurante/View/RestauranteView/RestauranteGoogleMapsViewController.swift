@@ -77,24 +77,21 @@ class RestauranteGoogleMapsViewController: UIViewController, GMSMapViewDelegate 
             
                marker.title = bussiness.name
 //               marker.snippet = bussiness.categories?.first?.title
-               
-               marker.iconView = pinPersonalizacao
-              
             
-
+            let imageView = UIImageView(image: UIImage(named: "icon2"))
+                       imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+                       imageView.layer.cornerRadius = 25
+                       imageView.layer.borderColor = UIColor.white.cgColor
+                       imageView.layer.borderWidth = 4
+                       imageView.clipsToBounds = true
+               
+               marker.iconView = imageView
                marker.appearAnimation = .pop
-               
                marker.map = self.mapView
-            
-               marker.groundAnchor = CGPoint(x: 0, y: 0)
-               marker.infoWindowAnchor = CGPoint(x: 0, y: 0)
-               marker.tracksViewChanges = true
-              
+               marker.tracksViewChanges = false
                marker.isFlat = false
                marker.rotation = 0
                
-            
-                
                mapView?.selectedMarker = marker
                
                
