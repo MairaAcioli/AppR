@@ -374,10 +374,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="trailing" secondItem="96H-Wb-WGz" secondAttribute="trailing" id="3R6-5r-ufO"/>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="top" secondItem="Kit-KU-vKq" secondAttribute="top" id="4GP-zw-the"/>
                             <constraint firstItem="6re-Ww-kGF" firstAttribute="top" secondItem="96H-Wb-WGz" secondAttribute="top" constant="40" id="Jsd-Jc-EAZ"/>
                             <constraint firstItem="Wom-C7-hWl" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" id="Kwv-f3-TuQ"/>
                             <constraint firstItem="6re-Ww-kGF" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" constant="40" id="MEI-Uc-p3b"/>
+                            <constraint firstAttribute="bottom" secondItem="Wom-C7-hWl" secondAttribute="bottom" id="N0R-xL-8sx"/>
                             <constraint firstItem="96H-Wb-WGz" firstAttribute="trailing" secondItem="6re-Ww-kGF" secondAttribute="trailing" constant="40" id="Nob-Xh-zhe"/>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" id="QKp-Fh-dKX"/>
                             <constraint firstItem="Wom-C7-hWl" firstAttribute="trailing" secondItem="96H-Wb-WGz" secondAttribute="trailing" id="UMU-rr-aOo"/>
                             <constraint firstAttribute="bottom" secondItem="Wom-C7-hWl" secondAttribute="bottom" id="ZnJ-sv-9tK"/>
                             <constraint firstItem="Wom-C7-hWl" firstAttribute="top" secondItem="Kit-KU-vKq" secondAttribute="top" id="xoz-EG-n9M"/>
@@ -700,7 +704,7 @@
         <!--Cadastro View Controller-->
         <scene sceneID="byH-iv-3f8">
             <objects>
-                <viewController storyboardIdentifier="CadastroViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rqM-g8-6yS" customClass="CadastroViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CadastroViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rqM-g8-6yS" customClass="CadastroViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9RR-pk-gtg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

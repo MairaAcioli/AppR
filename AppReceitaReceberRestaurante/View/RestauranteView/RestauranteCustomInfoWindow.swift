@@ -35,6 +35,8 @@ class RestauranteCustomInfoWindow: UIView {
     
     var modelRestaurante: Business?
     
+    
+    
     @IBAction func informacoesButton(_ sender: UIButton) -> Void {
        
         self.delegate?.clicouNoBotao(value: modelRestaurante)
@@ -46,6 +48,7 @@ class RestauranteCustomInfoWindow: UIView {
     func setUpRestauranteWindow(value: Business?) {
         
         if let _value = value {
+            modelRestaurante = value
             
             nameLabel.text = _value.name
             categoriesLabel.text = _value.phone
@@ -54,6 +57,8 @@ class RestauranteCustomInfoWindow: UIView {
             nameLabel.textColor = .label
             categoriesLabel.textColor = .label
             
+           
+          
                
         }
  

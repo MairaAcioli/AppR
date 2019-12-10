@@ -154,6 +154,7 @@ extension RestauranteGoogleMapsViewController: RestauranteCustomInfoWindowDelega
     func clicouNoBotao(value: Business?) {
             
         if let informacoesRestaurante = self.storyboard?.instantiateViewController(identifier: "RestauranteInformacoesViewController") as? RestauranteInformacoesViewController {
+            informacoesRestaurante.modelRestaurante = value
                 self.navigationController?.pushViewController(informacoesRestaurante, animated: true)
              }
     }
@@ -161,4 +162,3 @@ extension RestauranteGoogleMapsViewController: RestauranteCustomInfoWindowDelega
     
 
 }
-

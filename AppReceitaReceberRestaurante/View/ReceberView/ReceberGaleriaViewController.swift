@@ -41,7 +41,7 @@ class ReceberGaleriaViewController: UIViewController, UIScrollViewDelegate {
 
             let posicaoX = (self.view.frame.width - 40 ) * CGFloat(i)
 
-            imageView.frame = CGRect(x: posicaoX, y: 0, width: self.galeriaReceberScrollView.frame.width, height: self.galeriaReceberScrollView.frame.height)
+            imageView.frame = CGRect(x: posicaoX, y: -40, width: self.galeriaReceberScrollView.frame.width, height: self.galeriaReceberScrollView.frame.height)
 
             galeriaReceberScrollView.contentSize.width = galeriaReceberScrollView.frame.width * CGFloat(i + 1)
             galeriaReceberScrollView.addSubview(imageView)

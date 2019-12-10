@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SDWebImage
+
 class RestauranteInformacoesViewController: UIViewController {
  
     
@@ -64,7 +66,7 @@ class RestauranteInformacoesViewController: UIViewController {
             imageView.topAnchor.constraint(equalTo: containerView.topAnchor).isActive = true
             imageView.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true
             imageView.heightAnchor.constraint(equalToConstant: 350).isActive = true
-            imageView.image = passedData.foto
+            imageView.sd_setImage(with: URL(string: _value.imageURL!), placeholderImage: UIImage(named: "contemporaneidadeAMesa"))
             
             containerView.addSubview(nomeRestauranteLabel)
             
@@ -80,8 +82,8 @@ class RestauranteInformacoesViewController: UIViewController {
             precoRestauranteLabel.topAnchor.constraint(equalTo: nomeRestauranteLabel.bottomAnchor).isActive = true
             precoRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
             precoRestauranteLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-            precoRestauranteLabel.text = "R$\(_value.price)/pessoa"
-          
+            precoRestauranteLabel.text = _value.url
+        
             containerView.addSubview(categoriaRestauranteLabel)
             categoriaRestauranteLabel.leftAnchor.constraint(equalTo: nomeRestauranteLabel.leftAnchor).isActive = true
             categoriaRestauranteLabel.topAnchor.constraint(equalTo: precoRestauranteLabel.bottomAnchor, constant: 10).isActive = true
