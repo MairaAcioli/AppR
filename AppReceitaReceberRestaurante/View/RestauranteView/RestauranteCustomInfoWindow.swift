@@ -51,7 +51,13 @@ class RestauranteCustomInfoWindow: UIView {
             modelRestaurante = value
             
             nameLabel.text = _value.name
-            categoriesLabel.text = _value.phone
+            if  _value.isClosed ?? true {
+                       categoriesLabel.text = "Fechado"
+                      }else{
+                       categoriesLabel.text = "Aberto"
+                       
+                   
+                       }
             fotoPinPersonalizacaoImageView.sd_setImage(with: URL(string: _value.imageURL!), placeholderImage: UIImage(named: "degradeFundo"))
             
             nameLabel.textColor = .label

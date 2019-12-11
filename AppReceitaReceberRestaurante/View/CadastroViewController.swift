@@ -40,9 +40,7 @@ class CadastroViewController: BaseViewController {
         
         
         setUpCadastroTextField()
-        
-        self.hiddenLoading()
-        
+                
         self.nomeTextField.delegate = self
         self.sobrenomeTextFiled.delegate = self
         self.emailTextField.delegate = self
@@ -64,7 +62,7 @@ class CadastroViewController: BaseViewController {
         Utilities.styleFilledButton(cadastroButton)
         
         
-        self.hiddenLoading()
+       
         
         
         
@@ -74,11 +72,7 @@ class CadastroViewController: BaseViewController {
     
     func validarCadastro() -> String? {
         
-        self.showLoading()
-        
         if nomeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || sobrenomeTextFiled.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || senhaTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            
-        self.hiddenLoading()
             
             return "Por favor, preencha todos os campos."
             
@@ -89,30 +83,30 @@ class CadastroViewController: BaseViewController {
         
         let senhaSegura = senhaTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        
         if Utilities.validarSenha(senhaSegura) == false {
             //se a senha não for segura
             
             self.senhaTextField.text = "" 
             return "Por favor, digite uma senha mais segura. Contendo ao menos 8 letras, números e caracteres especiais."
             
-            
         }
         return nil
     }
     
-    
     @IBAction func cadastroTapped(_ sender: Any) {
         
         //validar senha
-        
-        self.showLoading()
+
+        view.endEditing(true)
         
         let error = validarCadastro()
         
-        
-        
+        self.showLoading()
+
         if error != nil {
-            
+            self.hiddenLoading()
+
             mostrarErro(error!)
         }
         else {
@@ -122,6 +116,7 @@ class CadastroViewController: BaseViewController {
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let senha = senhaTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
+
             Auth.auth().createUser(withEmail: email, password: senha) { (result, err) in
                 
                 self.hiddenLoading()
@@ -143,7 +138,7 @@ class CadastroViewController: BaseViewController {
                     }
                     
                     
-                    self.hiddenLoading()
+                   
                     
                     self.transicaoParaMenu()
                     

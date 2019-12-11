@@ -36,8 +36,8 @@ class BaseViewController: UIViewController {
         }
         
         func hiddenLoading() {
-    //        animationLoadingView?.isHidden = true
-            animationLoadingView?.removeFromSuperview()
-            animationLoadingView?.stop()
+            animationLoadingView?.isHidden = true
+//            animationLoadingView?.removeFromSuperview()
+//            animationLoadingView?.stop()
         }
     }

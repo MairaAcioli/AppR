@@ -53,7 +53,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-aI-M3T">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAs-aI-M3T">
                                 <rect key="frame" x="20" y="109" width="374" height="575"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="zyL-hN-lhJ"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="8eO-cb-mhG"/>
@@ -374,17 +374,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Wom-C7-hWl" firstAttribute="trailing" secondItem="96H-Wb-WGz" secondAttribute="trailing" id="3R6-5r-ufO"/>
-                            <constraint firstItem="Wom-C7-hWl" firstAttribute="top" secondItem="Kit-KU-vKq" secondAttribute="top" id="4GP-zw-the"/>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="centerX" secondItem="6re-Ww-kGF" secondAttribute="centerX" id="2oK-Eo-Zrf"/>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" id="4UD-7f-To2"/>
                             <constraint firstItem="6re-Ww-kGF" firstAttribute="top" secondItem="96H-Wb-WGz" secondAttribute="top" constant="40" id="Jsd-Jc-EAZ"/>
-                            <constraint firstItem="Wom-C7-hWl" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" id="Kwv-f3-TuQ"/>
                             <constraint firstItem="6re-Ww-kGF" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" constant="40" id="MEI-Uc-p3b"/>
-                            <constraint firstAttribute="bottom" secondItem="Wom-C7-hWl" secondAttribute="bottom" id="N0R-xL-8sx"/>
                             <constraint firstItem="96H-Wb-WGz" firstAttribute="trailing" secondItem="6re-Ww-kGF" secondAttribute="trailing" constant="40" id="Nob-Xh-zhe"/>
-                            <constraint firstItem="Wom-C7-hWl" firstAttribute="leading" secondItem="96H-Wb-WGz" secondAttribute="leading" id="QKp-Fh-dKX"/>
-                            <constraint firstItem="Wom-C7-hWl" firstAttribute="trailing" secondItem="96H-Wb-WGz" secondAttribute="trailing" id="UMU-rr-aOo"/>
-                            <constraint firstAttribute="bottom" secondItem="Wom-C7-hWl" secondAttribute="bottom" id="ZnJ-sv-9tK"/>
-                            <constraint firstItem="Wom-C7-hWl" firstAttribute="top" secondItem="Kit-KU-vKq" secondAttribute="top" id="xoz-EG-n9M"/>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="centerY" secondItem="Kit-KU-vKq" secondAttribute="centerY" id="b1g-5s-jbx"/>
+                            <constraint firstItem="Wom-C7-hWl" firstAttribute="top" secondItem="Kit-KU-vKq" secondAttribute="topMargin" constant="-88" id="xHw-8H-5G2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="96H-Wb-WGz"/>
                     </view>
@@ -488,13 +484,13 @@
         <!-- -->
         <scene sceneID="2S6-Kb-9zp">
             <objects>
-                <viewController storyboardIdentifier="ReceitaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uoQ-nG-kq4" customClass="ReceitaViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReceitaViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uoQ-nG-kq4" customClass="ReceitaViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a21-IP-xJc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-IY-b1A">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="16" minimumInteritemSpacing="16" sectionInsetReference="layoutMargins" id="GCq-pC-Lgz">
                                     <size key="itemSize" width="50" height="50"/>
@@ -543,7 +539,7 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="1ap-ft-kCR">
-                                <rect key="frame" x="20" y="343" width="374" height="553"/>
+                                <rect key="frame" x="20" y="343" width="374" height="519"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -572,17 +568,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="MvS-bI-YaQ" firstAttribute="top" secondItem="a8V-Fh-qNH" secondAttribute="bottom" constant="16" id="0oq-mH-iWP"/>
+                            <constraint firstItem="1ap-ft-kCR" firstAttribute="leading" secondItem="vIX-vh-Lng" secondAttribute="leading" id="3jy-TL-B8e"/>
                             <constraint firstItem="a8V-Fh-qNH" firstAttribute="top" secondItem="2JT-wj-5UP" secondAttribute="top" constant="-44" id="4Hg-8g-is8"/>
                             <constraint firstItem="vIX-vh-Lng" firstAttribute="top" secondItem="MvS-bI-YaQ" secondAttribute="bottom" constant="16" id="5E8-XQ-Cct"/>
                             <constraint firstItem="a8V-Fh-qNH" firstAttribute="trailing" secondItem="2JT-wj-5UP" secondAttribute="trailing" id="7d9-of-ssD"/>
+                            <constraint firstItem="1ap-ft-kCR" firstAttribute="bottom" secondItem="2JT-wj-5UP" secondAttribute="bottom" id="8Dh-Aj-OVI"/>
+                            <constraint firstItem="1ap-ft-kCR" firstAttribute="trailing" secondItem="vIX-vh-Lng" secondAttribute="trailing" id="EkL-DO-yhF"/>
                             <constraint firstItem="2JT-wj-5UP" firstAttribute="trailing" secondItem="vIX-vh-Lng" secondAttribute="trailing" constant="20" id="OWJ-0N-h0b"/>
                             <constraint firstItem="vIX-vh-Lng" firstAttribute="leading" secondItem="2JT-wj-5UP" secondAttribute="leading" constant="20" id="TOH-66-mnU"/>
                             <constraint firstItem="a8V-Fh-qNH" firstAttribute="leading" secondItem="2JT-wj-5UP" secondAttribute="leading" id="YNw-yF-gUo"/>
-                            <constraint firstItem="2JT-wj-5UP" firstAttribute="trailing" secondItem="1ap-ft-kCR" secondAttribute="trailing" constant="20" id="gaa-E9-gpG"/>
+                            <constraint firstItem="1ap-ft-kCR" firstAttribute="top" secondItem="vIX-vh-Lng" secondAttribute="bottom" constant="20" id="lI3-aG-K66"/>
                             <constraint firstItem="2JT-wj-5UP" firstAttribute="trailing" secondItem="MvS-bI-YaQ" secondAttribute="trailing" constant="20" id="m9L-RF-Fmb"/>
-                            <constraint firstItem="1ap-ft-kCR" firstAttribute="top" secondItem="vIX-vh-Lng" secondAttribute="bottom" constant="20" id="n08-kW-hfh"/>
-                            <constraint firstAttribute="bottom" secondItem="1ap-ft-kCR" secondAttribute="bottom" id="rMK-QH-HwW"/>
-                            <constraint firstItem="1ap-ft-kCR" firstAttribute="leading" secondItem="2JT-wj-5UP" secondAttribute="leading" constant="20" id="sef-Oq-oZf"/>
                             <constraint firstItem="MvS-bI-YaQ" firstAttribute="leading" secondItem="2JT-wj-5UP" secondAttribute="leading" constant="20" id="yQO-9P-b6C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2JT-wj-5UP"/>
@@ -651,9 +647,9 @@
         <!--Receber View Controller-->
         <scene sceneID="9vW-Rh-MbU">
             <objects>
-                <viewController storyboardIdentifier="ReceberViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D29-Lx-sYC" customClass="ReceberViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReceberViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D29-Lx-sYC" customClass="ReceberViewController" customModule="AppReceitaReceberRestaurante" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oqo-nW-raN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L7b-bc-qhe">
@@ -671,7 +667,7 @@
                                 <cells/>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dNX-3d-Zxo">
-                                <rect key="frame" x="0.0" y="143" width="414" height="665"/>
+                                <rect key="frame" x="0.0" y="143" width="414" height="719"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -764,11 +760,11 @@
                         <constraints>
                             <constraint firstItem="LJG-sz-Cz0" firstAttribute="leading" secondItem="dxv-wQ-Q9L" secondAttribute="leading" constant="40" id="0fB-Ka-Kmz"/>
                             <constraint firstItem="dxv-wQ-Q9L" firstAttribute="trailing" secondItem="LJG-sz-Cz0" secondAttribute="trailing" constant="40" id="Dgm-Mr-Txm"/>
-                            <constraint firstItem="4F6-82-C0l" firstAttribute="top" secondItem="9RR-pk-gtg" secondAttribute="top" id="aCG-y2-pCs"/>
+                            <constraint firstAttribute="bottom" secondItem="4F6-82-C0l" secondAttribute="bottom" id="GVX-rF-ojN"/>
+                            <constraint firstItem="4F6-82-C0l" firstAttribute="top" secondItem="9RR-pk-gtg" secondAttribute="top" id="T9D-KP-mB4"/>
+                            <constraint firstItem="4F6-82-C0l" firstAttribute="trailing" secondItem="dxv-wQ-Q9L" secondAttribute="trailing" id="TgE-BJ-Iwb"/>
+                            <constraint firstItem="4F6-82-C0l" firstAttribute="leading" secondItem="dxv-wQ-Q9L" secondAttribute="leading" id="bEc-KH-PS6"/>
                             <constraint firstItem="LJG-sz-Cz0" firstAttribute="top" secondItem="dxv-wQ-Q9L" secondAttribute="top" constant="40" id="m3Y-mQ-lMU"/>
-                            <constraint firstItem="4F6-82-C0l" firstAttribute="trailing" secondItem="dxv-wQ-Q9L" secondAttribute="trailing" id="re5-04-elK"/>
-                            <constraint firstAttribute="bottom" secondItem="4F6-82-C0l" secondAttribute="bottom" id="sof-rf-xFv"/>
-                            <constraint firstItem="4F6-82-C0l" firstAttribute="leading" secondItem="dxv-wQ-Q9L" secondAttribute="leading" id="xeC-f4-Zim"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dxv-wQ-Q9L"/>
                     </view>

@@ -49,12 +49,22 @@ class MenuViewController: BaseViewController, UITabBarDelegate {
     
         let alerta = UIAlertController(title: "Atenção", message: "Deseja sair do aplicativo?", preferredStyle: .actionSheet)
 
+
+        alerta.view.backgroundColor = .systemBackground
+        
+    
         let btnOK = UIAlertAction(title: "Sair", style: .destructive) { (alert) in
-                   self.singOut()
+                  
+            
+            self.singOut()
+           
+        
                }
-               
+    
+    
         let btnCancel = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
                
+   
                alerta.addAction(btnOK)
                alerta.addAction(btnCancel)
                

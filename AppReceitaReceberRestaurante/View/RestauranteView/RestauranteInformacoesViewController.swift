@@ -82,13 +82,14 @@ class RestauranteInformacoesViewController: UIViewController {
             precoRestauranteLabel.topAnchor.constraint(equalTo: nomeRestauranteLabel.bottomAnchor).isActive = true
             precoRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
             precoRestauranteLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-            precoRestauranteLabel.text = _value.url
+            precoRestauranteLabel.text = "★ " + String(_value.rating ?? 0.0)
         
             containerView.addSubview(categoriaRestauranteLabel)
             categoriaRestauranteLabel.leftAnchor.constraint(equalTo: nomeRestauranteLabel.leftAnchor).isActive = true
             categoriaRestauranteLabel.topAnchor.constraint(equalTo: precoRestauranteLabel.bottomAnchor, constant: 10).isActive = true
             categoriaRestauranteLabel.rightAnchor.constraint(equalTo: nomeRestauranteLabel.rightAnchor).isActive = true
-            categoriaRestauranteLabel.text = _value.phone
+            categoriaRestauranteLabel.text = "☎︎ " + (_value.phone ?? " ")
+           
            
             categoriaRestauranteLabel.sizeToFit()
         }
