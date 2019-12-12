@@ -27,8 +27,7 @@ class LoginViewController: BaseViewController {
     
     @IBOutlet weak var degradeFundoImageView: UIImageView!
     
-    
-//    @IBOutlet weak var fotoLoginImageView: UIImageView!
+ 
     
     
     
@@ -36,7 +35,7 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         
        setUpLoginTextField()
-//       self.fotoLoginImageView.image = UIImage(named: "login")
+
         
         self.emailTextField.text = "maira@teste.com"
         self.senhaTextField.text = "maira1234@"
